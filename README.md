@@ -40,10 +40,12 @@ npm start -- -p 3000
 - Versioned video render: `renders/casa-cabane-web-video/20260523-042046-v01/casa-cabane-web-video.mp4`
 - Versioned poster render: `renders/casa-cabane-poster/20260523-042046-v01/casa-cabane-poster.jpg`
 
-The walkthrough video is intentionally not committed to Git because the current
-file is too large for normal GitHub storage. Keep the master video in Dropbox
-and place a local copy at `public/media/casa-cabane-walkthrough.mp4` after
-cloning. Add Git LFS or a hosted media/CDN path before making this public-ready.
+The committed walkthrough video is a deploy-safe web encode. The high-quality
+local master should stay in Dropbox as
+`public/media/casa-cabane-walkthrough-master-local.mp4` and is intentionally
+ignored by Git. When the master changes, regenerate the deploy encode at
+`public/media/casa-cabane-walkthrough.mp4` before publishing. Add Git LFS or a
+hosted media/CDN path before making this public-ready at full quality.
 
 ## Verified
 

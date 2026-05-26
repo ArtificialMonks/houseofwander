@@ -5,8 +5,8 @@
       "type": "video",
       "status": "active",
       "path": "public/media/casa-cabane-walkthrough.mp4",
-      "source": "host-provided",
-      "notes": "Real Casa Cabane walkthrough. Do not replace unless the user explicitly supplies a better source file."
+      "source": "web-optimized-from-host-master",
+      "notes": "Real Casa Cabane walkthrough. The committed file is deploy-safe; keep the high-quality master local as public/media/casa-cabane-walkthrough-master-local.mp4."
     },
     {
       "id": "casa-cabane-poster",
