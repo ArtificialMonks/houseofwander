@@ -3,6 +3,22 @@
 Date: May 26, 2026  
 For: Joey, Jo, Maaike, Laurens, and the House of Wander team
 
+Live deployment:
+
+- Production: https://houseofwander-ochre.vercel.app
+- GitHub: https://github.com/ArtificialMonks/houseofwander
+- Implementation commit: `6fbe075`
+- Vercel deployment: `dpl_945ECPjh2NQaMNZsH2ExYTaD71az`
+
+Review materials:
+
+- Local PNG mockups:
+  `renders/house-of-wander-collection-qa/20260526-170437-v01/`
+- Local PDF mockup pack:
+  `renders/house-of-wander-collection-qa/20260526-170437-v01/house-of-wander-team-mockups-20260526.pdf`
+- Local QA report:
+  `renders/house-of-wander-collection-qa/20260526-170437-v01/house-of-wander-collection-qa.md`
+
 ## What changed
 
 House of Wander has moved from a one-stay prototype into a full collection
