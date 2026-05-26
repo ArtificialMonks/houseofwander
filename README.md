@@ -11,8 +11,12 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-- `/` - House of Wander brand / collection gateway.
-- `/casa-cabane` - Casa Cabane guided walkthrough prototype.
+- `/` - House of Wander brand gateway with the 3D object.
+- `/stays` - Full collection landing page.
+- `/stays/casa-cabane` - Casa Cabane guided walkthrough prototype.
+- `/stays/the-love-nest` - Public Airbnb-fact prototype page with safe photo placeholders.
+- `/style-lab` - Three house-style variations for the team to compare.
+- `/casa-cabane` - Compatibility redirect to `/stays/casa-cabane`.
 
 For a cleaner demo without the development indicator:
 
@@ -23,16 +27,17 @@ npm start -- -p 3000
 
 ## Prototype Scope
 
-- Uses Maaike & Laudi's Casa Cabane walkthrough as the first interactive stay asset.
-- Adds a Three.js House of Wander object on the collection gateway.
+- Uses the House of Wander team's Casa Cabane walkthrough as the first interactive stay asset.
+- Adds a Three.js House of Wander object on the brand gateway.
+- Adds reusable stay pages for the full briefing collection.
 - Focuses on local proof-of-feel, not a public launch.
 - Airbnb is the default CTA until the team chooses a direct booking or inquiry path.
 - `DESIGN.md` is the design source of truth for future UI passes, combining
   House of Wander direction with AI Design Studio and Airbnb workflow lessons.
-- `source/` now holds the first structured brand, nav, stay, and Airbnb snapshot
-  data so future stays do not have to start as hard-coded page copy.
+- `source/` holds structured brand, nav, stay, source-status, and Airbnb
+  snapshot data so future stays do not have to start as hard-coded page copy.
 - Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
-  agent or backend.
+  agent or backend. It now labels source boundaries and missing confirmations.
 
 ## Media
 

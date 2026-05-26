@@ -160,7 +160,7 @@ Amigo guide:
   booking handoff.
 - Never implies live availability, pricing, payment, cancellation, host inbox,
   or Airbnb sync until those systems exist.
-- Later becomes the bridge between guest questions, Maaike & Laudi's operator
+- Later becomes the bridge between guest questions, Maaike & Laurens' operator
   workflow, Airbnb communication, and direct booking.
 
 ## 7. Content Model

@@ -158,6 +158,32 @@ h2 {
   transform: scale(1.04);
 }
 
+.stayGatewayMedia {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, #27301f 0%, #a87854 54%, #d8c09a 100%);
+}
+
+.stayGatewayMedia .stayHeroPlaceholder {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transform: none;
+  background:
+    linear-gradient(135deg, rgba(30, 42, 26, 0.95) 0%, rgba(178, 116, 73, 0.72) 52%, rgba(230, 220, 201, 0.92) 100%);
+}
+
+.coastal-light .stayGatewayMedia .stayHeroPlaceholder {
+  background:
+    linear-gradient(135deg, rgba(126, 168, 162, 0.92) 0%, rgba(242, 236, 224, 0.95) 52%, rgba(201, 155, 85, 0.5) 100%);
+}
+
+.boutique-night .stayGatewayMedia .stayHeroPlaceholder {
+  background:
+    linear-gradient(135deg, rgba(7, 10, 8, 0.98) 0%, rgba(42, 39, 31, 0.94) 50%, rgba(201, 155, 85, 0.62) 100%);
+}
+
 .gatewayShade {
   position: absolute;
   inset: 0;
@@ -937,7 +963,7 @@ h2 {
   }
 
   .filmstrip {
-    grid-template-columns: repeat(6, minmax(94px, 1fr));
+    grid-template-columns: repeat(6, minmax(116px, 1fr));
     overflow-x: auto;
     padding-bottom: 4px;
     scrollbar-width: thin;
@@ -1359,6 +1385,14 @@ h2 {
   color: rgba(11, 15, 10, 0.58);
 }
 
+.stayStyle {
+  color: rgba(11, 15, 10, 0.52);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 .featuredStay .stayAction {
   color: var(--gold);
 }
@@ -1724,6 +1758,420 @@ h2 {
   display: none;
 }
 
+/* Reusable collection and stay ecosystem */
+
+.stylePreviewBand,
+.collectionSystemBand {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1.1fr);
+  gap: clamp(28px, 6vw, 92px);
+  padding: clamp(72px, 10vw, 132px) clamp(24px, 5vw, 72px);
+  background: linear-gradient(180deg, #f3ecdf 0%, #dcc9aa 100%);
+  color: var(--ink);
+}
+
+.stylePreviewIntro,
+.collectionHeroCopy,
+.styleLabHeroCopy {
+  display: grid;
+  align-content: end;
+}
+
+.stylePreviewIntro .sectionKicker,
+.stylePreviewBand .sectionKicker,
+.collectionGridBand .sectionKicker,
+.collectionSystemBand .sectionKicker,
+.styleLabPage .sectionKicker {
+  color: var(--clay);
+}
+
+.stylePreviewIntro p:last-child,
+.collectionSystemBand p,
+.styleLabHeroCopy p,
+.collectionHeroCopy p {
+  margin: 24px 0 0;
+  color: rgba(11, 15, 10, 0.7);
+  font-size: 1.08rem;
+  line-height: 1.66;
+}
+
+.stylePreviewGrid,
+.readinessList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.stylePreviewCard,
+.readinessList article {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  min-height: 230px;
+  padding: 22px;
+  border: 1px solid rgba(11, 15, 10, 0.13);
+  border-radius: 8px;
+  background: rgba(255, 252, 244, 0.64);
+  color: var(--ink);
+}
+
+.stylePreviewCard span,
+.readinessList span {
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.stylePreviewCard p,
+.readinessList p {
+  margin: 0;
+  color: rgba(11, 15, 10, 0.7);
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.collectionPage,
+.styleLabPage {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.collectionHero,
+.styleLabHero {
+  position: relative;
+  min-height: 72svh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: clamp(20px, 4vw, 56px);
+  overflow: hidden;
+  background:
+    linear-gradient(115deg, rgba(11, 15, 10, 0.94) 0%, rgba(24, 33, 23, 0.86) 48%, rgba(197, 164, 112, 0.32) 100%),
+    #11170f;
+  color: var(--paper);
+}
+
+.styleLabHero {
+  background:
+    linear-gradient(110deg, rgba(8, 12, 8, 0.95) 0%, rgba(34, 37, 34, 0.78) 46%, rgba(129, 170, 169, 0.28) 100%),
+    #0d120d;
+}
+
+.collectionNav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: rgba(242, 236, 224, 0.76);
+  font-size: 0.76rem;
+  font-weight: 650;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.collectionNav nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.collectionHeroCopy,
+.styleLabHeroCopy {
+  align-self: end;
+  max-width: 900px;
+  padding: clamp(40px, 8vh, 92px) 0 0;
+}
+
+.collectionHeroCopy h1,
+.styleLabHeroCopy h1 {
+  max-width: 980px;
+}
+
+.collectionHeroCopy p,
+.styleLabHeroCopy p {
+  max-width: 690px;
+  color: rgba(242, 236, 224, 0.82);
+}
+
+.collectionGridBand,
+.styleVariantGrid {
+  padding: clamp(72px, 10vw, 132px) clamp(24px, 5vw, 72px);
+  background: var(--paper);
+}
+
+.collectionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.collectionStayCard {
+  display: grid;
+  grid-template-rows: 230px 1fr;
+  min-height: 540px;
+  overflow: hidden;
+  border: 1px solid rgba(11, 15, 10, 0.13);
+  border-radius: 8px;
+  background: #fbf7ee;
+  color: var(--ink);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.collectionStayCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(11, 15, 10, 0.28);
+  box-shadow: 0 26px 80px rgba(20, 16, 10, 0.16);
+}
+
+.collectionStayMedia {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(30, 42, 26, 0.95) 0%, rgba(178, 116, 73, 0.72) 52%, rgba(230, 220, 201, 0.92) 100%);
+}
+
+.collectionStayCard.coastal-light .collectionStayMedia {
+  background:
+    linear-gradient(135deg, rgba(126, 168, 162, 0.92) 0%, rgba(242, 236, 224, 0.95) 52%, rgba(201, 155, 85, 0.5) 100%);
+}
+
+.collectionStayCard.boutique-night .collectionStayMedia {
+  background:
+    linear-gradient(135deg, rgba(7, 10, 8, 0.98) 0%, rgba(42, 39, 31, 0.94) 50%, rgba(201, 155, 85, 0.62) 100%);
+}
+
+.collectionStayMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collectionStayMedia span,
+.mediaTile.placeholder span,
+.stayHeroPlaceholder {
+  width: 42%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 252, 244, 0.56);
+  transform: rotate(45deg);
+}
+
+.collectionStayBody {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 24px;
+}
+
+.collectionStayBody h2 {
+  color: var(--ink);
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
+}
+
+.collectionStayBody p:not(.stayStatus):not(.stayLocation) {
+  margin: 0;
+  color: rgba(11, 15, 10, 0.68);
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.sourcePills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.sourcePills span {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(11, 15, 10, 0.12);
+  border-radius: 999px;
+  padding: 0 10px;
+  color: rgba(11, 15, 10, 0.62);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mediaRail {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(2, minmax(0, 0.85fr));
+  gap: 14px;
+}
+
+.mediaTile {
+  position: relative;
+  min-height: 320px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 15, 10, 0.13);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(30, 42, 26, 0.95) 0%, rgba(178, 116, 73, 0.72) 52%, rgba(230, 220, 201, 0.92) 100%);
+}
+
+.coastal-light .mediaTile,
+.coastal-light .stayHeroPlaceholder {
+  background:
+    linear-gradient(135deg, rgba(126, 168, 162, 0.92) 0%, rgba(242, 236, 224, 0.95) 52%, rgba(201, 155, 85, 0.5) 100%);
+}
+
+.boutique-night .mediaTile,
+.boutique-night .stayHeroPlaceholder {
+  background:
+    linear-gradient(135deg, rgba(7, 10, 8, 0.98) 0%, rgba(42, 39, 31, 0.94) 50%, rgba(201, 155, 85, 0.62) 100%);
+}
+
+.mediaTile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.mediaTile.placeholder {
+  display: grid;
+  place-items: center;
+}
+
+.mediaTile figcaption {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(8, 12, 6, 0.72);
+  color: var(--paper);
+  backdrop-filter: blur(14px);
+}
+
+.mediaTile figcaption strong,
+.mediaTile figcaption em {
+  font-size: 0.74rem;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mediaTile figcaption em {
+  color: rgba(242, 236, 224, 0.64);
+}
+
+.factGrid small,
+.highlightList small {
+  color: rgba(11, 15, 10, 0.48);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sourceNotes {
+  display: grid;
+  gap: 16px;
+  padding: clamp(24px, 3vw, 36px);
+  border: 1px solid rgba(11, 15, 10, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 252, 244, 0.68);
+}
+
+.sourceNotes ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.sourceNotes li {
+  color: rgba(11, 15, 10, 0.7);
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.amigoSource {
+  color: rgba(242, 236, 224, 0.46);
+  font-size: 0.64rem;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.styleVariantGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.styleVariantCard {
+  display: grid;
+  align-content: start;
+  gap: 24px;
+  min-height: 620px;
+  padding: clamp(24px, 3vw, 36px);
+  border: 1px solid rgba(11, 15, 10, 0.13);
+  border-radius: 8px;
+  color: var(--ink);
+}
+
+.styleVariantCard h2 {
+  color: inherit;
+  font-size: clamp(2rem, 3.5vw, 3.6rem);
+}
+
+.styleVariantCard ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.styleVariantCard li {
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.styleVariantCard a {
+  align-self: end;
+  justify-self: start;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0 18px;
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.styleVariantCard.editorial-warm {
+  background: linear-gradient(180deg, #f6efe3 0%, #deccb0 100%);
+}
+
+.styleVariantCard.coastal-light {
+  background: linear-gradient(180deg, #f6f3ea 0%, #d9ece8 100%);
+}
+
+.styleVariantCard.boutique-night {
+  background: linear-gradient(180deg, #10150f 0%, #2d2a21 100%);
+  color: var(--paper);
+}
+
 @media (max-width: 1020px) {
   .wanderTitle {
     font-size: 4.5rem;
@@ -1738,8 +2186,20 @@ h2 {
   }
 
   .amigoSystemGrid,
-  .amigoStayGrid {
+  .amigoStayGrid,
+  .stylePreviewGrid,
+  .readinessList,
+  .collectionGrid,
+  .styleVariantGrid {
     grid-template-columns: 1fr;
+  }
+
+  .mediaRail {
+    grid-template-columns: 1fr;
+  }
+
+  .mediaTile {
+    min-height: 260px;
   }
 }
 
@@ -1776,13 +2236,15 @@ h2 {
   }
 
   .wanderNav,
-  .wanderHeroFoot {
+  .wanderHeroFoot,
+  .collectionNav {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
   }
 
-  .wanderNav nav {
+  .wanderNav nav,
+  .collectionNav nav {
     justify-content: flex-start;
     gap: 12px;
     font-size: 0.68rem;
@@ -1791,6 +2253,10 @@ h2 {
 
   .wanderHeroCopy {
     padding-bottom: 18px;
+  }
+
+  .stayGateway .gatewayContent {
+    padding-bottom: 82px;
   }
 
   .wanderTitle {
@@ -1813,7 +2279,9 @@ h2 {
   .staysIntro,
   .systemBand,
   .amigoSystemBand,
-  .amigoStayBand {
+  .amigoStayBand,
+  .stylePreviewBand,
+  .collectionSystemBand {
     grid-template-columns: 1fr;
   }
 
@@ -1827,9 +2295,7 @@ h2 {
   }
 
   .mobileBookingBar {
-    position: fixed;
-    left: 12px;
-    right: 12px;
+    position: sticky;
     bottom: 12px;
     z-index: 42;
     min-height: 58px;
@@ -1839,6 +2305,7 @@ h2 {
     gap: 12px;
     border: 1px solid rgba(242, 236, 224, 0.2);
     border-radius: 999px;
+    margin: -12px 0 10px;
     padding: 8px 8px 8px 18px;
     background: rgba(8, 12, 6, 0.9);
     color: var(--paper);
@@ -1867,7 +2334,7 @@ h2 {
 
   .amigoGuide {
     right: 12px;
-    bottom: 84px;
+    bottom: 14px;
     width: min(390px, calc(100vw - 24px));
   }
 
@@ -1925,5 +2392,35 @@ h2 {
 
   .amigoInputRow {
     grid-template-columns: 1fr;
+  }
+
+  .collectionHero,
+  .styleLabHero {
+    min-height: 82svh;
+    padding: 22px;
+  }
+
+  .collectionHeroCopy,
+  .styleLabHeroCopy {
+    padding-top: 64px;
+  }
+
+  .collectionGridBand,
+  .styleVariantGrid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .collectionStayCard {
+    grid-template-rows: 190px 1fr;
+    min-height: 0;
+  }
+
+  .mediaTile {
+    min-height: 220px;
+  }
+
+  .styleVariantCard {
+    min-height: 0;
   }
 }

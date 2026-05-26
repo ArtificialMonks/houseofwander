@@ -1,0 +1,163 @@
+{
+  "slug": "louise-marie",
+  "name": "Louise Marie",
+  "location": "Ostend",
+  "region": "Coastal apartment",
+  "status": "Briefing story ready",
+  "sourceStatus": "Briefing document plus public non-Airbnb references; Airbnb URL and host-approved photos needed",
+  "title": "A seaside apartment shaped by a promise.",
+  "tagline": "The Ostend stay with a romantic origin story and a bright coastal rhythm.",
+  "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by the promise Laurens made to Maaike early in their relationship.",
+  "styleVariant": "coastal-light",
+  "media": [
+    {
+      "type": "placeholder",
+      "caption": "Seaside hero photo slot",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Apartment interior slot",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Terrace or beach context slot",
+      "source": "needs-confirmation"
+    }
+  ],
+  "quickFacts": [
+    { "label": "Stay type", "value": "Apartment", "source": "briefing-doc" },
+    { "label": "City", "value": "Ostend", "source": "briefing-doc" },
+    { "label": "Guests", "value": "4 likely", "source": "needs-confirmation" },
+    { "label": "Bedrooms", "value": "2 likely", "source": "needs-confirmation" },
+    { "label": "Bathroom", "value": "1 likely", "source": "needs-confirmation" },
+    { "label": "Beach context", "value": "Nearby", "source": "needs-confirmation" }
+  ],
+  "trustSignals": [
+    { "label": "Source", "value": "Brief", "source": "briefing-doc" },
+    { "label": "Airbnb", "value": "Needed", "source": "needs-confirmation" },
+    { "label": "Photos", "value": "Needed", "source": "needs-confirmation" },
+    { "label": "Style", "value": "Coastal", "source": "prototype-copy" }
+  ],
+  "listingHighlights": [
+    {
+      "label": "Seaside position",
+      "value": "Louise Marie should carry the brighter coastal side of the collection.",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Origin story",
+      "value": "The briefing ties the stay to a promise from Laurens to Maaike in the first week of their relationship.",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Practical layer",
+      "value": "Public web references suggest a modern Ostend apartment pattern, but final Airbnb facts must be confirmed by the team.",
+      "source": "needs-confirmation"
+    }
+  ],
+  "stayStory": [
+    {
+      "title": "The stay",
+      "text": "Louise Marie should feel light, coastal, and easy to understand: a seaside apartment within the larger House of Wander world.",
+      "source": "briefing-doc"
+    },
+    {
+      "title": "The story",
+      "text": "The romantic origin gives the page a human anchor without turning it into a private family page.",
+      "source": "briefing-doc"
+    },
+    {
+      "title": "The guest fit",
+      "text": "This page should eventually explain beach access, city convenience, bedroom setup, and who the apartment is best for.",
+      "source": "needs-confirmation"
+    },
+    {
+      "title": "The booking path",
+      "text": "Airbnb remains the correct live booking handoff until direct booking is built and verified.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amenityGroups": [
+    {
+      "title": "Confirmed now",
+      "source": "briefing-doc",
+      "items": ["Ostend seaside stay", "Apartment positioning", "Maaike and Laurens origin story"]
+    },
+    {
+      "title": "Likely detail to confirm",
+      "source": "needs-confirmation",
+      "items": ["Guest count", "Bedrooms", "Bathroom", "Kitchen", "Parking", "Beach access"]
+    },
+    {
+      "title": "Media needed",
+      "source": "needs-confirmation",
+      "items": ["Hero image", "Interior gallery", "Bedroom photos", "Exterior or beach context"]
+    },
+    {
+      "title": "Amigo can guide",
+      "source": "prototype-copy",
+      "items": ["Compare with Casa Cabane", "Explain coastal fit", "Send to Airbnb once URL is confirmed"]
+    }
+  ],
+  "reviewMentions": ["Sea", "Ostend", "Apartment", "Romantic story", "Content needed"],
+  "bookingSteps": [
+    "Confirm the official Airbnb URL and whether this is the exact Louise Marie listing.",
+    "Import only approved facts and approved photos.",
+    "Keep exact prices, dates, cancellation, and payment on Airbnb.",
+    "Use House of Wander for story and guidance, not final transaction."
+  ],
+  "houseNotes": [
+    "Official Airbnb URL needed.",
+    "Guest count and room setup need confirmation.",
+    "Amenities and rules need confirmation.",
+    "Approved gallery needed before client-ready publication."
+  ],
+  "locationNote": "Louise Marie belongs to the Ostend coastal part of the collection. Exact neighborhood, beach distance, parking, and access details need confirmation from the live listing or hosts.",
+  "sourceNotes": [
+    "The briefing document establishes the story and collection role.",
+    "Search found public non-Airbnb references for a Louise Marie apartment, but these are not treated as final Airbnb truth.",
+    "No Airbnb-hosted photos were copied."
+  ],
+  "amigoStayPlan": [
+    {
+      "title": "Story guide",
+      "text": "Amigo can explain the promise and seaside angle in a concise guest-facing way.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "Content intake",
+      "text": "Amigo should surface that the official Airbnb URL, photos, and room facts are still missing.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "Stay comparison",
+      "text": "Later, Amigo can help guests choose between Ostend, Ghent, Blankenberge, and Stekene.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amigoPrompts": [
+    {
+      "label": "What is Louise Marie?",
+      "sourceLabel": "Briefing doc",
+      "answer": "Louise Marie is the Ostend seaside apartment in the collection, built around a romantic promise story from Laurens to Maaike. The exact Airbnb details still need confirmation.",
+      "actionLabel": "Review details",
+      "actionHref": "#details"
+    },
+    {
+      "label": "Is it ready to book?",
+      "sourceLabel": "Needs confirmation",
+      "answer": "Not from this prototype yet. The official Airbnb URL, approved photos, guest count, rules, and amenities need to be confirmed before this page can become booking-ready.",
+      "actionLabel": "Back to collection",
+      "actionHref": "/stays"
+    },
+    {
+      "label": "Which style fits it?",
+      "sourceLabel": "Style lab",
+      "answer": "Louise Marie is a strong candidate for the Coastal Light house style: brighter, airier, and more seaside than Casa Cabane's cinematic nature mood.",
+      "actionLabel": "View style lab",
+      "actionHref": "/style-lab"
+    }
+  ]
+}

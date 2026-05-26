@@ -15,6 +15,14 @@
       "path": "public/media/casa-cabane-poster.jpg",
       "source": "local-render",
       "notes": "Poster image used for gateway, fallback, and collection card."
+    },
+    {
+      "id": "collection-photo-slots",
+      "type": "image-set",
+      "status": "needs-owner-approved-assets",
+      "path": "public/media/stays/<slug>/",
+      "source": "host-needed",
+      "notes": "Casa Fabiola, Louise Marie, Thelma & Louise, Heritage Collection, and The Love Nest need owner-approved image sets before Airbnb-style galleries can use real photos. Airbnb-hosted photos are not copied into this repo."
     }
   ]
 }

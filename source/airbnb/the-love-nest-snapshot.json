@@ -1,0 +1,37 @@
+{
+  "checked": "Public Airbnb search result · May 26, 2026",
+  "url": "https://www.airbnb.com/rooms/1025111265786397251",
+  "title": "Love Nest - Your cosy penthouse",
+  "listingType": "Entire rental unit in Ostend, Belgium",
+  "rating": "4.95",
+  "reviews": "113 reviews",
+  "status": "Guest favorite",
+  "host": "Lisa",
+  "coHosts": "Caroline · Laurens",
+  "response": "100% response rate · responds within an hour",
+  "note": "Public Airbnb facts were used for structured prototype copy. Airbnb-hosted photos were not copied.",
+  "quickFacts": [
+    { "label": "Guests", "value": "2 maximum" },
+    { "label": "Bedrooms", "value": "1" },
+    { "label": "Beds", "value": "1 king bed" },
+    { "label": "Baths", "value": "1.5" },
+    { "label": "Check-in", "value": "After 16:00" },
+    { "label": "Checkout", "value": "Before 11:00" }
+  ],
+  "amenities": [
+    "Beach access",
+    "Kitchen",
+    "Wifi",
+    "Dedicated workspace",
+    "TV",
+    "Two terraces",
+    "Outdoor pool",
+    "Outdoor shower",
+    "Electric BBQ"
+  ],
+  "guardrails": [
+    "Confirm final inclusion with Maaike & Laurens.",
+    "Request owner-approved photo exports before replacing placeholders.",
+    "Keep live price, availability, payment, cancellation, and messaging on Airbnb."
+  ]
+}

@@ -11,13 +11,16 @@ import navSource from "../source/nav.json";
 import staysSource from "../source/stays/index.json";
 
 type Stay = {
+  slug: string;
   name: string;
   location: string;
   status: string;
+  sourceStatus?: string;
   meta?: string;
   description: string;
   href?: string;
   image?: string;
+  styleVariant?: string;
 };
 
 type NavItem = {
@@ -30,16 +33,23 @@ type AmigoSystemItem = {
   text: string;
 };
 
+type StyleVariant = {
+  name: string;
+  slug: string;
+  description: string;
+};
+
 type CollectionSource = {
   stays: Stay[];
   productionLanes: string[];
   amigoSystem: AmigoSystemItem[];
+  styleVariants: StyleVariant[];
   amigoPrompts: AmigoPrompt[];
 };
 
 const nav = navSource as { primary: NavItem[] };
 const collection = staysSource as CollectionSource;
-const { stays, productionLanes, amigoSystem, amigoPrompts } = collection;
+const { stays, productionLanes, amigoSystem, styleVariants, amigoPrompts } = collection;
 
 function HouseOfWanderObject() {
   const hostRef = useRef<HTMLDivElement | null>(null);
@@ -344,18 +354,21 @@ export default function Home() {
             A house of stays, each one entered like its own world.
           </h1>
           <p className="wanderLead">
-            House of Wander can become the calm entry point for every
-            accommodation: a cinematic collection first, then a guided dive into
-            each stay. Casa Cabane is the first working prototype, with Amigo as
-            the guide layer guests can talk to before the final Airbnb handoff.
+            House of Wander is now the calm entry point for the whole
+            accommodation ecosystem: a cinematic collection first, then a guided
+            dive into each stay. Casa Cabane remains the flagship prototype,
+            with Amigo as the guide layer guests can talk to before Airbnb.
           </p>
           <div className="wanderActions">
-            <Link className="primaryButton" href="/casa-cabane">
+            <Link className="primaryButton" href="/stays/casa-cabane">
               Enter Casa Cabane
             </Link>
-            <a className="ghostButton" href="#stays">
+            <Link className="ghostButton" href="/stays">
               View collection
-            </a>
+            </Link>
+            <Link className="ghostButton" href="/style-lab">
+              Compare styles
+            </Link>
             <button className="ghostButton" type="button" onClick={openAmigo}>
               Ask Amigo
             </button>
@@ -363,8 +376,8 @@ export default function Home() {
         </div>
 
         <footer className="wanderHeroFoot">
-          <span>Prototype collection layer</span>
-          <span>Real stay pages · guided detail later</span>
+          <span>Collection ecosystem v0.3</span>
+          <span>Guided stay pages · source-aware Amigo</span>
         </footer>
       </section>
 
@@ -373,10 +386,10 @@ export default function Home() {
           <p className="sectionKicker">Stays</p>
           <h2>Start with Casa Cabane, then let every place receive a doorway.</h2>
           <p>
-            The collection page should make the full ecosystem easy to scan
-            without becoming an Airbnb-style dashboard. Each stay can open into
-            a richer world with atmosphere, facts, photos, practical details,
-            and booking paths in one guided flow.
+            The collection is now mapped into stay pages, source status, gallery
+            slots, Airbnb-level facts where available, and Amigo prompts. Missing
+            URLs and photo approvals are visible as team to-dos instead of
+            broken pages.
           </p>
         </div>
 
@@ -399,6 +412,9 @@ export default function Home() {
                   <p className="stayLocation">{stay.location}</p>
                   {stay.meta ? <p className="stayMeta">{stay.meta}</p> : null}
                   <p>{stay.description}</p>
+                  {stay.styleVariant ? (
+                    <small className="stayStyle">{stay.styleVariant}</small>
+                  ) : null}
                   <span className="stayAction">
                     {stay.href ? "Open stay" : "Awaiting content"}
                   </span>
@@ -428,8 +444,8 @@ export default function Home() {
           <p className="sectionKicker">Amigo guide layer</p>
           <h2>One guide between atmosphere, answers, Airbnb, and direct booking later.</h2>
           <p>
-            Amigo starts as a visible prototype guide for guests. Later it can
-            become the operating layer between Maaike & Laudi, guest questions,
+            Amigo starts as a visible source-aware guide for guests. Later it can
+            become the operating layer between Maaike & Laurens, guest questions,
             Airbnb messages, and direct booking on House of Wander.
           </p>
         </div>
@@ -439,6 +455,32 @@ export default function Home() {
               <span>{item.title}</span>
               <p>{item.text}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section
+        className="stylePreviewBand"
+        aria-label="House of Wander house-style variations"
+      >
+        <div className="stylePreviewIntro">
+          <p className="sectionKicker">House style options</p>
+          <h2>Three directions for the team to choose from.</h2>
+          <p>
+            The site now carries three controlled visual languages: one flagship
+            style, one coastal variant, and one intimate boutique variant.
+          </p>
+        </div>
+        <div className="stylePreviewGrid">
+          {styleVariants.map((variant) => (
+            <Link
+              key={variant.slug}
+              className="stylePreviewCard"
+              href="/style-lab"
+            >
+              <span>{variant.name}</span>
+              <p>{variant.description}</p>
+            </Link>
           ))}
         </div>
       </section>
@@ -460,7 +502,7 @@ export default function Home() {
 
       <AmigoGuide
         context="House of Wander collection"
-        intro="I can help guests choose where to start, understand the current Airbnb handoff, and see how direct booking can grow later."
+        intro="I can help guests choose where to start, explain source labels, point out what is missing, and keep live booking details safely on Airbnb."
         prompts={amigoPrompts}
       />
     </main>

@@ -1,72 +1,140 @@
 {
   "stays": [
     {
+      "slug": "casa-cabane",
       "name": "Casa Cabane",
       "location": "Stekene",
-      "status": "Live prototype",
+      "status": "Flagship prototype",
+      "sourceStatus": "Airbnb public + owner-approved local media",
       "meta": "4.93 · 94 reviews · 7 guests",
-      "description": "The first guided stay: real walkthrough footage, chaptered controls, Airbnb-informed details, and a clear path into the atmosphere.",
-      "href": "/casa-cabane",
-      "image": "/media/casa-cabane-poster.jpg"
+      "description": "The first complete guided stay: real walkthrough footage, chapter controls, Airbnb-informed details, and a clear path into the atmosphere.",
+      "href": "/stays/casa-cabane",
+      "image": "/media/casa-cabane-poster.jpg",
+      "styleVariant": "Editorial Warm"
     },
     {
-      "name": "Next waterside stay",
-      "location": "To confirm",
-      "status": "Brief needed",
-      "description": "A future stay can join this collection once footage, photos, booking link, practical details, and story angle are ready."
+      "slug": "casa-fabiola",
+      "name": "Casa Fabiola",
+      "location": "Ghent",
+      "status": "Briefing story ready",
+      "sourceStatus": "Airbnb URL and photos needed",
+      "meta": "City apartment · family heritage",
+      "description": "A Ghent stay shaped around family, heritage, and the feeling of coming home.",
+      "href": "/stays/casa-fabiola",
+      "styleVariant": "Editorial Warm"
     },
     {
-      "name": "Hidden garden retreat",
-      "location": "To confirm",
-      "status": "Coming later",
-      "description": "The system is made to hold multiple stays without forcing guests into a listing dashboard."
+      "slug": "louise-marie",
+      "name": "Louise Marie",
+      "location": "Ostend",
+      "status": "Briefing story ready",
+      "sourceStatus": "Airbnb URL and photos needed",
+      "meta": "Coastal apartment · romantic origin",
+      "description": "The Ostend seaside apartment inspired by the promise Laurens made to Maaike early in their relationship.",
+      "href": "/stays/louise-marie",
+      "styleVariant": "Coastal Light"
+    },
+    {
+      "slug": "thelma-louise",
+      "name": "Thelma & Louise",
+      "location": "Blankenberge",
+      "status": "Briefing story ready",
+      "sourceStatus": "Airbnb URL and photos needed",
+      "meta": "Shared venture · coastal friendship",
+      "description": "A Blankenberge stay carrying the story of friendship, shared ambition, and doing something together.",
+      "href": "/stays/thelma-louise",
+      "styleVariant": "Coastal Light"
+    },
+    {
+      "slug": "heritage-collection",
+      "name": "Heritage Collection",
+      "location": "Ostend",
+      "status": "Briefing story ready",
+      "sourceStatus": "Five apartment records needed",
+      "meta": "5 apartments · family legacy",
+      "description": "A family apartment cluster that should later split into five individual stay records.",
+      "href": "/stays/heritage-collection",
+      "styleVariant": "Editorial Warm"
+    },
+    {
+      "slug": "the-love-nest",
+      "name": "The Love Nest",
+      "location": "Ostend",
+      "status": "Public Airbnb facts found",
+      "sourceStatus": "Airbnb public; photos need approval",
+      "meta": "4.95 · 113 reviews · 2 guests",
+      "description": "A cosy Ostend penthouse for two, with terraces, outdoor bathing, beach access, and Airbnb booking handoff.",
+      "href": "/stays/the-love-nest",
+      "styleVariant": "Boutique Night"
     }
   ],
   "productionLanes": [
-    "Casa Cabane as the first proof-of-feel",
-    "Property pages with full Airbnb-level detail",
-    "Amigo guidance for collection and stay questions",
-    "A future host cockpit for Maaike & Laudi",
-    "Direct booking only after availability, payments, rules, and support are real"
+    "Casa Cabane remains the first proof-of-feel and highest-fidelity stay.",
+    "Every stay now has a route, structured source record, gallery slot, facts, and Amigo prompts.",
+    "Airbnb-level decision detail is integrated only where public or briefing sources support it.",
+    "Photo reuse stays safe: local owner-approved Casa Cabane media is used, other Airbnb photos need team approval.",
+    "Amigo starts as a source-aware scripted guide before live AI, booking, or host operations are connected.",
+    "Direct booking remains a future phase after availability, payments, rules, and support are real."
   ],
   "amigoSystem": [
     {
       "title": "Guest guide",
-      "text": "Amigo helps visitors choose a stay, understand practical details, and move from atmosphere to booking without menu diving."
+      "text": "Amigo helps visitors choose a stay, understand practical details, and move from atmosphere to Airbnb handoff without menu diving."
     },
     {
-      "title": "Host cockpit",
-      "text": "Later, Maaike & Laudi can use Amigo to centralize questions, Airbnb messages, direct inquiries, rules, and stay updates."
+      "title": "Source labels",
+      "text": "Amigo distinguishes confirmed facts, public Airbnb data, prototype copy, and missing host confirmations."
     },
     {
-      "title": "Direct booking bridge",
-      "text": "The website can start with Airbnb handoff, then evolve into independent booking once live inventory and payment logic are approved."
+      "title": "Host cockpit later",
+      "text": "Later, Maaike & Laurens can use Amigo to centralize questions, Airbnb messages, direct inquiries, rules, and stay updates."
+    }
+  ],
+  "styleVariants": [
+    {
+      "name": "Editorial Warm",
+      "slug": "editorial-warm",
+      "description": "Cinematic serif, warm ivory, moss, clay, and restrained gold. Recommended flagship style."
+    },
+    {
+      "name": "Coastal Light",
+      "slug": "coastal-light",
+      "description": "Brighter, airier, and more seaside. Best first test for Ostend and Blankenberge stays."
+    },
+    {
+      "name": "Boutique Night",
+      "slug": "boutique-night",
+      "description": "Darker and more intimate, suited to romantic hideaways and evening-led storytelling."
     }
   ],
   "amigoPrompts": [
     {
       "label": "Which stay should I open first?",
-      "answer": "Start with Casa Cabane. It is the only stay with real walkthrough video, public Airbnb trust data, and a guided detail page in this prototype.",
+      "sourceLabel": "Collection guide",
+      "answer": "Start with Casa Cabane if you want the complete prototype: real video, guided walkthrough, Airbnb-informed detail, and a working Amigo layer. Open The Love Nest next to see how public Airbnb facts can become a stay page without copying photos.",
       "actionLabel": "Open Casa Cabane",
-      "actionHref": "/casa-cabane"
+      "actionHref": "/stays/casa-cabane"
+    },
+    {
+      "label": "Which stays are ready?",
+      "sourceLabel": "Source labels",
+      "answer": "Casa Cabane is the flagship. The Love Nest has public Airbnb facts but still needs approved photos and host confirmation. Casa Fabiola, Louise Marie, Thelma & Louise, and Heritage Collection have briefing stories but need Airbnb URLs, facts, and approved media.",
+      "actionLabel": "View all stays",
+      "actionHref": "/stays"
     },
     {
       "label": "How does booking work now?",
-      "answer": "For now, House of Wander guides the decision and Airbnb handles live dates, payment, rules, cancellation, and guest-host messaging.",
+      "sourceLabel": "Airbnb handoff",
+      "answer": "For now, House of Wander guides the decision and Airbnb handles live dates, price, rules, cancellation, payment, and guest-host messaging.",
       "actionLabel": "View Casa details",
-      "actionHref": "/casa-cabane#details"
+      "actionHref": "/stays/casa-cabane#details"
     },
     {
       "label": "What changes later?",
+      "sourceLabel": "Future platform",
       "answer": "Later, Amigo can connect the collection, guest questions, host operations, Airbnb messages, and direct booking. That backend is planned, not active yet.",
       "actionLabel": "See project shape",
       "actionHref": "/#system"
-    },
-    {
-      "label": "Can you guide without menus?",
-      "answer": "Yes. The goal is that guests can ask Amigo for the right stay, the practical details, the booking path, or the difference between Airbnb now and direct booking later instead of digging through a dashboard.",
-      "actionLabel": "Open Casa Cabane",
-      "actionHref": "/casa-cabane"
     }
   ]
 }

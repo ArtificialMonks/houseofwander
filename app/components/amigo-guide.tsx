@@ -8,6 +8,7 @@ export type AmigoPrompt = {
   answer: string;
   actionLabel?: string;
   actionHref?: string;
+  sourceLabel?: string;
 };
 
 type AmigoGuideProps = {
@@ -24,6 +25,7 @@ type AmigoMessage = {
   actionLabel?: string;
   actionHref?: string;
   meta?: string;
+  sourceLabel?: string;
 };
 
 const isExternalHref = (href: string) => href.startsWith("http");
@@ -114,7 +116,8 @@ export function AmigoGuide({
         text: response.answer,
         actionLabel: response.actionLabel,
         actionHref: response.actionHref,
-        meta: response.label
+        meta: response.label,
+        sourceLabel: response.sourceLabel
       }
     ]);
   };
@@ -180,6 +183,9 @@ export function AmigoGuide({
                 className={`amigoMessage ${message.role}`}
               >
                 {message.meta ? <span>{message.meta}</span> : null}
+                {message.sourceLabel ? (
+                  <em className="amigoSource">{message.sourceLabel}</em>
+                ) : null}
                 <p>{message.text}</p>
                 {message.actionHref && message.actionLabel ? (
                   isExternalHref(message.actionHref) ? (

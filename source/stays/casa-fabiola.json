@@ -1,0 +1,163 @@
+{
+  "slug": "casa-fabiola",
+  "name": "Casa Fabiola",
+  "location": "Ghent",
+  "region": "City stay",
+  "status": "Briefing story ready",
+  "sourceStatus": "Briefing document source; Airbnb URL and host-approved photos needed",
+  "title": "A Ghent apartment with the feeling of coming home.",
+  "tagline": "Family, heritage, and city warmth inside the House of Wander collection.",
+  "description": "Casa Fabiola is positioned as the Ghent city stay in the collection: an apartment rooted in family, heritage, and the feeling of returning to a warm home base.",
+  "styleVariant": "editorial-warm",
+  "media": [
+    {
+      "type": "placeholder",
+      "caption": "Ghent interior gallery slot",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Street and arrival slot",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Bedroom and amenities slot",
+      "source": "needs-confirmation"
+    }
+  ],
+  "quickFacts": [
+    { "label": "Stay type", "value": "Apartment", "source": "briefing-doc" },
+    { "label": "City", "value": "Ghent", "source": "briefing-doc" },
+    { "label": "Guests", "value": "To confirm", "source": "needs-confirmation" },
+    { "label": "Bedrooms", "value": "To confirm", "source": "needs-confirmation" },
+    { "label": "Beds", "value": "To confirm", "source": "needs-confirmation" },
+    { "label": "Bathroom", "value": "To confirm", "source": "needs-confirmation" }
+  ],
+  "trustSignals": [
+    { "label": "Source", "value": "Brief", "source": "briefing-doc" },
+    { "label": "Airbnb", "value": "Needed", "source": "needs-confirmation" },
+    { "label": "Photos", "value": "Needed", "source": "needs-confirmation" },
+    { "label": "Booking", "value": "Pending", "source": "needs-confirmation" }
+  ],
+  "listingHighlights": [
+    {
+      "label": "City base",
+      "value": "Casa Fabiola should become the Ghent doorway in the collection, with practical city-stay details added once the Airbnb listing is confirmed.",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Family story",
+      "value": "The briefing positions this stay around family, heritage, and coming home.",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Content gap",
+      "value": "Guests should eventually see the full photo set, rooms, amenities, rules, and booking handoff here.",
+      "source": "needs-confirmation"
+    }
+  ],
+  "stayStory": [
+    {
+      "title": "The stay",
+      "text": "Casa Fabiola should feel like the Ghent chapter of House of Wander: urban, personal, and warm.",
+      "source": "briefing-doc"
+    },
+    {
+      "title": "The story",
+      "text": "The working story angle is family, heritage, and the feeling of coming home.",
+      "source": "briefing-doc"
+    },
+    {
+      "title": "The page need",
+      "text": "The next content pass should add real listing facts, sleeping setup, photos, and house notes.",
+      "source": "needs-confirmation"
+    },
+    {
+      "title": "The booking path",
+      "text": "Until a direct path is approved, the final booking action should hand off to Airbnb once the listing URL is confirmed.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amenityGroups": [
+    {
+      "title": "Confirmed now",
+      "source": "briefing-doc",
+      "items": ["Ghent city stay", "Apartment positioning", "Family and heritage story"]
+    },
+    {
+      "title": "Needs Airbnb intake",
+      "source": "needs-confirmation",
+      "items": ["Guest count", "Bedrooms", "Beds", "Bathrooms", "Amenities", "House rules"]
+    },
+    {
+      "title": "Needs media",
+      "source": "needs-confirmation",
+      "items": ["Hero photo", "Gallery set", "Room photos", "Arrival photo"]
+    },
+    {
+      "title": "Future Amigo flow",
+      "source": "prototype-copy",
+      "items": ["Compare Ghent versus coast stays", "Explain who it suits", "Guide booking handoff"]
+    }
+  ],
+  "reviewMentions": ["City stay", "Family story", "Heritage", "Coming home", "Content needed"],
+  "bookingSteps": [
+    "Confirm the public Airbnb listing URL with Maaike & Laurens.",
+    "Import approved public facts into this page.",
+    "Add host-approved photos only.",
+    "Keep live dates, price, cancellation, payment, and guest-host messaging on Airbnb."
+  ],
+  "houseNotes": [
+    "Airbnb listing URL needed.",
+    "Approved photo set needed.",
+    "Guest capacity and room setup needed.",
+    "Rules and safety notes needed."
+  ],
+  "locationNote": "Casa Fabiola is the Ghent city chapter in the House of Wander briefing. More exact neighborhood and access details need source confirmation.",
+  "sourceNotes": [
+    "No Airbnb URL was confirmed in the local source files during this pass.",
+    "No Airbnb-hosted photos were copied.",
+    "This page is ready for content intake without looking broken to the team."
+  ],
+  "amigoStayPlan": [
+    {
+      "title": "Positioning",
+      "text": "Amigo can explain Casa Fabiola as the city and heritage option once details are confirmed.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "Intake",
+      "text": "Amigo should ask the team for Airbnb URL, photo approval, guest count, rooms, amenities, and rules.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "Comparison",
+      "text": "Later, Amigo can compare Casa Fabiola with Casa Cabane and the coastal stays.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amigoPrompts": [
+    {
+      "label": "What is Casa Fabiola?",
+      "sourceLabel": "Briefing doc",
+      "answer": "Casa Fabiola is the Ghent city stay in the House of Wander briefing, with a family, heritage, and coming-home story. The Airbnb listing URL and exact practical facts still need confirmation.",
+      "actionLabel": "Review details",
+      "actionHref": "#details"
+    },
+    {
+      "label": "Can I book Casa Fabiola?",
+      "sourceLabel": "Needs confirmation",
+      "answer": "Not from this prototype yet. The team first needs to confirm the Airbnb URL, live booking path, photos, and listing facts.",
+      "actionLabel": "Back to collection",
+      "actionHref": "/stays"
+    },
+    {
+      "label": "What is missing?",
+      "sourceLabel": "Team to-do",
+      "answer": "Airbnb URL, approved photos, guest capacity, bedroom and bed setup, amenities, house rules, review proof, and final host copy are still needed.",
+      "actionLabel": "See source notes",
+      "actionHref": "#details"
+    }
+  ]
+}

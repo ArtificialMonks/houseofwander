@@ -1,10 +1,39 @@
 {
+  "slug": "casa-cabane",
   "name": "Casa Cabane",
   "location": "Stekene",
+  "region": "Nature retreat",
+  "status": "Flagship prototype",
+  "sourceStatus": "Airbnb public snapshot plus local owner-approved Casa Cabane media",
+  "title": "Step inside Casa Cabane without losing the thread.",
+  "tagline": "A quiet lakehouse in the green borderlands, guided by real walkthrough footage.",
+  "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
   "airbnbUrl": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61",
   "videoSrc": "/media/casa-cabane-walkthrough.mp4",
   "posterSrc": "/media/casa-cabane-poster.jpg",
   "runtimeSeconds": 254.4,
+  "styleVariant": "editorial-warm",
+  "media": [
+    {
+      "type": "image",
+      "src": "/media/casa-cabane-poster.jpg",
+      "alt": "Casa Cabane by the water",
+      "caption": "Poster frame",
+      "source": "owner-approved"
+    },
+    {
+      "type": "video",
+      "src": "/media/casa-cabane-walkthrough.mp4",
+      "alt": "Casa Cabane walkthrough video",
+      "caption": "Real walkthrough",
+      "source": "owner-approved"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Airbnb gallery import slot",
+      "source": "needs-confirmation"
+    }
+  ],
   "chapters": [
     {
       "id": "arrival",
@@ -55,60 +84,162 @@
       "detail": "No backend overbuild before the visual system is proven."
     }
   ],
+  "quickFacts": [
+    { "label": "Guests", "value": "7 maximum", "source": "airbnb-public" },
+    { "label": "Bedrooms", "value": "2", "source": "airbnb-public" },
+    { "label": "Beds", "value": "5", "source": "airbnb-public" },
+    { "label": "Bathroom", "value": "1", "source": "airbnb-public" },
+    { "label": "Check-in", "value": "After 16:00", "source": "airbnb-public" },
+    { "label": "Checkout", "value": "Before 11:00", "source": "airbnb-public" }
+  ],
+  "trustSignals": [
+    { "label": "Rating", "value": "4.93", "source": "airbnb-public" },
+    { "label": "Reviews", "value": "94", "source": "airbnb-public" },
+    { "label": "Host", "value": "Laurens", "source": "airbnb-public" },
+    { "label": "Response", "value": "100%", "source": "airbnb-public" }
+  ],
+  "listingHighlights": [
+    {
+      "label": "Guest favourite",
+      "value": "Casa Cabane is positioned by Airbnb as a guest favourite, with strong guest reliability and review signals.",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Setting",
+      "value": "A scenic lakeside position in Stekene, between Antwerp and Ghent.",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Outdoor life",
+      "value": "Lake garden, outdoor dining, BBQ, fire bowl, tank tub, and children's playhouse shape the stay rhythm.",
+      "source": "airbnb-public"
+    }
+  ],
   "stayStory": [
     {
       "title": "The stay",
-      "text": "Casa Cabane is a characterful lakehouse made for couples, families, and small groups who want nature without losing comfort."
+      "text": "Casa Cabane is a characterful lakehouse made for couples, families, and small groups who want nature without losing comfort.",
+      "source": "airbnb-public"
     },
     {
       "title": "Inside",
-      "text": "The interior combines a high-quality kitchen, lake-facing dining, a comfortable living room, and a bathroom with a walk-in rain shower."
+      "text": "The interior combines a high-quality kitchen, lake-facing dining, a comfortable living room, and a bathroom with a walk-in rain shower.",
+      "source": "airbnb-public"
     },
     {
       "title": "Sleeping setup",
-      "text": "The bedroom has a double bed plus three single bunk beds best suited to children up to around 16. The living room adds sofa-bed options."
+      "text": "The bedroom has a double bed plus three single bunk beds best suited to children up to around 16. The living room adds sofa-bed options.",
+      "source": "airbnb-public"
     },
     {
       "title": "Outside",
-      "text": "A wild garden, lake access, outdoor dining, BBQ, fire bowl, tank tub for hot or cold bathing, and a wooden playhouse shape the outdoor rhythm."
+      "text": "A wild garden, lake access, outdoor dining, BBQ, fire bowl, tank tub for hot or cold bathing, and a wooden playhouse shape the outdoor rhythm.",
+      "source": "airbnb-public"
     }
+  ],
+  "amenityGroups": [
+    {
+      "title": "Core comforts",
+      "source": "airbnb-public",
+      "items": ["Waterfront", "Kitchen", "Wifi", "Dedicated workspace", "Free parking"]
+    },
+    {
+      "title": "Arrival basics",
+      "source": "airbnb-public",
+      "items": ["Coffee and tea starter set", "Olive oil, salt and pepper", "Dish soap and dishwasher tablets", "Kitchen towel and cleaning basics"]
+    },
+    {
+      "title": "Bathroom basics",
+      "source": "airbnb-public",
+      "items": ["Shampoo", "Shower gel", "Hand soap", "Toilet paper"]
+    },
+    {
+      "title": "Outdoor life",
+      "source": "airbnb-public",
+      "items": ["Lake garden", "Outdoor dining tables", "BBQ", "Tripod with fire bowl", "Tank tub", "Children's playhouse"]
+    }
+  ],
+  "reviewScores": [
+    { "label": "Cleanliness", "value": "4.7", "source": "airbnb-public" },
+    { "label": "Accuracy", "value": "4.9", "source": "airbnb-public" },
+    { "label": "Check-in", "value": "5.0", "source": "airbnb-public" },
+    { "label": "Communication", "value": "5.0", "source": "airbnb-public" },
+    { "label": "Location", "value": "4.9", "source": "airbnb-public" },
+    { "label": "Value", "value": "4.9", "source": "airbnb-public" }
+  ],
+  "reviewMentions": [
+    "Location",
+    "Hospitality",
+    "Decor",
+    "Outdoor spaces",
+    "Cleanliness",
+    "Accuracy",
+    "Amenities",
+    "Kitchen",
+    "Indoor spaces"
+  ],
+  "bookingSteps": [
+    "Choose dates on Airbnb to confirm live price and availability.",
+    "Select guest count, with 7 guests as the listed maximum.",
+    "Review house rules, cancellation policy, safety notes, and final payment on Airbnb.",
+    "Keep payment and guest-host messaging inside Airbnb until a direct booking path is approved."
+  ],
+  "houseNotes": [
+    "Check-in after 16:00.",
+    "Checkout before 11:00.",
+    "Maximum 7 guests.",
+    "Smoke alarm listed; carbon monoxide alarm not reported.",
+    "Cleaning and post-checkout inspection are included in the Airbnb booking setup."
+  ],
+  "locationNote": "Casa Cabane is positioned in Stekene, between Antwerp and Ghent, while the stay itself is anchored in nature, lake, garden, and quiet.",
+  "sourceNotes": [
+    "Casa Cabane uses local owner-approved poster and walkthrough media already in the project.",
+    "Practical facts are shaped from a public Airbnb snapshot and still need host confirmation before final publication.",
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ],
   "amigoStayPlan": [
     {
       "title": "Guest questions",
-      "text": "Amigo can answer stay-fit questions, explain sleeping setup, summarize amenities, and send guests to the right section."
+      "text": "Amigo can answer stay-fit questions, explain sleeping setup, summarize amenities, and send guests to the right section.",
+      "source": "prototype-copy"
     },
     {
       "title": "Booking handoff",
-      "text": "For this prototype, Amigo keeps the final transaction on Airbnb and explains what still needs live confirmation there."
+      "text": "For this prototype, Amigo keeps the final transaction on Airbnb and explains what still needs live confirmation there.",
+      "source": "prototype-copy"
     },
     {
       "title": "Host readiness",
-      "text": "Before direct booking, Maaike & Laudi need confirmed rules, availability, pricing, payment, cancellation, and support workflows."
+      "text": "Before direct booking, Maaike & Laurens need confirmed rules, availability, pricing, payment, cancellation, and support workflows.",
+      "source": "prototype-copy"
     }
   ],
   "amigoPrompts": [
     {
       "label": "Is Casa Cabane right for us?",
+      "sourceLabel": "Airbnb public + prototype guide",
       "answer": "Casa Cabane suits guests who want a quiet lakeside stay with outdoor life, a compact interior, and space for up to 7 guests. The exact dates, price, and final rules still need Airbnb confirmation.",
       "actionLabel": "Check quick facts",
       "actionHref": "#details"
     },
     {
       "label": "Guide me through the stay",
+      "sourceLabel": "Prototype guide",
       "answer": "Start with the walkthrough for atmosphere, then review guests, sleeping setup, outdoor features, reviews, house notes, and finally check dates on Airbnb.",
       "actionLabel": "Review details",
       "actionHref": "#details"
     },
     {
       "label": "Can I book directly here?",
+      "sourceLabel": "Future direct booking",
       "answer": "Not yet. This version guides the decision and sends the final booking to Airbnb. Direct booking is a future phase once live availability, payments, rules, and support are approved.",
       "actionLabel": "Check dates on Airbnb",
       "actionHref": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61"
     },
     {
       "label": "What still needs confirmation?",
-      "answer": "Before Casa Cabane becomes a final public page, Maaike & Laurens should confirm the video approval, house facts, reusable Airbnb details, review usage, final copy, and whether Airbnb remains the only v1 booking path.",
+      "sourceLabel": "Team to-do",
+      "answer": "Before Casa Cabane becomes a final public page, Maaike & Laurens should confirm the reusable Airbnb details, review usage, final copy, and whether Airbnb remains the only v1 booking path.",
       "actionLabel": "Review stay details",
       "actionHref": "#details"
     }
