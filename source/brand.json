@@ -1,0 +1,17 @@
+{
+  "name": "House of Wander",
+  "tagline": "Guided stays, entered like small worlds.",
+  "primaryStay": "Casa Cabane",
+  "prototypeStage": "Local prototype",
+  "voice": [
+    "Cinematic before practical",
+    "Warm, clear, and trustworthy",
+    "Guided instead of dashboard-like",
+    "Direct about what is prototype and what is real"
+  ],
+  "bookingPosition": {
+    "now": "Airbnb remains the trusted booking handoff.",
+    "next": "Amigo can guide guests through questions and readiness before the Airbnb handoff.",
+    "later": "Direct booking can become independent once availability, payments, rules, host messaging, and support are approved."
+  }
+}

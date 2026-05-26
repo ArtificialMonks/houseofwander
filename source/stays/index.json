@@ -1,0 +1,66 @@
+{
+  "stays": [
+    {
+      "name": "Casa Cabane",
+      "location": "Stekene",
+      "status": "Live prototype",
+      "meta": "4.93 · 94 reviews · 7 guests",
+      "description": "The first guided stay: real walkthrough footage, chaptered controls, Airbnb-informed details, and a clear path into the atmosphere.",
+      "href": "/casa-cabane",
+      "image": "/media/casa-cabane-poster.jpg"
+    },
+    {
+      "name": "Next waterside stay",
+      "location": "To confirm",
+      "status": "Brief needed",
+      "description": "A future stay can join this collection once footage, photos, booking link, practical details, and story angle are ready."
+    },
+    {
+      "name": "Hidden garden retreat",
+      "location": "To confirm",
+      "status": "Coming later",
+      "description": "The system is made to hold multiple stays without forcing guests into a listing dashboard."
+    }
+  ],
+  "productionLanes": [
+    "Casa Cabane as the first proof-of-feel",
+    "Property pages with full Airbnb-level detail",
+    "Amigo guidance for collection and stay questions",
+    "A future host cockpit for Maaike & Laudi",
+    "Direct booking only after availability, payments, rules, and support are real"
+  ],
+  "amigoSystem": [
+    {
+      "title": "Guest guide",
+      "text": "Amigo helps visitors choose a stay, understand practical details, and move from atmosphere to booking without menu diving."
+    },
+    {
+      "title": "Host cockpit",
+      "text": "Later, Maaike & Laudi can use Amigo to centralize questions, Airbnb messages, direct inquiries, rules, and stay updates."
+    },
+    {
+      "title": "Direct booking bridge",
+      "text": "The website can start with Airbnb handoff, then evolve into independent booking once live inventory and payment logic are approved."
+    }
+  ],
+  "amigoPrompts": [
+    {
+      "label": "Which stay should I open first?",
+      "answer": "Start with Casa Cabane. It is the only stay with real walkthrough video, public Airbnb trust data, and a guided detail page in this prototype.",
+      "actionLabel": "Open Casa Cabane",
+      "actionHref": "/casa-cabane"
+    },
+    {
+      "label": "How does booking work now?",
+      "answer": "For now, House of Wander guides the decision and Airbnb handles live dates, payment, rules, cancellation, and guest-host messaging.",
+      "actionLabel": "View Casa details",
+      "actionHref": "/casa-cabane#details"
+    },
+    {
+      "label": "What changes later?",
+      "answer": "Later, Amigo can connect the collection, guest questions, host operations, Airbnb messages, and direct booking. That backend is planned, not active yet.",
+      "actionLabel": "See project shape",
+      "actionHref": "/#system"
+    }
+  ]
+}

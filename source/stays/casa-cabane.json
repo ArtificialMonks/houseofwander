@@ -1,0 +1,110 @@
+{
+  "name": "Casa Cabane",
+  "location": "Stekene",
+  "airbnbUrl": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61",
+  "videoSrc": "/media/casa-cabane-walkthrough.mp4",
+  "posterSrc": "/media/casa-cabane-poster.jpg",
+  "runtimeSeconds": 254.4,
+  "chapters": [
+    {
+      "id": "arrival",
+      "label": "Arrival",
+      "time": 2,
+      "title": "Enter through the green borderlands",
+      "text": "The walkthrough begins before the house appears. The lane, hedges, and late-day light create the feeling of leaving the ordinary road behind.",
+      "detail": "First impression: nature, stillness, arrival."
+    },
+    {
+      "id": "exterior",
+      "label": "Exterior",
+      "time": 39,
+      "title": "Reveal the cabin by the water",
+      "text": "The exterior and glass facade become the first clear proof of place: Casa Cabane as a retreat, not just a listing.",
+      "detail": "A clear brand moment before practical details enter."
+    },
+    {
+      "id": "lake",
+      "label": "Lake",
+      "time": 64,
+      "title": "Let the lake hold the pace",
+      "text": "Water, trees, outdoor seating, and stillness are the emotional reason to stay. This chapter should feel slow, quiet, and spacious.",
+      "detail": "The future home for a subtle lake-shimmer loop, if approved later."
+    },
+    {
+      "id": "outdoor",
+      "label": "Outdoor",
+      "time": 96,
+      "title": "Move through the outdoor rhythm",
+      "text": "The retreat is more than a view: chairs, garden, fire, water, and open air become part of the stay.",
+      "detail": "Proof that the atmosphere extends outside the cabin."
+    },
+    {
+      "id": "interior",
+      "label": "Interior",
+      "time": 136,
+      "title": "Step inside without breaking the spell",
+      "text": "The living room and kitchen stay connected to the garden and water. Practical details appear only when they help the guest decide.",
+      "detail": "Tests whether room chapters can feel natural inside the same take."
+    },
+    {
+      "id": "stay",
+      "label": "Stay",
+      "time": 198,
+      "title": "Turn atmosphere into a simple next step",
+      "text": "For now the call to action stays direct: open Airbnb. Inquiry, direct booking, availability, and reviews can follow once the experience direction is approved.",
+      "detail": "No backend overbuild before the visual system is proven."
+    }
+  ],
+  "stayStory": [
+    {
+      "title": "The stay",
+      "text": "Casa Cabane is a characterful lakehouse made for couples, families, and small groups who want nature without losing comfort."
+    },
+    {
+      "title": "Inside",
+      "text": "The interior combines a high-quality kitchen, lake-facing dining, a comfortable living room, and a bathroom with a walk-in rain shower."
+    },
+    {
+      "title": "Sleeping setup",
+      "text": "The bedroom has a double bed plus three single bunk beds best suited to children up to around 16. The living room adds sofa-bed options."
+    },
+    {
+      "title": "Outside",
+      "text": "A wild garden, lake access, outdoor dining, BBQ, fire bowl, tank tub for hot or cold bathing, and a wooden playhouse shape the outdoor rhythm."
+    }
+  ],
+  "amigoStayPlan": [
+    {
+      "title": "Guest questions",
+      "text": "Amigo can answer stay-fit questions, explain sleeping setup, summarize amenities, and send guests to the right section."
+    },
+    {
+      "title": "Booking handoff",
+      "text": "For this prototype, Amigo keeps the final transaction on Airbnb and explains what still needs live confirmation there."
+    },
+    {
+      "title": "Host readiness",
+      "text": "Before direct booking, Maaike & Laudi need confirmed rules, availability, pricing, payment, cancellation, and support workflows."
+    }
+  ],
+  "amigoPrompts": [
+    {
+      "label": "Is Casa Cabane right for us?",
+      "answer": "Casa Cabane suits guests who want a quiet lakeside stay with outdoor life, a compact interior, and space for up to 7 guests. The exact dates, price, and final rules still need Airbnb confirmation.",
+      "actionLabel": "Check quick facts",
+      "actionHref": "#details"
+    },
+    {
+      "label": "Guide me through the stay",
+      "answer": "Start with the walkthrough for atmosphere, then review guests, sleeping setup, outdoor features, reviews, house notes, and finally check dates on Airbnb.",
+      "actionLabel": "Review details",
+      "actionHref": "#details"
+    },
+    {
+      "label": "Can I book directly here?",
+      "answer": "Not yet. This version guides the decision and sends the final booking to Airbnb. Direct booking is a future phase once live availability, payments, rules, and support are approved.",
+      "actionLabel": "Check dates on Airbnb",
+      "actionHref": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61"
+    }
+  ]
+}

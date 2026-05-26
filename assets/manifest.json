@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "casa-cabane-walkthrough",
+      "type": "video",
+      "status": "active",
+      "path": "public/media/casa-cabane-walkthrough.mp4",
+      "source": "host-provided",
+      "notes": "Real Casa Cabane walkthrough. Do not replace unless the user explicitly supplies a better source file."
+    },
+    {
+      "id": "casa-cabane-poster",
+      "type": "image",
+      "status": "active",
+      "path": "public/media/casa-cabane-poster.jpg",
+      "source": "local-render",
+      "notes": "Poster image used for gateway, fallback, and collection card."
+    }
+  ]
+}

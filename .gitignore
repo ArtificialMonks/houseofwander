@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+dist
+.DS_Store
+*.log
+public/media/*.tmp
+.env
+.env.*
+!.env.example
+.vercel
+.turbo
+
+# Large local media/render outputs stay in Dropbox unless Git LFS is configured.
+public/media/*.mp4
+renders/
