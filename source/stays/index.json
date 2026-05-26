@@ -61,6 +61,12 @@
       "answer": "Later, Amigo can connect the collection, guest questions, host operations, Airbnb messages, and direct booking. That backend is planned, not active yet.",
       "actionLabel": "See project shape",
       "actionHref": "/#system"
+    },
+    {
+      "label": "Can you guide without menus?",
+      "answer": "Yes. The goal is that guests can ask Amigo for the right stay, the practical details, the booking path, or the difference between Airbnb now and direct booking later instead of digging through a dashboard.",
+      "actionLabel": "Open Casa Cabane",
+      "actionHref": "/casa-cabane"
     }
   ]
 }

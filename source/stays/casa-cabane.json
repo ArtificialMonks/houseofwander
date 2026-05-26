@@ -105,6 +105,12 @@
       "answer": "Not yet. This version guides the decision and sends the final booking to Airbnb. Direct booking is a future phase once live availability, payments, rules, and support are approved.",
       "actionLabel": "Check dates on Airbnb",
       "actionHref": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61"
+    },
+    {
+      "label": "What still needs confirmation?",
+      "answer": "Before Casa Cabane becomes a final public page, Maaike & Laurens should confirm the video approval, house facts, reusable Airbnb details, review usage, final copy, and whether Airbnb remains the only v1 booking path.",
+      "actionLabel": "Review stay details",
+      "actionHref": "#details"
     }
   ]
 }

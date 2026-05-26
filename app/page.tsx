@@ -309,6 +309,10 @@ function HouseOfWanderObject() {
 }
 
 export default function Home() {
+  const openAmigo = () => {
+    window.dispatchEvent(new Event("amigo:open"));
+  };
+
   return (
     <main className="brandPage">
       <section className="wanderHero" aria-label="House of Wander">
@@ -352,6 +356,9 @@ export default function Home() {
             <a className="ghostButton" href="#stays">
               View collection
             </a>
+            <button className="ghostButton" type="button" onClick={openAmigo}>
+              Ask Amigo
+            </button>
           </div>
         </div>
 

@@ -31,7 +31,8 @@ npm start -- -p 3000
   House of Wander direction with AI Design Studio and Airbnb workflow lessons.
 - `source/` now holds the first structured brand, nav, stay, and Airbnb snapshot
   data so future stays do not have to start as hard-coded page copy.
-- Amigo is currently a scripted UI prototype, not a live AI agent or backend.
+- Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
+  agent or backend.
 
 ## Media
 

@@ -24,7 +24,7 @@ access is available.
 - Casa Cabane guided stay prototype at `/casa-cabane`.
 - Fullscreen guided walkthrough with Exit, Collection, Airbnb, Previous,
   Play/Pause, Next, chapter filmstrip, and timecode controls.
-- Amigo guide UI prototype as a scripted front-end layer.
+- Amigo chatbot UI prototype as a scripted front-end guide layer.
 - Airbnb-informed Casa Cabane detail sections for practical review.
 - Mobile and tablet responsive layout.
 - Optimized Casa Cabane walkthrough video committed for deployment.
@@ -95,8 +95,8 @@ marketing traffic.
 ## Current Limits
 
 - The live deployment is good for team review, not yet a final public launch.
-- The Amigo layer is scripted UI only; no backend agent, booking automation, or
-  Airbnb communication workflow is connected yet.
+- The Amigo layer is now a scripted chatbot UI only; no backend agent, booking
+  automation, or Airbnb communication workflow is connected yet.
 - Airbnb remains the active transaction path.
 - The Casa Cabane detail data should still be checked by Maaike & Laurens before
   treating it as final public copy.

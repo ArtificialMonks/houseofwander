@@ -121,6 +121,10 @@ export default function Home() {
     []
   );
 
+  const openAmigo = () => {
+    window.dispatchEvent(new Event("amigo:open"));
+  };
+
   const applyTimeState = (time: number) => {
     const state = getChapterStateForTime(time);
     currentTimeRef.current = state.time;
@@ -304,9 +308,9 @@ export default function Home() {
             <button className="primaryButton gatewayEnter" type="button" onClick={openJourney}>
               Enter walkthrough
             </button>
-            <a className="ghostButton" href="#amigo-casa-plan">
+            <button className="ghostButton" type="button" onClick={openAmigo}>
               Ask Amigo
-            </a>
+            </button>
             <a
               className="ghostButton"
               href={AIRBNB_URL}

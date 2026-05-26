@@ -1479,10 +1479,14 @@ h2 {
   position: fixed;
   right: clamp(16px, 2vw, 26px);
   bottom: clamp(16px, 2vw, 26px);
-  z-index: 45;
-  width: min(392px, calc(100vw - 32px));
+  z-index: 70;
+  width: min(430px, calc(100vw - 32px));
   color: var(--paper);
   pointer-events: none;
+}
+
+.journey ~ .amigoGuide {
+  bottom: clamp(168px, 22vh, 230px);
 }
 
 .amigoLauncher,
@@ -1525,7 +1529,7 @@ h2 {
 .amigoPanel {
   clear: both;
   display: grid;
-  gap: 16px;
+  gap: 14px;
   margin-bottom: 10px;
   padding: 18px;
   border: 1px solid rgba(242, 236, 224, 0.16);
@@ -1534,6 +1538,7 @@ h2 {
     linear-gradient(180deg, rgba(19, 27, 16, 0.96), rgba(8, 12, 6, 0.96));
   box-shadow: 0 24px 90px rgba(0, 0, 0, 0.42);
   backdrop-filter: blur(18px);
+  max-height: min(720px, calc(100svh - 116px));
 }
 
 .amigoHeader {
@@ -1575,13 +1580,54 @@ h2 {
   font-weight: 700;
 }
 
-.amigoIntro,
-.amigoResponse p,
+.amigoChatLog {
+  display: grid;
+  gap: 10px;
+  max-height: 280px;
+  overflow: auto;
+  padding-right: 2px;
+  scrollbar-width: thin;
+}
+
+.amigoMessage {
+  display: grid;
+  gap: 8px;
+  max-width: 88%;
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(242, 236, 224, 0.1);
+  background: rgba(242, 236, 224, 0.07);
+}
+
+.amigoMessage.guest {
+  justify-self: end;
+  border-color: rgba(201, 155, 85, 0.26);
+  background: rgba(201, 155, 85, 0.14);
+}
+
+.amigoMessage.amigo {
+  justify-self: start;
+}
+
+.amigoMessage span,
+.amigoPromptGrid > span {
+  color: var(--gold);
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.amigoMessage p,
 .amigoPanel small {
   margin: 0;
   color: rgba(242, 236, 224, 0.74);
   font-size: 0.92rem;
   line-height: 1.55;
+}
+
+.amigoMessage.guest p {
+  color: rgba(242, 236, 224, 0.9);
 }
 
 .amigoPromptGrid {
@@ -1602,21 +1648,12 @@ h2 {
   font-weight: 650;
 }
 
-.amigoPromptGrid button.active {
+.amigoPromptGrid button:hover {
   border-color: rgba(201, 155, 85, 0.64);
   color: var(--paper);
 }
 
-.amigoResponse {
-  display: grid;
-  gap: 10px;
-  padding: 14px;
-  border: 1px solid rgba(201, 155, 85, 0.3);
-  border-radius: 12px;
-  background: rgba(201, 155, 85, 0.08);
-}
-
-.amigoResponse a {
+.amigoMessage a {
   justify-self: start;
   min-height: 38px;
   display: inline-flex;
@@ -1627,6 +1664,55 @@ h2 {
   color: var(--gold);
   font-size: 0.82rem;
   font-weight: 750;
+}
+
+.amigoInputRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.amigoInputRow label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.amigoInputRow input {
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid rgba(242, 236, 224, 0.18);
+  border-radius: 999px;
+  padding: 0 14px;
+  background: rgba(242, 236, 224, 0.08);
+  color: var(--paper);
+  outline: none;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.amigoInputRow input::placeholder {
+  color: rgba(242, 236, 224, 0.42);
+}
+
+.amigoInputRow input:focus {
+  border-color: rgba(201, 155, 85, 0.72);
+}
+
+.amigoInputRow button {
+  min-height: 44px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 0 14px;
+  background: var(--gold);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 800;
 }
 
 .amigoPanel small {
@@ -1785,6 +1871,10 @@ h2 {
     width: min(390px, calc(100vw - 24px));
   }
 
+  .journey ~ .amigoGuide {
+    bottom: 154px;
+  }
+
   .amigoLauncher {
     min-height: 48px;
   }
@@ -1792,6 +1882,10 @@ h2 {
   .amigoPanel {
     max-height: calc(100svh - 160px);
     overflow: auto;
+  }
+
+  .journey ~ .amigoGuide .amigoPanel {
+    max-height: calc(100svh - 218px);
   }
 }
 
@@ -1823,5 +1917,13 @@ h2 {
 
   .amigoPromptGrid button {
     font-size: 0.82rem;
+  }
+
+  .amigoMessage {
+    max-width: 94%;
+  }
+
+  .amigoInputRow {
+    grid-template-columns: 1fr;
   }
 }
