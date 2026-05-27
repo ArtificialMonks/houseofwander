@@ -12,14 +12,10 @@ npm run dev
 Open `http://localhost:3000`.
 
 - `/` - House of Wander brand gateway with the 3D object.
-- `/stays` - Full collection landing page.
+- `/stays` - Priority collection landing page.
 - `/stays/casa-cabane` - Casa Cabane guided walkthrough prototype.
-- `/stays/casa-fabiola` - Ghent apartment page with public Airbnb facts.
-- `/stays/louise-marie` - Ostend apartment page with public Airbnb facts.
-- `/stays/thelma-louise` - Blankenberge Airbnb listing mapped provisionally to Thelma & Louise.
-- `/stays/the-love-nest` - Public Airbnb-fact page with safe photo placeholders.
-- `/stays/ghent-group-house` - Ghent 10-person house from Laurens' public listing set.
-- `/stays/heritage-collection` - Parent concept until the five apartment URLs are confirmed.
+- `/stays/casa-fabiola` - Ghent apartment page with public Airbnb facts and main photo.
+- `/stays/louise-marie` - Ostend apartment page with public Airbnb facts and main photo.
 - `/style-lab` - Three house-style variations for the team to compare.
 - `/casa-cabane` - Compatibility redirect to `/stays/casa-cabane`.
 
@@ -34,7 +30,8 @@ npm start -- -p 3000
 
 - Uses the House of Wander team's Casa Cabane walkthrough as the first interactive stay asset.
 - Adds a Three.js House of Wander object on the brand gateway.
-- Adds reusable stay pages for the full briefing collection.
+- Adds reusable stay pages for the three priority stays: Casa Cabane, Casa
+  Fabiola, and Louise Marie.
 - Focuses on local proof-of-feel, not a public launch.
 - Airbnb is the default CTA until the team chooses a direct booking or inquiry path.
 - `DESIGN.md` is the design source of truth for future UI passes, combining
@@ -43,9 +40,9 @@ npm start -- -p 3000
   snapshot data so future stays do not have to start as hard-coded page copy.
 - Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
   agent or backend. It now labels source boundaries and missing confirmations.
-- Airbnb-hosted photo URLs are stored as reference-only in
-  `source/airbnb/photo-references.json`; the site does not display or download
-  them until owner-approved exports exist.
+- The site now displays local project-media main photos for Casa Cabane, Casa
+  Fabiola, and Louise Marie. Broader Airbnb-hosted galleries remain
+  reference-only until owner-approved exports exist.
 - Private Airbnb conversations are not stored in Git. Future Amigo/Toon training
   should start from an Airbnb GDPR export or an approved channel-manager route.
 

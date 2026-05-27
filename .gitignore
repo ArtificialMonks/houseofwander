@@ -13,4 +13,13 @@ public/media/*.tmp
 
 # Large local media/render outputs stay in Dropbox unless Git LFS is configured.
 public/media/*-master*.mp4
+
+# Listing folders may contain wider gallery exports. Keep only the selected
+# main photos in Git until the team approves a broader gallery pass.
+public/media/Casa Cabane/*
+!public/media/Casa Cabane/CasaCabane.avif
+public/media/Casa Fabiola/*
+!public/media/Casa Fabiola/Casa Fabiola.avif
+public/media/Louise Marie/*
+!public/media/Louise Marie/Louise.avif
 renders/

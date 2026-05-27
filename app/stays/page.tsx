@@ -18,8 +18,12 @@ const collection = collectionSource as CollectionSource;
 export const metadata = {
   title: "Stays - House of Wander",
   description:
-    "The House of Wander collection: Casa Cabane, Casa Fabiola, Louise Marie, Thelma & Louise, Heritage Collection, and The Love Nest."
+    "The House of Wander priority collection: Casa Cabane in Stekene, Casa Fabiola in Ghent, and Louise Marie in Ostend."
 };
+
+const previewImageFor = (stay: (typeof stays)[number]) =>
+  stay.media.find((item) => item.type === "image" && item.src)?.src ??
+  stay.posterSrc;
 
 export default function StaysPage() {
   return (
@@ -37,12 +41,12 @@ export default function StaysPage() {
         </header>
 
         <div className="collectionHeroCopy">
-          <p className="eyebrow">Full collection</p>
-          <h1>Every stay gets a doorway, a detail layer, and a guide.</h1>
+          <p className="eyebrow">Priority collection</p>
+          <h1>Three stays, three doorways, one guided House of Wander world.</h1>
           <p>
-            This page brings the House of Wander ecosystem together: flagship
-            Casa Cabane, public Airbnb facts where available, briefing stories,
-            source labels, and safe photo slots for the team to complete.
+            This page now focuses on Casa Cabane in Stekene, Casa Fabiola in
+            Ghent, and Louise Marie in Ostend. Each stay has a main visual,
+            source-labelled facts, and Amigo ready to guide the next step.
           </p>
         </div>
       </section>
@@ -56,8 +60,8 @@ export default function StaysPage() {
               href={`/stays/${stay.slug}`}
             >
               <div className="collectionStayMedia" aria-hidden="true">
-                {stay.posterSrc ? (
-                  <img src={stay.posterSrc} alt="" />
+                {previewImageFor(stay) ? (
+                  <img src={previewImageFor(stay)} alt="" />
                 ) : (
                   <span />
                 )}
@@ -90,22 +94,22 @@ export default function StaysPage() {
           <article>
             <span>Ready</span>
             <p>
-              Routes, reusable stay pages, Casa Cabane media, Airbnb-informed
-              facts, style variations, source labels, and Amigo prompts.
+              Routes, reusable stay pages, three main photos, Airbnb-informed
+              facts, source labels, and Amigo prompts for the priority trio.
             </p>
           </article>
           <article>
-            <span>Needs photos</span>
+            <span>Next photos</span>
             <p>
-              Airbnb photo URLs are catalogued as reference-only. Owner-approved
-              exports are needed before displaying them in House of Wander.
+              The main photos are integrated. Wider gallery expansion still
+              needs a clear approved source selection per stay.
             </p>
           </article>
           <article>
-            <span>Needs approval</span>
+            <span>Later</span>
             <p>
-              Heritage apartment names, final collection naming, direct-booking
-              rules, and any private conversation training path.
+              Other listings can return once the team approves naming, assets,
+              and whether they belong in the public House of Wander collection.
             </p>
           </article>
         </div>

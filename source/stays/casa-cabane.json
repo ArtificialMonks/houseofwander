@@ -4,7 +4,7 @@
   "location": "Stekene",
   "region": "Nature retreat",
   "status": "Flagship prototype",
-  "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local owner-approved Casa Cabane media",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local Casa Cabane media",
   "title": "Step inside Casa Cabane without losing the thread.",
   "tagline": "A quiet lakehouse in the green borderlands, guided by real walkthrough footage.",
   "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
@@ -16,22 +16,24 @@
   "media": [
     {
       "type": "image",
+      "src": "/media/Casa%20Cabane/CasaCabane.avif",
+      "alt": "Casa Cabane in Stekene beside the water",
+      "caption": "Casa Cabane Stekene main photo",
+      "source": "project-media"
+    },
+    {
+      "type": "image",
       "src": "/media/casa-cabane-poster.jpg",
-      "alt": "Casa Cabane by the water",
-      "caption": "Poster frame",
-      "source": "owner-approved"
+      "alt": "Casa Cabane walkthrough poster frame",
+      "caption": "Walkthrough poster frame",
+      "source": "project-media"
     },
     {
       "type": "video",
       "src": "/media/casa-cabane-walkthrough.mp4",
       "alt": "Casa Cabane walkthrough video",
       "caption": "Real walkthrough",
-      "source": "owner-approved"
-    },
-    {
-      "type": "placeholder",
-      "caption": "Airbnb gallery import slot",
-      "source": "needs-confirmation"
+      "source": "project-media"
     }
   ],
   "chapters": [
@@ -283,7 +285,8 @@
     "Casa Cabane uses local owner-approved poster and walkthrough media already in the project.",
     "Public Airbnb facts were checked again on May 27, 2026 without logging into the host account.",
     "Airbnb-hosted photo URLs are catalogued in the source references only; they are not downloaded or displayed.",
-    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb.",
+    "A local main photo from the project media folder is now integrated; any additional gallery expansion still needs owner-approved source selection."
   ],
   "amigoStayPlan": [
     {
@@ -368,8 +371,8 @@
     },
     {
       "label": "Photos on site",
-      "value": "Local approved media only",
-      "source": "owner-approved"
+      "value": "Local main photo integrated; extra gallery photos still need approval",
+      "source": "project-media"
     }
   ]
 }

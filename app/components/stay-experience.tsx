@@ -97,6 +97,7 @@ const SOURCE_LABELS: Record<string, string> = {
   "prototype-copy": "Prototype copy",
   "briefing-doc": "Briefing doc",
   "needs-confirmation": "Needs confirmation",
+  "project-media": "Project media",
   "owner-approved": "Owner-approved media"
 };
 
@@ -439,7 +440,20 @@ export function StayExperience({ stay }: StayExperienceProps) {
               key={`${item.caption}-${index}`}
               className={item.src ? "mediaTile" : "mediaTile placeholder"}
             >
-              {item.src ? <img src={item.src} alt={item.alt ?? ""} /> : <span />}
+              {item.src && item.type === "video" ? (
+                <video
+                  src={item.src}
+                  poster={stay.posterSrc}
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={item.alt ?? item.caption}
+                />
+              ) : item.src ? (
+                <img src={item.src} alt={item.alt ?? ""} />
+              ) : (
+                <span />
+              )}
               <figcaption>
                 <strong>{item.caption}</strong>
                 <em>{sourceLabel(item.source)}</em>

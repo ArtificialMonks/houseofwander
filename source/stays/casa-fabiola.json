@@ -4,7 +4,7 @@
   "location": "Ghent",
   "region": "City stay",
   "status": "Public Airbnb facts integrated",
-  "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
   "title": "A Ghent apartment with the feeling of coming home.",
   "tagline": "Family, heritage, and city warmth directly beside Gent-Sint-Pieters station.",
   "description": "Casa Fabiola is the Ghent city stay in the collection: a private upper-floor apartment in the family townhouse, rooted in family, heritage, comfort, and a very practical station-side location.",
@@ -16,18 +16,20 @@
   "styleVariant": "editorial-warm",
   "media": [
     {
+      "type": "image",
+      "src": "/media/Casa%20Fabiola/Casa%20Fabiola.avif",
+      "alt": "Casa Fabiola bedroom in Ghent",
+      "caption": "Casa Fabiola Ghent main photo",
+      "source": "project-media"
+    },
+    {
       "type": "placeholder",
-      "caption": "Owner-approved Casa Fabiola hero photo needed",
+      "caption": "Additional bedroom and mezzanine photos pending",
       "source": "needs-confirmation"
     },
     {
       "type": "placeholder",
-      "caption": "Bedroom and mezzanine gallery slot",
-      "source": "needs-confirmation"
-    },
-    {
-      "type": "placeholder",
-      "caption": "Ghent station and arrival context slot",
+      "caption": "Ghent station and arrival context pending",
       "source": "needs-confirmation"
     }
   ],
@@ -63,8 +65,8 @@
     },
     {
       "label": "Photos on site",
-      "value": "Approval needed",
-      "source": "needs-confirmation"
+      "value": "Local main photo integrated; extra gallery photos still need approval",
+      "source": "project-media"
     }
   ],
   "quickFacts": [
@@ -266,7 +268,8 @@
     "Public Airbnb facts were checked on May 27, 2026 without login.",
     "The older collection-listings cross-check could not find Casa Fabiola by name; the direct vanity URL resolves the match.",
     "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb.",
+    "A local main photo from the project media folder is now integrated; any additional gallery expansion still needs owner-approved source selection."
   ],
   "amigoStayPlan": [
     {
@@ -307,5 +310,6 @@
       "actionLabel": "Check dates on Airbnb",
       "actionHref": "https://www.airbnb.be/h/casafabiola"
     }
-  ]
+  ],
+  "posterSrc": "/media/Casa%20Fabiola/Casa%20Fabiola.avif"
 }

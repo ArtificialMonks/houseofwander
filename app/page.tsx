@@ -384,12 +384,12 @@ export default function Home() {
       <section id="stays" className="staysBand" aria-label="House of Wander stays">
         <div className="staysIntro">
           <p className="sectionKicker">Stays</p>
-          <h2>Start with Casa Cabane, then let every place receive a doorway.</h2>
+          <h2>Start with the three stays that are ready to show.</h2>
           <p>
-            The collection is now mapped into stay pages, source status, gallery
-            slots, Airbnb-level facts where available, and Amigo prompts. Missing
-            URLs and photo approvals are visible as team to-dos instead of
-            broken pages.
+            The public collection is now focused on Casa Cabane, Casa Fabiola,
+            and Louise Marie. Each stay has a main photo, source status,
+            Airbnb-level facts where available, and Amigo prompts instead of
+            unfinished placeholder listings.
           </p>
         </div>
 

@@ -26,12 +26,12 @@ const styleDetails: Record<string, string[]> = {
     "Feels premium, grounded, and most aligned with the current prototype."
   ],
   "coastal-light": [
-    "Best first test for Louise Marie, Thelma & Louise, and Ostend/Blankenberge pages.",
+    "Best first test for Louise Marie and future coastal pages.",
     "Airier paper surfaces, sea-glass accents, lighter image treatment.",
     "Keeps the brand warm while making coastal stays feel brighter."
   ],
   "boutique-night": [
-    "Best for The Love Nest or evening-led, romantic hideaway pages.",
+    "Kept as a later option for evening-led or romantic hideaway pages.",
     "Deep ink, amber highlights, intimate contrast, compact trust cards.",
     "Feels more hotel/editorial than beach apartment."
   ]

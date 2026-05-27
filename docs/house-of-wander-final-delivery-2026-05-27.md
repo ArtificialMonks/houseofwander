@@ -12,20 +12,15 @@ For: Joey, Jo, Maaike, Laudi, Laurens, and the House of Wander team
 
 ## What is now built
 
-House of Wander is now a collection-ready prototype instead of a Casa Cabane-only
-proof.
+House of Wander is now a focused three-stay prototype instead of a Casa
+Cabane-only proof.
 
 - `/` remains the House of Wander gateway with the 3D object.
-- `/stays` is the collection overview.
+- `/stays` is the priority collection overview.
 - `/stays/casa-cabane` is the flagship guided walkthrough.
-- `/stays/casa-fabiola` now uses public Airbnb facts.
-- `/stays/louise-marie` now uses public Airbnb facts.
-- `/stays/thelma-louise` now maps to the Blankenberge Airbnb listing from
-  Laurens' URL list, with brand-name confirmation still flagged.
-- `/stays/the-love-nest` now uses updated public Airbnb facts.
-- `/stays/ghent-group-house` is added from the provided public Airbnb URL.
-- `/stays/heritage-collection` remains a parent concept until the five unit
-  names and URLs are confirmed.
+- `/stays/casa-fabiola` now uses public Airbnb facts and a local main photo.
+- `/stays/louise-marie` now uses public Airbnb facts and a local main photo.
+- The other listings are removed from the public collection for now.
 - `/style-lab` remains the house-style comparison page.
 
 ## Data integrated
@@ -35,26 +30,24 @@ The source model now includes public listing snapshots for:
 - Casa Cabane — Airbnb ID `962896812968290131`
 - Casa Fabiola — Airbnb ID `51655826`
 - Louise Marie — Airbnb ID `563442400500577170`
-- Thelma & Louise provisional map — Airbnb ID `52296316`
-- The Love Nest — Airbnb ID `1025111265786397251`
-- Ghent Group House — Airbnb ID `1559436233376573149`
 
 Every stay page now has a visible source map with listing title, listing ID,
 public source status, and links. Facts are labelled as public Airbnb data,
-briefing source, prototype copy, owner-approved media, or confirmation needed.
+briefing source, prototype copy, project media, or confirmation needed.
 
 ## Image handling
 
 Airbnb-hosted photo URLs were not downloaded and are not displayed by the site.
 They are stored as reference-only in `source/airbnb/photo-references.json`.
 
-The website still uses:
+The website now uses:
 
-- local owner-approved Casa Cabane media
-- placeholders for non-approved gallery images
+- local project-media main photos for Casa Cabane, Casa Fabiola, and Louise
+  Marie
+- placeholders only for wider gallery expansion
 
 The next asset task is for Maaike, Laudi, or Laurens to provide owner-approved
-photo exports for each stay.
+photo exports for any additional gallery images.
 
 ## Amigo and Toon
 
@@ -73,15 +66,12 @@ changes, calendar changes, or host-account actions were performed.
 
 ## Open questions
 
-1. Confirm whether Airbnb listing `52296316` is officially Thelma & Louise.
-2. Confirm whether the Ghent 10-person house should be branded inside House of
-   Wander and under which name.
-3. Share the five Heritage Collection apartment names and URLs.
-4. Provide owner-approved image exports for all non-Casa Cabane stays.
-5. Decide whether The Love Nest and the Ghent Group House are public collection
-   members or co-hosted inventory only.
-6. Decide when to request the Airbnb GDPR data export for Amigo/Toon training.
-7. Decide when to move from Airbnb handoff to direct booking discovery.
+1. Confirm whether the current three-stay focus is the right public-preview
+   scope.
+2. Provide owner-approved gallery exports beyond the main photos now integrated.
+3. Decide which removed listings should return later and under which names.
+4. Decide when to request the Airbnb GDPR data export for Amigo/Toon training.
+5. Decide when to move from Airbnb handoff to direct booking discovery.
 
 ## Safety boundary
 
@@ -94,7 +84,7 @@ scraping.
 - `npm run build` passes locally with Next.js 16.2.6.
 - GitHub `main` is pushed and clean.
 - Vercel production deployment is ready and promoted.
-- Live route checks pass for `/`, `/stays`, all stay detail pages,
+- Live route checks pass for `/`, `/stays`, the three stay detail pages,
   `/style-lab`, and the `/casa-cabane` redirect.
 - Browser QA screenshots were captured for desktop, mobile, and the Casa Cabane
   guided journey in `renders/house-of-wander-live-deploy/`.

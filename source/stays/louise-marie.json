@@ -4,7 +4,7 @@
   "location": "Ostend",
   "region": "Coastal apartment",
   "status": "Public Airbnb facts integrated",
-  "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
   "title": "A seaside apartment shaped by a promise.",
   "tagline": "The Ostend stay with a romantic origin story and a bright coastal rhythm.",
   "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by a promise from Laurens to Maaike and now backed by public Airbnb facts.",
@@ -16,18 +16,20 @@
   "styleVariant": "coastal-light",
   "media": [
     {
+      "type": "image",
+      "src": "/media/Louise%20Marie/Louise.avif",
+      "alt": "Louise Marie living room and kitchen in Ostend",
+      "caption": "Louise Marie Ostend main photo",
+      "source": "project-media"
+    },
+    {
       "type": "placeholder",
-      "caption": "Owner-approved Louise Marie hero photo needed",
+      "caption": "Bedroom and living room gallery expansion pending",
       "source": "needs-confirmation"
     },
     {
       "type": "placeholder",
-      "caption": "Bedroom and living room gallery slot",
-      "source": "needs-confirmation"
-    },
-    {
-      "type": "placeholder",
-      "caption": "Ostend beach and city context slot",
+      "caption": "Ostend beach and city context pending",
       "source": "needs-confirmation"
     }
   ],
@@ -69,8 +71,8 @@
     },
     {
       "label": "Photos on site",
-      "value": "Approval needed",
-      "source": "needs-confirmation"
+      "value": "Local main photo integrated; extra gallery photos still need approval",
+      "source": "project-media"
     }
   ],
   "quickFacts": [
@@ -271,7 +273,8 @@
     "Public Airbnb facts were checked on May 27, 2026 without login.",
     "The older collection-listings doc found a non-Airbnb Louise Marie page; this is retained as a cross-platform reference, not final booking truth.",
     "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb.",
+    "A local main photo from the project media folder is now integrated; any additional gallery expansion still needs owner-approved source selection."
   ],
   "amigoStayPlan": [
     {
@@ -312,5 +315,6 @@
       "actionLabel": "Check dates on Airbnb",
       "actionHref": "https://www.airbnb.be/h/louisemarie"
     }
-  ]
+  ],
+  "posterSrc": "/media/Louise%20Marie/Louise.avif"
 }

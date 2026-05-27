@@ -5,11 +5,11 @@
       "name": "Casa Cabane",
       "location": "Stekene",
       "status": "Flagship prototype",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local owner-approved Casa Cabane media",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local Casa Cabane media",
       "meta": "4.93 · 94 reviews · 7 maximum",
       "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
       "href": "/stays/casa-cabane",
-      "image": "/media/casa-cabane-poster.jpg",
+      "image": "/media/Casa%20Cabane/CasaCabane.avif",
       "styleVariant": "Editorial Warm"
     },
     {
@@ -17,75 +17,32 @@
       "name": "Casa Fabiola",
       "location": "Ghent",
       "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
       "meta": "4.96 · 155 reviews · 5 maximum",
       "description": "Casa Fabiola is the Ghent city stay in the collection: a private upper-floor apartment in the family townhouse, rooted in family, heritage, comfort, and a very practical station-side location.",
       "href": "/stays/casa-fabiola",
-      "styleVariant": "Editorial Warm"
+      "styleVariant": "Editorial Warm",
+      "image": "/media/Casa%20Fabiola/Casa%20Fabiola.avif"
     },
     {
       "slug": "louise-marie",
       "name": "Louise Marie",
       "location": "Ostend",
       "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
       "meta": "4.97 · 39 reviews · 4 maximum",
       "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by a promise from Laurens to Maaike and now backed by public Airbnb facts.",
       "href": "/stays/louise-marie",
-      "styleVariant": "Coastal Light"
-    },
-    {
-      "slug": "thelma-louise",
-      "name": "Thelma & Louise",
-      "location": "Blankenberge",
-      "status": "Public Airbnb facts mapped",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; internal Thelma & Louise naming still needs host confirmation",
-      "meta": "4.63 · 19 reviews · 4 maximum",
-      "description": "Thelma & Louise is mapped to the Stefanie-hosted Blankenberge apartment from Laurens’ account links. The public Airbnb facts are integrated, while the internal brand-name match should still be confirmed by the team.",
-      "href": "/stays/thelma-louise",
-      "styleVariant": "Coastal Light"
-    },
-    {
-      "slug": "heritage-collection",
-      "name": "Heritage Collection",
-      "location": "Ostend",
-      "status": "Parent concept pending listing map",
-      "sourceStatus": "Briefing concept only; five children/apartment names and Airbnb URLs still needed",
-      "meta": "Brief · 5 reviews · 5 apartments",
-      "description": "The Heritage Collection is described as five family apartments in Ostend, developed with a cherished family friend and named with a sense of children, tribute, and legacy.",
-      "href": "/stays/heritage-collection",
-      "styleVariant": "Editorial Warm"
-    },
-    {
-      "slug": "the-love-nest",
-      "name": "The Love Nest",
-      "location": "Ostend",
-      "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
-      "meta": "4.95 · 115 reviews · 2 maximum",
-      "description": "The Love Nest is the clearest co-hosted addition in the public listings: a cosy Ostend penthouse for two, close to the beach, with terraces, outdoor pool/shower, and Laurens listed as co-host.",
-      "href": "/stays/the-love-nest",
-      "styleVariant": "Boutique Night"
-    },
-    {
-      "slug": "ghent-group-house",
-      "name": "Ghent Group House",
-      "location": "Ghent",
-      "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; collection role needs host confirmation",
-      "meta": "5.0 · 20 reviews · 10 maximum",
-      "description": "This public Airbnb listing is co-hosted by Laurens and adds a strong group-stay option to the House of Wander data model. Its final House of Wander brand role still needs confirmation.",
-      "href": "/stays/ghent-group-house",
-      "styleVariant": "Editorial Warm"
+      "styleVariant": "Coastal Light",
+      "image": "/media/Louise%20Marie/Louise.avif"
     }
   ],
   "productionLanes": [
-    "Casa Cabane remains the flagship proof-of-feel and keeps local approved media plus the guided walkthrough.",
-    "All provided public Airbnb URLs now map into structured stay records, including Casa Fabiola, Louise Marie, Thelma & Louise, The Love Nest, and the Ghent Group House.",
-    "Heritage Collection remains a parent concept until the five apartment names and URLs are confirmed.",
-    "Airbnb photo URLs are catalogued as reference-only; the public site still uses local media or placeholders until owner approval.",
-    "Amigo remains a source-aware scripted guide with boundaries around live price, availability, payment, Airbnb messaging, and direct booking.",
-    "Private Airbnb conversation ingestion is documented as a GDPR/channel-manager future path, not executed through risky logged-in scraping."
+    "The public collection is now intentionally focused on the three priority stays: Casa Cabane, Casa Fabiola, and Louise Marie.",
+    "Each priority stay has a local main photo integrated from the project media folder.",
+    "Casa Cabane remains the flagship proof-of-feel and keeps the guided walkthrough video.",
+    "Airbnb facts remain source-labelled and live price, availability, payment, and private messaging stay on Airbnb for now.",
+    "The other listings are removed from the public collection until the team decides to bring them back with approved assets and naming."
   ],
   "amigoSystem": [
     {
@@ -94,7 +51,7 @@
     },
     {
       "title": "Source labels",
-      "text": "Amigo distinguishes public Airbnb data, briefing notes, prototype copy, owner-approved media, and host confirmations still needed."
+      "text": "Amigo distinguishes public Airbnb data, briefing notes, prototype copy, project media, and host confirmations still needed."
     },
     {
       "title": "Host cockpit later",
@@ -122,14 +79,14 @@
     {
       "label": "Which stays are ready now?",
       "sourceLabel": "Source labels",
-      "answer": "Casa Cabane, Casa Fabiola, Louise Marie, Thelma & Louise, The Love Nest, and the Ghent Group House now have structured public Airbnb facts. Heritage Collection still needs the five unit names and URLs.",
-      "actionLabel": "View all stays",
+      "answer": "The public collection is now focused on three priority stays: Casa Cabane in Stekene, Casa Fabiola in Ghent, and Louise Marie in Ostend. The other listings are intentionally hidden until the team approves naming and assets.",
+      "actionLabel": "View the three stays",
       "actionHref": "/stays"
     },
     {
       "label": "Can you use Airbnb photos?",
       "sourceLabel": "Safety guardrail",
-      "answer": "Not on the site yet. Airbnb-hosted image URLs are catalogued as references only. Owner-approved exports are needed before House of Wander displays them.",
+      "answer": "The site now uses local project-media main photos for the three priority stays. Any broader Airbnb gallery import still needs owner approval before publication.",
       "actionLabel": "Open Casa Cabane",
       "actionHref": "/stays/casa-cabane"
     },
