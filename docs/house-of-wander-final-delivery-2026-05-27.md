@@ -3,6 +3,13 @@
 Date: May 27, 2026  
 For: Joey, Jo, Maaike, Laudi, Laurens, and the House of Wander team
 
+## Where to review
+
+- Live site: https://houseofwander-ochre.vercel.app
+- GitHub repo: https://github.com/ArtificialMonks/houseofwander
+- The current production commit and deployment ID are listed in the GitHub and
+  Vercel project history.
+
 ## What is now built
 
 House of Wander is now a collection-ready prototype instead of a Casa Cabane-only
@@ -81,3 +88,13 @@ changes, calendar changes, or host-account actions were performed.
 The final version uses public Airbnb listing pages and the provided Claude
 research files only. It does not rely on private account access or unsafe
 scraping.
+
+## Verification completed
+
+- `npm run build` passes locally with Next.js 16.2.6.
+- GitHub `main` is pushed and clean.
+- Vercel production deployment is ready and promoted.
+- Live route checks pass for `/`, `/stays`, all stay detail pages,
+  `/style-lab`, and the `/casa-cabane` redirect.
+- Browser QA screenshots were captured for desktop, mobile, and the Casa Cabane
+  guided journey in `renders/house-of-wander-live-deploy/`.
