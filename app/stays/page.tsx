@@ -35,7 +35,6 @@ export default function StaysPage() {
           </Link>
           <nav aria-label="Collection navigation">
             <Link href="/">Gateway</Link>
-            <Link href="/style-lab">Styles</Link>
             <Link href="/stays/casa-cabane">Casa Cabane</Link>
           </nav>
         </header>

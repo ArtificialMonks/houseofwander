@@ -16,7 +16,6 @@ Open `http://localhost:3000`.
 - `/stays/casa-cabane` - Casa Cabane guided walkthrough prototype.
 - `/stays/casa-fabiola` - Ghent apartment page with public Airbnb facts and main photo.
 - `/stays/louise-marie` - Ostend apartment page with public Airbnb facts and main photo.
-- `/style-lab` - Three house-style variations for the team to compare.
 - `/casa-cabane` - Compatibility redirect to `/stays/casa-cabane`.
 
 For a cleaner demo without the development indicator:

@@ -21,7 +21,7 @@ Cabane-only proof.
 - `/stays/casa-fabiola` now uses public Airbnb facts and a local main photo.
 - `/stays/louise-marie` now uses public Airbnb facts and a local main photo.
 - The other listings are removed from the public collection for now.
-- `/style-lab` remains the house-style comparison page.
+- Internal style exploration is no longer exposed as a public route.
 
 ## Data integrated
 
@@ -84,7 +84,7 @@ scraping.
 - `npm run build` passes locally with Next.js 16.2.6.
 - GitHub `main` is pushed and clean.
 - Vercel production deployment is ready and promoted.
-- Live route checks pass for `/`, `/stays`, the three stay detail pages,
-  `/style-lab`, and the `/casa-cabane` redirect.
+- Live route checks pass for `/`, `/stays`, the three stay detail pages, and
+  the `/casa-cabane` redirect.
 - Browser QA screenshots were captured for desktop, mobile, and the Casa Cabane
   guided journey in `renders/house-of-wander-live-deploy/`.

@@ -33,23 +33,16 @@ type AmigoSystemItem = {
   text: string;
 };
 
-type StyleVariant = {
-  name: string;
-  slug: string;
-  description: string;
-};
-
 type CollectionSource = {
   stays: Stay[];
   productionLanes: string[];
   amigoSystem: AmigoSystemItem[];
-  styleVariants: StyleVariant[];
   amigoPrompts: AmigoPrompt[];
 };
 
 const nav = navSource as { primary: NavItem[] };
 const collection = staysSource as CollectionSource;
-const { stays, productionLanes, amigoSystem, styleVariants, amigoPrompts } = collection;
+const { stays, productionLanes, amigoSystem, amigoPrompts } = collection;
 
 function HouseOfWanderObject() {
   const hostRef = useRef<HTMLDivElement | null>(null);
@@ -366,9 +359,6 @@ export default function Home() {
             <Link className="ghostButton" href="/stays">
               View collection
             </Link>
-            <Link className="ghostButton" href="/style-lab">
-              Compare styles
-            </Link>
             <button className="ghostButton" type="button" onClick={openAmigo}>
               Ask Amigo
             </button>
@@ -455,32 +445,6 @@ export default function Home() {
               <span>{item.title}</span>
               <p>{item.text}</p>
             </article>
-          ))}
-        </div>
-      </section>
-
-      <section
-        className="stylePreviewBand"
-        aria-label="House of Wander house-style variations"
-      >
-        <div className="stylePreviewIntro">
-          <p className="sectionKicker">House style options</p>
-          <h2>Three directions for the team to choose from.</h2>
-          <p>
-            The site now carries three controlled visual languages: one flagship
-            style, one coastal variant, and one intimate boutique variant.
-          </p>
-        </div>
-        <div className="stylePreviewGrid">
-          {styleVariants.map((variant) => (
-            <Link
-              key={variant.slug}
-              className="stylePreviewCard"
-              href="/style-lab"
-            >
-              <span>{variant.name}</span>
-              <p>{variant.description}</p>
-            </Link>
           ))}
         </div>
       </section>
