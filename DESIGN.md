@@ -230,6 +230,10 @@ Do:
 - Make the practical layer feel clear, compact, and trustworthy.
 - Add source notes when facts come from Airbnb public pages.
 - Keep Amigo honest about prototype vs future platform capability.
+- Keep Airbnb photo references separate from public display until
+  owner-approved image exports exist.
+- Keep private Airbnb conversations out of Git; Amigo/Toon training starts from
+  a GDPR export or approved channel-manager route.
 
 Do not:
 
@@ -238,3 +242,5 @@ Do not:
   explicit approval.
 - Invent amenities, prices, policies, safety claims, or reviews.
 - Hide the Airbnb handoff behind a custom checkout-looking flow.
+- Scrape logged-in Airbnb host inboxes, change account settings, send messages,
+  or store credentials/cookies in the repository.

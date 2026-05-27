@@ -1,0 +1,65 @@
+{
+  "checked": "Reference-only public image URLs copied from provided Claude source documents and public Airbnb pages. These are not downloaded, not displayed by the app, and require owner approval before publication.",
+  "listings": [
+    {
+      "slug": "casa-cabane",
+      "listingId": "962896812968290131",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-962896812968290131/original/cc0847c8-d4ae-48f8-9032-f5b81441ef2c.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-962896812968290131/original/90d97cbf-aec7-4b0b-b1ca-8ad76db171b3.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-962896812968290131/original/49904c9b-8c9d-46f0-9ce3-b402b628c778.jpeg"
+      ]
+    },
+    {
+      "slug": "casa-fabiola",
+      "listingId": "51655826",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-51655826/original/a0ab7d14-a29a-4d82-b31a-7f5c9601580b.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-51655826/original/5797014e-ec26-449b-977f-2f5522023b2a.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-51655826/original/6e2be2ab-7d3d-45d2-a3db-77df23db64cf.jpeg"
+      ]
+    },
+    {
+      "slug": "louise-marie",
+      "listingId": "563442400500577170",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-563442400500577170/original/cf5d9f56-001f-4985-80fb-4cf4ca022f2d.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-563442400500577170/original/e0e79faa-54ef-46bf-9035-520f5c3be1e2.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-563442400500577170/original/3b20edde-c450-42e2-81c6-da3fc8d6956a.jpeg"
+      ]
+    },
+    {
+      "slug": "thelma-louise",
+      "listingId": "52296316",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTIyOTYzMTY%3D/original/624fe69f-2387-40b0-8b33-56b8aba957a0.jpeg",
+        "https://a0.muscache.com/im/pictures/0b5b74fa-082b-4008-bc20-e1e8d7f1cc54.jpg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTIyOTYzMTY%3D/original/e0cd6366-206f-4652-abf4-886d25d1c07e.jpeg"
+      ]
+    },
+    {
+      "slug": "the-love-nest",
+      "listingId": "1025111265786397251",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-1025111265786397251/original/0056a6f8-7cf3-4e08-8a57-949afc1b5fe5.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-1025111265786397251/original/c928bb89-1e16-465a-820d-9e105fe6636f.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-1025111265786397251/original/377eeab4-641b-4431-bec9-9933be8e3121.jpeg"
+      ]
+    },
+    {
+      "slug": "ghent-group-house",
+      "listingId": "1559436233376573149",
+      "useStatus": "reference-only",
+      "urls": [
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-1559436233376573149/original/3f2c001f-713e-4c1f-bd80-841af30eac27.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-1559436233376573149/original/9b3219bb-576d-4573-a262-d0179f8f6d81.jpeg",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-1559436233376573149/original/ae2345a3-3ac7-4d80-8175-0eccf32ca593.jpeg"
+      ]
+    }
+  ]
+}

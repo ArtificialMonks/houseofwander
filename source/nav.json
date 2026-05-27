@@ -1,14 +1,38 @@
 {
   "primary": [
-    { "label": "Stays", "href": "/stays" },
-    { "label": "Amigo", "href": "/#amigo" },
-    { "label": "Styles", "href": "/style-lab" },
-    { "label": "Project brief", "href": "/#system" },
-    { "label": "Casa Cabane", "href": "/stays/casa-cabane" }
+    {
+      "label": "Stays",
+      "href": "/stays"
+    },
+    {
+      "label": "Amigo",
+      "href": "/#amigo"
+    },
+    {
+      "label": "Styles",
+      "href": "/style-lab"
+    },
+    {
+      "label": "Source",
+      "href": "/stays#source-map"
+    },
+    {
+      "label": "Casa Cabane",
+      "href": "/stays/casa-cabane"
+    }
   ],
   "casaCabane": [
-    { "label": "All stays", "href": "/" },
-    { "label": "Ask Amigo", "href": "#amigo-casa-plan" },
-    { "label": "Details", "href": "#details" }
+    {
+      "label": "All stays",
+      "href": "/"
+    },
+    {
+      "label": "Ask Amigo",
+      "href": "#amigo-casa-plan"
+    },
+    {
+      "label": "Details",
+      "href": "#details"
+    }
   ]
 }

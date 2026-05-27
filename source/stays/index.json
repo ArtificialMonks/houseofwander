@@ -5,9 +5,9 @@
       "name": "Casa Cabane",
       "location": "Stekene",
       "status": "Flagship prototype",
-      "sourceStatus": "Airbnb public + owner-approved local media",
-      "meta": "4.93 · 94 reviews · 7 guests",
-      "description": "The first complete guided stay: real walkthrough footage, chapter controls, Airbnb-informed details, and a clear path into the atmosphere.",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local owner-approved Casa Cabane media",
+      "meta": "4.93 · 94 reviews · 7 maximum",
+      "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
       "href": "/stays/casa-cabane",
       "image": "/media/casa-cabane-poster.jpg",
       "styleVariant": "Editorial Warm"
@@ -16,10 +16,10 @@
       "slug": "casa-fabiola",
       "name": "Casa Fabiola",
       "location": "Ghent",
-      "status": "Briefing story ready",
-      "sourceStatus": "Airbnb URL and photos needed",
-      "meta": "City apartment · family heritage",
-      "description": "A Ghent stay shaped around family, heritage, and the feeling of coming home.",
+      "status": "Public Airbnb facts integrated",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+      "meta": "4.96 · 155 reviews · 5 maximum",
+      "description": "Casa Fabiola is the Ghent city stay in the collection: a private upper-floor apartment in the family townhouse, rooted in family, heritage, comfort, and a very practical station-side location.",
       "href": "/stays/casa-fabiola",
       "styleVariant": "Editorial Warm"
     },
@@ -27,10 +27,10 @@
       "slug": "louise-marie",
       "name": "Louise Marie",
       "location": "Ostend",
-      "status": "Briefing story ready",
-      "sourceStatus": "Airbnb URL and photos needed",
-      "meta": "Coastal apartment · romantic origin",
-      "description": "The Ostend seaside apartment inspired by the promise Laurens made to Maaike early in their relationship.",
+      "status": "Public Airbnb facts integrated",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+      "meta": "4.97 · 39 reviews · 4 maximum",
+      "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by a promise from Laurens to Maaike and now backed by public Airbnb facts.",
       "href": "/stays/louise-marie",
       "styleVariant": "Coastal Light"
     },
@@ -38,10 +38,10 @@
       "slug": "thelma-louise",
       "name": "Thelma & Louise",
       "location": "Blankenberge",
-      "status": "Briefing story ready",
-      "sourceStatus": "Airbnb URL and photos needed",
-      "meta": "Shared venture · coastal friendship",
-      "description": "A Blankenberge stay carrying the story of friendship, shared ambition, and doing something together.",
+      "status": "Public Airbnb facts mapped",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; internal Thelma & Louise naming still needs host confirmation",
+      "meta": "4.63 · 19 reviews · 4 maximum",
+      "description": "Thelma & Louise is mapped to the Stefanie-hosted Blankenberge apartment from Laurens’ account links. The public Airbnb facts are integrated, while the internal brand-name match should still be confirmed by the team.",
       "href": "/stays/thelma-louise",
       "styleVariant": "Coastal Light"
     },
@@ -49,10 +49,10 @@
       "slug": "heritage-collection",
       "name": "Heritage Collection",
       "location": "Ostend",
-      "status": "Briefing story ready",
-      "sourceStatus": "Five apartment records needed",
-      "meta": "5 apartments · family legacy",
-      "description": "A family apartment cluster that should later split into five individual stay records.",
+      "status": "Parent concept pending listing map",
+      "sourceStatus": "Briefing concept only; five children/apartment names and Airbnb URLs still needed",
+      "meta": "Brief · 5 reviews · 5 apartments",
+      "description": "The Heritage Collection is described as five family apartments in Ostend, developed with a cherished family friend and named with a sense of children, tribute, and legacy.",
       "href": "/stays/heritage-collection",
       "styleVariant": "Editorial Warm"
     },
@@ -60,21 +60,32 @@
       "slug": "the-love-nest",
       "name": "The Love Nest",
       "location": "Ostend",
-      "status": "Public Airbnb facts found",
-      "sourceStatus": "Airbnb public; photos need approval",
-      "meta": "4.95 · 113 reviews · 2 guests",
-      "description": "A cosy Ostend penthouse for two, with terraces, outdoor bathing, beach access, and Airbnb booking handoff.",
+      "status": "Public Airbnb facts integrated",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
+      "meta": "4.95 · 115 reviews · 2 maximum",
+      "description": "The Love Nest is the clearest co-hosted addition in the public listings: a cosy Ostend penthouse for two, close to the beach, with terraces, outdoor pool/shower, and Laurens listed as co-host.",
       "href": "/stays/the-love-nest",
       "styleVariant": "Boutique Night"
+    },
+    {
+      "slug": "ghent-group-house",
+      "name": "Ghent Group House",
+      "location": "Ghent",
+      "status": "Public Airbnb facts integrated",
+      "sourceStatus": "Public Airbnb facts checked May 27, 2026; collection role needs host confirmation",
+      "meta": "5.0 · 20 reviews · 10 maximum",
+      "description": "This public Airbnb listing is co-hosted by Laurens and adds a strong group-stay option to the House of Wander data model. Its final House of Wander brand role still needs confirmation.",
+      "href": "/stays/ghent-group-house",
+      "styleVariant": "Editorial Warm"
     }
   ],
   "productionLanes": [
-    "Casa Cabane remains the first proof-of-feel and highest-fidelity stay.",
-    "Every stay now has a route, structured source record, gallery slot, facts, and Amigo prompts.",
-    "Airbnb-level decision detail is integrated only where public or briefing sources support it.",
-    "Photo reuse stays safe: local owner-approved Casa Cabane media is used, other Airbnb photos need team approval.",
-    "Amigo starts as a source-aware scripted guide before live AI, booking, or host operations are connected.",
-    "Direct booking remains a future phase after availability, payments, rules, and support are real."
+    "Casa Cabane remains the flagship proof-of-feel and keeps local approved media plus the guided walkthrough.",
+    "All provided public Airbnb URLs now map into structured stay records, including Casa Fabiola, Louise Marie, Thelma & Louise, The Love Nest, and the Ghent Group House.",
+    "Heritage Collection remains a parent concept until the five apartment names and URLs are confirmed.",
+    "Airbnb photo URLs are catalogued as reference-only; the public site still uses local media or placeholders until owner approval.",
+    "Amigo remains a source-aware scripted guide with boundaries around live price, availability, payment, Airbnb messaging, and direct booking.",
+    "Private Airbnb conversation ingestion is documented as a GDPR/channel-manager future path, not executed through risky logged-in scraping."
   ],
   "amigoSystem": [
     {
@@ -83,11 +94,11 @@
     },
     {
       "title": "Source labels",
-      "text": "Amigo distinguishes confirmed facts, public Airbnb data, prototype copy, and missing host confirmations."
+      "text": "Amigo distinguishes public Airbnb data, briefing notes, prototype copy, owner-approved media, and host confirmations still needed."
     },
     {
       "title": "Host cockpit later",
-      "text": "Later, Maaike & Laurens can use Amigo to centralize questions, Airbnb messages, direct inquiries, rules, and stay updates."
+      "text": "Later, Maaike, Laudi, and Laurens can use Amigo and Toon to organize questions, Airbnb messages, direct inquiries, rules, and stay updates."
     }
   ],
   "styleVariants": [
@@ -109,18 +120,18 @@
   ],
   "amigoPrompts": [
     {
-      "label": "Which stay should I open first?",
-      "sourceLabel": "Collection guide",
-      "answer": "Start with Casa Cabane if you want the complete prototype: real video, guided walkthrough, Airbnb-informed detail, and a working Amigo layer. Open The Love Nest next to see how public Airbnb facts can become a stay page without copying photos.",
-      "actionLabel": "Open Casa Cabane",
-      "actionHref": "/stays/casa-cabane"
-    },
-    {
-      "label": "Which stays are ready?",
+      "label": "Which stays are ready now?",
       "sourceLabel": "Source labels",
-      "answer": "Casa Cabane is the flagship. The Love Nest has public Airbnb facts but still needs approved photos and host confirmation. Casa Fabiola, Louise Marie, Thelma & Louise, and Heritage Collection have briefing stories but need Airbnb URLs, facts, and approved media.",
+      "answer": "Casa Cabane, Casa Fabiola, Louise Marie, Thelma & Louise, The Love Nest, and the Ghent Group House now have structured public Airbnb facts. Heritage Collection still needs the five unit names and URLs.",
       "actionLabel": "View all stays",
       "actionHref": "/stays"
+    },
+    {
+      "label": "Can you use Airbnb photos?",
+      "sourceLabel": "Safety guardrail",
+      "answer": "Not on the site yet. Airbnb-hosted image URLs are catalogued as references only. Owner-approved exports are needed before House of Wander displays them.",
+      "actionLabel": "Open Casa Cabane",
+      "actionHref": "/stays/casa-cabane"
     },
     {
       "label": "How does booking work now?",
@@ -130,9 +141,9 @@
       "actionHref": "/stays/casa-cabane#details"
     },
     {
-      "label": "What changes later?",
+      "label": "What about Amigo and Toon?",
       "sourceLabel": "Future platform",
-      "answer": "Later, Amigo can connect the collection, guest questions, host operations, Airbnb messages, and direct booking. That backend is planned, not active yet.",
+      "answer": "Amigo is the guest-facing guide now. Toon and private Airbnb conversation training need a safe GDPR export or channel-manager path first, not risky logged-in scraping.",
       "actionLabel": "See project shape",
       "actionHref": "/#system"
     }

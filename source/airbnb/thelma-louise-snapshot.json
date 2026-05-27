@@ -1,0 +1,53 @@
+{
+  "checked": "Public Airbnb page · May 27, 2026",
+  "url": "https://www.airbnb.co.uk/rooms/52296316",
+  "title": "Cosy apartment 150m from the beach",
+  "listingId": "52296316",
+  "listingType": "Entire apartment in Blankenberge, Belgium",
+  "rating": "4.63",
+  "reviews": "19",
+  "status": "Public Airbnb listing mapped to Thelma & Louise pending host confirmation",
+  "host": "Stefanie",
+  "coHosts": [
+    "Jan",
+    "Laurens"
+  ],
+  "quickFacts": [
+    {
+      "label": "Guests",
+      "value": "4 maximum",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bedrooms",
+      "value": "2",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Beds",
+      "value": "3",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bathroom",
+      "value": "Toilet and sink; showers in bedrooms",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Floor",
+      "value": "3rd, no lift",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Pets",
+      "value": "Allowed",
+      "source": "airbnb-public"
+    }
+  ],
+  "guardrails": [
+    "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "The source URL came from Laurens’ account listing list, but the internal Thelma & Louise brand name should still be confirmed by Maaike, Laudi, or Laurens.",
+    "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
+  ]
+}

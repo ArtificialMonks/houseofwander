@@ -1,0 +1,305 @@
+{
+  "slug": "ghent-group-house",
+  "name": "Ghent Group House",
+  "location": "Ghent",
+  "region": "Group city house",
+  "status": "Public Airbnb facts integrated",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026; collection role needs host confirmation",
+  "title": "A modern Ghent house for groups of up to ten.",
+  "tagline": "A spacious station-side house with garden, terrace, BBQ, and a perfect public review score.",
+  "description": "This public Airbnb listing is co-hosted by Laurens and adds a strong group-stay option to the House of Wander data model. Its final House of Wander brand role still needs confirmation.",
+  "airbnbUrl": "https://www.airbnb.co.uk/rooms/1559436233376573149",
+  "publicListingTitle": "Well located, modern spacious house for 10 people.",
+  "listingId": "1559436233376573149",
+  "canonicalUrl": "https://www.airbnb.co.uk/rooms/1559436233376573149",
+  "styleVariant": "editorial-warm",
+  "media": [
+    {
+      "type": "placeholder",
+      "caption": "Owner-approved group house hero photo needed",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Garden and terrace gallery slot",
+      "source": "needs-confirmation"
+    },
+    {
+      "type": "placeholder",
+      "caption": "Bedrooms and group dining slot",
+      "source": "needs-confirmation"
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Airbnb canonical",
+      "href": "https://www.airbnb.co.uk/rooms/1559436233376573149",
+      "note": "Canonical listing ID 1559436233376573149",
+      "source": "airbnb-public"
+    }
+  ],
+  "sourceAudit": [
+    {
+      "label": "Public title",
+      "value": "Well located, modern spacious house for 10 people.",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Listing ID",
+      "value": "1559436233376573149",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Collection role",
+      "value": "Needs host confirmation",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Photos on site",
+      "value": "Approval needed",
+      "source": "needs-confirmation"
+    }
+  ],
+  "quickFacts": [
+    {
+      "label": "Guests",
+      "value": "10 maximum",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bedrooms",
+      "value": "3",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Beds",
+      "value": "5",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bathroom",
+      "value": "1",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "After 16:00",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Checkout",
+      "value": "Before 11:00",
+      "source": "airbnb-public"
+    }
+  ],
+  "trustSignals": [
+    {
+      "label": "Rating",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Reviews",
+      "value": "20",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Host",
+      "value": "Veronique",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Co-host",
+      "value": "Laurens",
+      "source": "airbnb-public"
+    }
+  ],
+  "listingHighlights": [
+    {
+      "label": "Top 5%",
+      "value": "Airbnb marks this home as top 5% based on ratings, reviews, and reliability.",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Group fit",
+      "value": "The public listing positions it for groups of friends or large families, with space for up to 10 people.",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Quiet station-side location",
+      "value": "The page describes a quiet street near Gent-Sint-Pieters, with train, tram, bus, taxi, shops, bars, restaurants, and supermarkets nearby.",
+      "source": "airbnb-public"
+    }
+  ],
+  "stayStory": [
+    {
+      "title": "The stay",
+      "text": "A modern spacious house with terrace, BBQ, and garden, designed for larger families or groups of friends.",
+      "source": "airbnb-public"
+    },
+    {
+      "title": "The connection",
+      "text": "The listing is hosted by Veronique with Laurens as co-host, which makes it relevant to the House of Wander ecosystem but not yet fully branded.",
+      "source": "airbnb-public"
+    },
+    {
+      "title": "The guest fit",
+      "text": "This fills a different need than Casa Fabiola: bigger groups, more social space, and a full house rather than an apartment.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "The handoff",
+      "text": "Booking remains on Airbnb while the team decides whether this stay joins the public House of Wander collection.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amenityGroups": [
+    {
+      "title": "Core comforts",
+      "source": "airbnb-public",
+      "items": [
+        "Kitchen",
+        "Wifi",
+        "Dedicated workspace",
+        "TV",
+        "Free washer in unit"
+      ]
+    },
+    {
+      "title": "Group life",
+      "source": "airbnb-public",
+      "items": [
+        "Terrace",
+        "Garden",
+        "BBQ",
+        "Sleeping space for up to 10",
+        "Quiet street"
+      ]
+    },
+    {
+      "title": "Arrival and rules",
+      "source": "airbnb-public",
+      "items": [
+        "Self check-in with lockbox",
+        "Check-in after 16:00",
+        "Checkout before 11:00",
+        "CO alarm",
+        "Smoke alarm"
+      ]
+    },
+    {
+      "title": "Needs approval",
+      "source": "needs-confirmation",
+      "items": [
+        "Collection naming",
+        "Photo reuse",
+        "Host-approved story angle",
+        "Direct booking fit"
+      ]
+    }
+  ],
+  "reviewScores": [
+    {
+      "label": "Cleanliness",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Accuracy",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Communication",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Location",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Value",
+      "value": "5.0",
+      "source": "airbnb-public"
+    }
+  ],
+  "reviewMentions": [
+    "Hospitality",
+    "Amenities",
+    "Decor",
+    "Location",
+    "Condition",
+    "Parking",
+    "Cleanliness",
+    "Bathroom",
+    "Getting around",
+    "Kitchen"
+  ],
+  "bookingSteps": [
+    "Use Airbnb to confirm live dates, price, cancellation policy, and final availability.",
+    "Select the correct guest count, with 10 guests maximum as the current public maximum.",
+    "Keep payment and guest-host messaging inside Airbnb until a direct booking layer is approved.",
+    "Use House of Wander for story, comparison, guidance, and source-labelled decision support."
+  ],
+  "houseNotes": [
+    "Check-in after 16:00.",
+    "Checkout before 11:00.",
+    "Maximum 10 guests.",
+    "Carbon monoxide alarm and smoke alarm listed.",
+    "Collection role and final House of Wander name still need confirmation."
+  ],
+  "locationNote": "The listing is in Ghent near Gent-Sint-Pieters station, with many transport connections and city amenities within walking distance.",
+  "sourceNotes": [
+    "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "This listing was provided in Laurens’ account URL list, but its final public House of Wander collection name should be confirmed.",
+    "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
+  ],
+  "amigoStayPlan": [
+    {
+      "title": "Fit guide",
+      "text": "Amigo can position this as the large-group Ghent option and compare it against Casa Fabiola.",
+      "source": "prototype-copy"
+    },
+    {
+      "title": "Source guardrail",
+      "text": "Amigo should say the public listing is verified but the House of Wander brand role needs confirmation.",
+      "source": "needs-confirmation"
+    },
+    {
+      "title": "Booking guardrail",
+      "text": "Amigo keeps live price, availability, cancellation, and payment on Airbnb.",
+      "source": "prototype-copy"
+    }
+  ],
+  "amigoPrompts": [
+    {
+      "label": "Is this in the collection?",
+      "sourceLabel": "Needs host confirmation",
+      "answer": "This Airbnb listing is in Laurens’ account links and is co-hosted by Laurens, but the final House of Wander brand role still needs confirmation. The public listing facts are integrated safely.",
+      "actionLabel": "Review details",
+      "actionHref": "#details"
+    },
+    {
+      "label": "Who is it for?",
+      "sourceLabel": "Airbnb public",
+      "answer": "It is the larger Ghent option: up to 10 guests, 3 bedrooms, 5 beds, terrace, garden, BBQ, and strong public review proof.",
+      "actionLabel": "Open Airbnb",
+      "actionHref": "https://www.airbnb.co.uk/rooms/1559436233376573149"
+    },
+    {
+      "label": "How do I book?",
+      "sourceLabel": "Airbnb handoff",
+      "answer": "Use Airbnb for live dates, price, cancellation, payment, and host messaging. House of Wander is the guided information layer for now.",
+      "actionLabel": "Check dates on Airbnb",
+      "actionHref": "https://www.airbnb.co.uk/rooms/1559436233376573149"
+    }
+  ]
+}

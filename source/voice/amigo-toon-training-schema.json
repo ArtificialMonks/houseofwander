@@ -1,0 +1,89 @@
+{
+  "status": "future-safe-schema",
+  "created": "2026-05-27",
+  "purpose": "Define how exported Airbnb/message data can later train Amigo and Toon without putting private conversations in Git.",
+  "storageBoundary": {
+    "git": "Only schemas, labels, redacted examples, and safety rules.",
+    "privateStorage": "Raw exports, transcripts, guest PII, booking IDs, and message history.",
+    "allowedInPublicRepo": false
+  },
+  "agents": {
+    "amigo": {
+      "role": "guest-facing sales and concierge guide",
+      "initialMode": "drafts and guided answers only",
+      "trainedOn": [
+        "pre-booking inquiries",
+        "stay-fit questions",
+        "neighbourhood questions",
+        "5-star guest journeys",
+        "approved listing facts"
+      ]
+    },
+    "toon": {
+      "role": "operations and service assistant",
+      "initialMode": "drafts for host approval",
+      "trainedOn": [
+        "check-in instructions",
+        "cleaning issues",
+        "lost items",
+        "maintenance reports",
+        "refund or complaint escalations"
+      ]
+    }
+  },
+  "threadSchema": {
+    "threadId": "string",
+    "listingSlug": "string",
+    "bookingStatus": "inquiry | confirmed | declined | cancelled | post-stay",
+    "guest": {
+      "firstName": "string",
+      "country": "string",
+      "language": "nl | fr | en | de | es | other",
+      "partySize": "number",
+      "pets": "boolean",
+      "tripPurpose": "string"
+    },
+    "turns": [
+      {
+        "sender": "guest | host | cohost",
+        "timestamp": "ISO-8601",
+        "text": "private-storage-only",
+        "intent": "availability | price | check-in | amenities | complaint | refund | local-tip | post-stay | other",
+        "tone": {
+          "warmth": "0-1",
+          "formality": "0-1",
+          "brevity": "0-1",
+          "humour": "0-1"
+        },
+        "tacticsUsed": [
+          "warm_open",
+          "mirror_language",
+          "empathy_first",
+          "anchor_value",
+          "soft_close",
+          "clear_boundary",
+          "escalate_to_host"
+        ]
+      }
+    ],
+    "outcome": {
+      "booked": "boolean",
+      "guestReviewRating": "number | null",
+      "escalated": "boolean",
+      "resolutionSummary": "string"
+    }
+  },
+  "recommendedIngestionRoutes": [
+    "Airbnb GDPR data export requested by account owner",
+    "Channel manager with authorized API access such as Hospitable, Smoobu, Hostaway, or equivalent",
+    "Browser automation only after explicit approval, with no sending/editing actions and secrets stored outside Git"
+  ],
+  "forbiddenActions": [
+    "Do not scrape private Airbnb inbox pages without explicit owner approval.",
+    "Do not store Airbnb cookies, tokens, passwords, or raw private conversations in this repo.",
+    "Do not send guest messages automatically.",
+    "Do not change listings, pricing, calendar, house rules, availability, or cancellation settings.",
+    "Do not promise refunds, discounts, direct payment, late checkout, or exceptions without host approval.",
+    "Do not reveal exact address before booking confirmation."
+  ]
+}

@@ -42,6 +42,13 @@ export type StayMedia = {
   source: string;
 };
 
+export type ExternalLink = {
+  label: string;
+  href: string;
+  note: string;
+  source?: string;
+};
+
 export type StaySource = {
   slug: string;
   name: string;
@@ -52,12 +59,18 @@ export type StaySource = {
   title?: string;
   tagline: string;
   description: string;
+  publicListingTitle?: string;
+  listingId?: string;
+  vanityUrl?: string;
+  canonicalUrl?: string;
   airbnbUrl?: string;
   videoSrc?: string;
   posterSrc?: string;
   runtimeSeconds?: number;
   chapters?: Chapter[];
   media: StayMedia[];
+  sourceAudit?: DetailItem[];
+  externalLinks?: ExternalLink[];
   quickFacts: DetailItem[];
   trustSignals: DetailItem[];
   listingHighlights: DetailItem[];
@@ -444,6 +457,49 @@ export function StayExperience({ stay }: StayExperienceProps) {
             </div>
           ))}
         </div>
+
+        {(stay.sourceAudit?.length || stay.externalLinks?.length) ? (
+          <section className="sourceMap" aria-label={`${stay.name} source map`}>
+            <div className="sourceMapIntro">
+              <p className="sectionKicker">Source map</p>
+              <h2>Public listing facts, safely separated from owner approvals.</h2>
+              <p>
+                Airbnb details are used as decision support. Photos, direct
+                booking, private conversations, live price, and live
+                availability stay out of the public site until approved.
+              </p>
+            </div>
+
+            {stay.sourceAudit?.length ? (
+              <div className="sourceAuditGrid">
+                {stay.sourceAudit.map((item) => (
+                  <div key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                    <small>{sourceLabel(item.source)}</small>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {stay.externalLinks?.length ? (
+              <div className="externalLinkGrid">
+                {stay.externalLinks.map((item) => (
+                  <a
+                    key={`${item.label}-${item.href}`}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>{item.label}</span>
+                    <strong>{item.note}</strong>
+                    <small>{sourceLabel(item.source)}</small>
+                  </a>
+                ))}
+              </div>
+            ) : null}
+          </section>
+        ) : null}
 
         <div className="detailGrid">
           <article className="detailPanel primaryDetail">

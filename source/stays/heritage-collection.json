@@ -3,8 +3,8 @@
   "name": "Heritage Collection",
   "location": "Ostend",
   "region": "Family apartments",
-  "status": "Briefing story ready",
-  "sourceStatus": "Briefing document source; individual apartment Airbnb URLs and photos needed",
+  "status": "Parent concept pending listing map",
+  "sourceStatus": "Briefing concept only; five children/apartment names and Airbnb URLs still needed",
   "title": "Five family apartments carrying legacy into the collection.",
   "tagline": "A small Ostend family collection inside the larger House of Wander world.",
   "description": "The Heritage Collection is described as five family apartments in Ostend, developed with a cherished family friend and named with a sense of children, tribute, and legacy.",
@@ -27,18 +27,58 @@
     }
   ],
   "quickFacts": [
-    { "label": "Stays", "value": "5 apartments", "source": "briefing-doc" },
-    { "label": "City", "value": "Ostend", "source": "briefing-doc" },
-    { "label": "Guests", "value": "Per apartment", "source": "needs-confirmation" },
-    { "label": "Bedrooms", "value": "Per apartment", "source": "needs-confirmation" },
-    { "label": "Bathrooms", "value": "Per apartment", "source": "needs-confirmation" },
-    { "label": "Booking", "value": "To map", "source": "needs-confirmation" }
+    {
+      "label": "Stays",
+      "value": "5 apartments",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "City",
+      "value": "Ostend",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Guests",
+      "value": "Per apartment",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Bedrooms",
+      "value": "Per apartment",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Bathrooms",
+      "value": "Per apartment",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Booking",
+      "value": "To map",
+      "source": "needs-confirmation"
+    }
   ],
   "trustSignals": [
-    { "label": "Source", "value": "Brief", "source": "briefing-doc" },
-    { "label": "Units", "value": "5", "source": "briefing-doc" },
-    { "label": "Airbnb", "value": "Needed", "source": "needs-confirmation" },
-    { "label": "Photos", "value": "Needed", "source": "needs-confirmation" }
+    {
+      "label": "Source",
+      "value": "Brief",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Units",
+      "value": "5",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Airbnb",
+      "value": "Needed",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Photos",
+      "value": "Needed",
+      "source": "needs-confirmation"
+    }
   ],
   "listingHighlights": [
     {
@@ -83,25 +123,51 @@
     {
       "title": "Confirmed now",
       "source": "briefing-doc",
-      "items": ["Five apartments", "Ostend", "Family friend partnership", "Children, tribute, and legacy story"]
+      "items": [
+        "Five apartments",
+        "Ostend",
+        "Family friend partnership",
+        "Children, tribute, and legacy story"
+      ]
     },
     {
       "title": "Needs mapping",
       "source": "needs-confirmation",
-      "items": ["Apartment names", "Individual Airbnb URLs", "Capacities", "Room setups", "Amenities"]
+      "items": [
+        "Apartment names",
+        "Individual Airbnb URLs",
+        "Capacities",
+        "Room setups",
+        "Amenities"
+      ]
     },
     {
       "title": "Media needed",
       "source": "needs-confirmation",
-      "items": ["Collection hero", "One gallery per apartment", "Neighborhood photos", "Interior details"]
+      "items": [
+        "Collection hero",
+        "One gallery per apartment",
+        "Neighborhood photos",
+        "Interior details"
+      ]
     },
     {
       "title": "Amigo can guide",
       "source": "prototype-copy",
-      "items": ["Help users choose the right apartment", "Explain differences", "Route to the right booking link"]
+      "items": [
+        "Help users choose the right apartment",
+        "Explain differences",
+        "Route to the right booking link"
+      ]
     }
   ],
-  "reviewMentions": ["Family", "Legacy", "Ostend", "Five apartments", "Content needed"],
+  "reviewMentions": [
+    "Family",
+    "Legacy",
+    "Ostend",
+    "Five apartments",
+    "Content needed"
+  ],
   "bookingSteps": [
     "Confirm all five apartment names and Airbnb URLs.",
     "Create one data record per apartment when facts are available.",
@@ -116,9 +182,10 @@
   ],
   "locationNote": "The Heritage Collection sits in Ostend. Exact apartment locations, access notes, and per-unit differences still need mapping.",
   "sourceNotes": [
-    "The briefing document confirms the concept and story.",
-    "This should likely become a parent collection page plus child apartment records later.",
-    "No Airbnb-hosted photos were copied."
+    "The public URL list does not yet identify the five Heritage Collection apartments.",
+    "The five children/apartment names are still needed before /stays/heritage/[name] routes can be built correctly.",
+    "No Airbnb-hosted photos were copied or displayed.",
+    "This remains a parent concept page until the listing map exists."
   ],
   "amigoStayPlan": [
     {
@@ -159,5 +226,28 @@
       "actionLabel": "See source notes",
       "actionHref": "#details"
     }
-  ]
+  ],
+  "sourceAudit": [
+    {
+      "label": "Concept",
+      "value": "5 Ostend apartments",
+      "source": "briefing-doc"
+    },
+    {
+      "label": "Listing map",
+      "value": "Not found in provided URLs",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Children names",
+      "value": "Needed",
+      "source": "needs-confirmation"
+    },
+    {
+      "label": "Photos on site",
+      "value": "Approval needed",
+      "source": "needs-confirmation"
+    }
+  ],
+  "externalLinks": []
 }

@@ -1,78 +1,23 @@
 {
-  "checked": "Public Airbnb snapshot · May 25, 2026",
-  "title": "Stylish lakehouse, green nature",
+  "checked": "Public Airbnb page · May 27, 2026",
+  "url": "https://www.airbnb.be/rooms/962896812968290131",
+  "vanityUrl": "https://www.airbnb.be/h/casacabane",
+  "title": "Stijlvol huis aan het meer, groene natuur / Stylish lakehouse, green nature",
+  "listingId": "962896812968290131",
   "listingType": "Entire home in Stekene, Belgium",
   "rating": "4.93",
-  "reviews": "94 reviews",
+  "reviews": "94",
   "status": "Guest favourite",
   "host": "Laurens",
-  "hostScore": "4.95 average host rating",
+  "coHosts": [
+    "Thomas",
+    "Maaike"
+  ],
   "response": "100% response rate · responds within an hour",
-  "coHosts": "Thomas · Maaike",
-  "note": "Public Airbnb data has been shaped into House of Wander copy. Final publication should still be confirmed by the hosts.",
-  "quickFacts": [
-    { "label": "Guests", "value": "7 maximum" },
-    { "label": "Bedrooms", "value": "2" },
-    { "label": "Beds", "value": "5" },
-    { "label": "Bathroom", "value": "1" },
-    { "label": "Check-in", "value": "After 16:00" },
-    { "label": "Checkout", "value": "Before 11:00" }
-  ],
-  "listingHighlights": [
-    {
-      "label": "Check-in",
-      "value": "Guests consistently rate arrival at 5.0, making the start of the stay a strong trust signal."
-    },
-    {
-      "label": "Setting",
-      "value": "A scenic lakeside position in Stekene, between Antwerp and Ghent."
-    },
-    {
-      "label": "Parking",
-      "value": "Free parking is available on the premises."
-    }
-  ],
-  "amenityGroups": [
-    {
-      "title": "Core comforts",
-      "items": ["Waterfront", "Kitchen", "Wifi", "Dedicated workspace", "Free parking"]
-    },
-    {
-      "title": "Arrival basics",
-      "items": ["Coffee and tea starter set", "Olive oil, salt and pepper", "Dish soap and dishwasher tablets", "Kitchen towel and cleaning basics"]
-    },
-    {
-      "title": "Bathroom basics",
-      "items": ["Shampoo", "Shower gel", "Hand soap", "Toilet paper"]
-    },
-    {
-      "title": "Outdoor life",
-      "items": ["Lake garden", "Outdoor dining tables", "BBQ", "Tripod with fire bowl", "Tank tub", "Children's playhouse"]
-    }
-  ],
-  "reviewScores": [
-    { "label": "Cleanliness", "value": "4.7" },
-    { "label": "Accuracy", "value": "4.9" },
-    { "label": "Check-in", "value": "5.0" },
-    { "label": "Communication", "value": "5.0" },
-    { "label": "Location", "value": "4.9" },
-    { "label": "Value", "value": "4.9" }
-  ],
-  "reviewMentions": [
-    "Location",
-    "Hospitality",
-    "Decor",
-    "Outdoor spaces",
-    "Cleanliness",
-    "Accuracy",
-    "Amenities",
-    "Kitchen",
-    "Indoor spaces"
-  ],
-  "bookingSteps": [
-    "Choose dates on Airbnb to confirm live price and availability.",
-    "Select guest count, with 7 guests as the listed maximum.",
-    "Review house rules, cancellation policy, safety notes, and final payment on Airbnb.",
-    "Keep payment and guest-host messaging inside Airbnb until a direct booking path is approved."
+  "guardrails": [
+    "Casa Cabane uses local owner-approved poster and walkthrough media already in the project.",
+    "Public Airbnb facts were checked again on May 27, 2026 without logging into the host account.",
+    "Airbnb-hosted photo URLs are catalogued in the source references only; they are not downloaded or displayed.",
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ]
 }

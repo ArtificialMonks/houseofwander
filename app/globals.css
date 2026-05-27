@@ -2081,6 +2081,75 @@ h2 {
   text-transform: uppercase;
 }
 
+.sourceMap {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(280px, 1.1fr);
+  gap: clamp(18px, 3vw, 34px);
+  padding: clamp(24px, 3vw, 36px);
+  border: 1px solid rgba(11, 15, 10, 0.12);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 252, 244, 0.92), rgba(230, 220, 201, 0.64));
+}
+
+.sourceMapIntro {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.sourceMapIntro p:not(.sectionKicker) {
+  margin: 0;
+  color: rgba(11, 15, 10, 0.66);
+  line-height: 1.58;
+}
+
+.sourceAuditGrid,
+.externalLinkGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sourceAuditGrid div,
+.externalLinkGrid a {
+  min-height: 112px;
+  display: grid;
+  align-content: space-between;
+  gap: 10px;
+  border: 1px solid rgba(11, 15, 10, 0.1);
+  border-radius: 8px;
+  padding: 14px;
+  background: rgba(255, 252, 244, 0.72);
+  color: var(--ink);
+}
+
+.externalLinkGrid {
+  grid-column: 2;
+}
+
+.externalLinkGrid a {
+  text-decoration: none;
+}
+
+.sourceAuditGrid span,
+.externalLinkGrid span,
+.sourceAuditGrid small,
+.externalLinkGrid small {
+  color: rgba(11, 15, 10, 0.52);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sourceAuditGrid strong,
+.externalLinkGrid strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
 .sourceNotes {
   display: grid;
   gap: 16px;
@@ -2196,6 +2265,16 @@ h2 {
 
   .mediaRail {
     grid-template-columns: 1fr;
+  }
+
+  .sourceMap,
+  .sourceAuditGrid,
+  .externalLinkGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .externalLinkGrid {
+    grid-column: auto;
   }
 
   .mediaTile {

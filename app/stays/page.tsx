@@ -77,7 +77,11 @@ export default function StaysPage() {
         </div>
       </section>
 
-      <section className="collectionSystemBand" aria-label="Collection readiness">
+      <section
+        id="source-map"
+        className="collectionSystemBand"
+        aria-label="Collection readiness"
+      >
         <div>
           <p className="sectionKicker">Team readiness</p>
           <h2>What this ecosystem now knows and what it still needs.</h2>
@@ -86,22 +90,22 @@ export default function StaysPage() {
           <article>
             <span>Ready</span>
             <p>
-              Routes, reusable stay pages, Casa Cabane media, style variations,
-              source labels, and Amigo prompts.
+              Routes, reusable stay pages, Casa Cabane media, Airbnb-informed
+              facts, style variations, source labels, and Amigo prompts.
             </p>
           </article>
           <article>
-            <span>Needs assets</span>
+            <span>Needs photos</span>
             <p>
-              Owner-approved photo sets for every non-Casa stay before using
-              Airbnb-style galleries with real images.
+              Airbnb photo URLs are catalogued as reference-only. Owner-approved
+              exports are needed before displaying them in House of Wander.
             </p>
           </article>
           <article>
-            <span>Needs facts</span>
+            <span>Needs approval</span>
             <p>
-              Airbnb URLs, capacities, amenities, rules, safety notes, reviews,
-              and final host approvals for the briefing-only stays.
+              Heritage apartment names, final collection naming, direct-booking
+              rules, and any private conversation training path.
             </p>
           </article>
         </div>

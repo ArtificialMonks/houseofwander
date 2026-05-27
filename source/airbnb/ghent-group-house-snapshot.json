@@ -1,37 +1,35 @@
 {
   "checked": "Public Airbnb page · May 27, 2026",
-  "url": "https://www.airbnb.com/rooms/1025111265786397251",
-  "title": "Love Nest - Your cosy penthouse",
-  "listingId": "1025111265786397251",
-  "listingType": "Entire rental unit in Ostend, Belgium",
-  "rating": "4.95",
-  "reviews": "115",
-  "status": "Guest favourite",
-  "host": "Lisa",
+  "url": "https://www.airbnb.co.uk/rooms/1559436233376573149",
+  "title": "Well located, modern spacious house for 10 people.",
+  "listingId": "1559436233376573149",
+  "listingType": "Entire home in Ghent, Belgium",
+  "rating": "5.0",
+  "reviews": "20",
+  "status": "Guest favourite · Top 5%",
+  "host": "Veronique",
   "coHosts": [
-    "Caroline",
     "Laurens"
   ],
-  "response": "100% response rate · responds within an hour",
   "quickFacts": [
     {
       "label": "Guests",
-      "value": "2 maximum",
+      "value": "10 maximum",
       "source": "airbnb-public"
     },
     {
-      "label": "Bedroom",
+      "label": "Bedrooms",
+      "value": "3",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Beds",
+      "value": "5",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bathroom",
       "value": "1",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Bed",
-      "value": "1 king bed",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Baths",
-      "value": "1.5",
       "source": "airbnb-public"
     },
     {
@@ -47,8 +45,8 @@
   ],
   "guardrails": [
     "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "This listing was provided in Laurens’ account URL list, but its final public House of Wander collection name should be confirmed.",
     "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Cross-platform links from Booking.com and BedandBreakfast.eu are retained as references, not live parity claims.",
     "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ]
 }

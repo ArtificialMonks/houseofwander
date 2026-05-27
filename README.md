@@ -14,7 +14,12 @@ Open `http://localhost:3000`.
 - `/` - House of Wander brand gateway with the 3D object.
 - `/stays` - Full collection landing page.
 - `/stays/casa-cabane` - Casa Cabane guided walkthrough prototype.
-- `/stays/the-love-nest` - Public Airbnb-fact prototype page with safe photo placeholders.
+- `/stays/casa-fabiola` - Ghent apartment page with public Airbnb facts.
+- `/stays/louise-marie` - Ostend apartment page with public Airbnb facts.
+- `/stays/thelma-louise` - Blankenberge Airbnb listing mapped provisionally to Thelma & Louise.
+- `/stays/the-love-nest` - Public Airbnb-fact page with safe photo placeholders.
+- `/stays/ghent-group-house` - Ghent 10-person house from Laurens' public listing set.
+- `/stays/heritage-collection` - Parent concept until the five apartment URLs are confirmed.
 - `/style-lab` - Three house-style variations for the team to compare.
 - `/casa-cabane` - Compatibility redirect to `/stays/casa-cabane`.
 
@@ -38,6 +43,11 @@ npm start -- -p 3000
   snapshot data so future stays do not have to start as hard-coded page copy.
 - Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
   agent or backend. It now labels source boundaries and missing confirmations.
+- Airbnb-hosted photo URLs are stored as reference-only in
+  `source/airbnb/photo-references.json`; the site does not display or download
+  them until owner-approved exports exist.
+- Private Airbnb conversations are not stored in Git. Future Amigo/Toon training
+  should start from an Airbnb GDPR export or an approved channel-manager route.
 
 ## Media
 
@@ -58,6 +68,17 @@ hosted media/CDN path before making this public-ready at full quality.
 - Production build passes with `npm run build`.
 - Local production preview runs at `http://localhost:3000`.
 - Desktop, phone, and tablet viewports were checked with the real walkthrough video.
+
+## Knowledge Base
+
+- Master listing reference:
+  `docs/knowledge-base/house-of-wander-master-knowledge-base.md`
+- Cross-check source:
+  `docs/knowledge-base/our-collection-listings-crosscheck.md`
+- Final delivery handoff:
+  `docs/house-of-wander-final-delivery-2026-05-27.md`
+- Safe Amigo/Toon ingestion:
+  `docs/amigo-toon-safe-ingestion-playbook.md`
 
 ## Claude Workflow
 

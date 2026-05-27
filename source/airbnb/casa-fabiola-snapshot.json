@@ -1,54 +1,55 @@
 {
   "checked": "Public Airbnb page · May 27, 2026",
-  "url": "https://www.airbnb.com/rooms/1025111265786397251",
-  "title": "Love Nest - Your cosy penthouse",
-  "listingId": "1025111265786397251",
-  "listingType": "Entire rental unit in Ostend, Belgium",
-  "rating": "4.95",
-  "reviews": "115",
-  "status": "Guest favourite",
-  "host": "Lisa",
+  "url": "https://www.airbnb.co.uk/rooms/51655826",
+  "vanityUrl": "https://www.airbnb.be/h/casafabiola",
+  "title": "Modern spacious apartment directly at Gent SP station",
+  "listingId": "51655826",
+  "listingType": "Entire apartment in Ghent, Belgium",
+  "rating": "4.96",
+  "reviews": "155",
+  "status": "Guest favourite · Top 5%",
+  "host": "Laurens",
   "coHosts": [
-    "Caroline",
-    "Laurens"
+    "Thomas",
+    "Maaike"
   ],
   "response": "100% response rate · responds within an hour",
   "quickFacts": [
     {
       "label": "Guests",
-      "value": "2 maximum",
+      "value": "5 maximum",
       "source": "airbnb-public"
     },
     {
-      "label": "Bedroom",
-      "value": "1",
+      "label": "Bedrooms",
+      "value": "2",
       "source": "airbnb-public"
     },
     {
-      "label": "Bed",
-      "value": "1 king bed",
+      "label": "Beds",
+      "value": "3",
       "source": "airbnb-public"
     },
     {
-      "label": "Baths",
+      "label": "Bathrooms",
       "value": "1.5",
       "source": "airbnb-public"
     },
     {
       "label": "Check-in",
-      "value": "After 16:00",
+      "value": "14:00-02:00",
       "source": "airbnb-public"
     },
     {
       "label": "Checkout",
-      "value": "Before 11:00",
+      "value": "Before 12:00",
       "source": "airbnb-public"
     }
   ],
   "guardrails": [
     "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "The older collection-listings cross-check could not find Casa Fabiola by name; the direct vanity URL resolves the match.",
     "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Cross-platform links from Booking.com and BedandBreakfast.eu are retained as references, not live parity claims.",
     "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ]
 }

@@ -3,161 +3,314 @@
   "name": "Louise Marie",
   "location": "Ostend",
   "region": "Coastal apartment",
-  "status": "Briefing story ready",
-  "sourceStatus": "Briefing document plus public non-Airbnb references; Airbnb URL and host-approved photos needed",
+  "status": "Public Airbnb facts integrated",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026; photos need owner approval before use",
   "title": "A seaside apartment shaped by a promise.",
   "tagline": "The Ostend stay with a romantic origin story and a bright coastal rhythm.",
-  "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by the promise Laurens made to Maaike early in their relationship.",
+  "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by a promise from Laurens to Maaike and now backed by public Airbnb facts.",
+  "airbnbUrl": "https://www.airbnb.be/h/louisemarie",
+  "publicListingTitle": "Comfortable apartment in the city center near the beach",
+  "listingId": "563442400500577170",
+  "vanityUrl": "https://www.airbnb.be/h/louisemarie",
+  "canonicalUrl": "https://www.airbnb.co.uk/rooms/563442400500577170",
   "styleVariant": "coastal-light",
   "media": [
     {
       "type": "placeholder",
-      "caption": "Seaside hero photo slot",
+      "caption": "Owner-approved Louise Marie hero photo needed",
       "source": "needs-confirmation"
     },
     {
       "type": "placeholder",
-      "caption": "Apartment interior slot",
+      "caption": "Bedroom and living room gallery slot",
       "source": "needs-confirmation"
     },
     {
       "type": "placeholder",
-      "caption": "Terrace or beach context slot",
+      "caption": "Ostend beach and city context slot",
+      "source": "needs-confirmation"
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Airbnb vanity",
+      "href": "https://www.airbnb.be/h/louisemarie",
+      "note": "Public vanity URL from Laurens account",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Airbnb canonical",
+      "href": "https://www.airbnb.co.uk/rooms/563442400500577170",
+      "note": "Canonical listing ID 563442400500577170",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Vakantiewoning.org",
+      "href": "https://www.vakantiewoning.org/vakantiehuis-belgie/west-vlaanderen/oostende/louise-marie",
+      "note": "Cross-platform public reference found in source doc; confirm before direct use",
+      "source": "needs-confirmation"
+    }
+  ],
+  "sourceAudit": [
+    {
+      "label": "Public title",
+      "value": "Comfortable apartment in the city center near the beach",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Listing ID",
+      "value": "563442400500577170",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Public page checked",
+      "value": "May 27, 2026",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Photos on site",
+      "value": "Approval needed",
       "source": "needs-confirmation"
     }
   ],
   "quickFacts": [
-    { "label": "Stay type", "value": "Apartment", "source": "briefing-doc" },
-    { "label": "City", "value": "Ostend", "source": "briefing-doc" },
-    { "label": "Guests", "value": "4 likely", "source": "needs-confirmation" },
-    { "label": "Bedrooms", "value": "2 likely", "source": "needs-confirmation" },
-    { "label": "Bathroom", "value": "1 likely", "source": "needs-confirmation" },
-    { "label": "Beach context", "value": "Nearby", "source": "needs-confirmation" }
+    {
+      "label": "Guests",
+      "value": "4 maximum",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bedroom",
+      "value": "1",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Beds",
+      "value": "2",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bathroom",
+      "value": "1",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "14:00-23:00",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Checkout",
+      "value": "Before 12:00",
+      "source": "airbnb-public"
+    }
   ],
   "trustSignals": [
-    { "label": "Source", "value": "Brief", "source": "briefing-doc" },
-    { "label": "Airbnb", "value": "Needed", "source": "needs-confirmation" },
-    { "label": "Photos", "value": "Needed", "source": "needs-confirmation" },
-    { "label": "Style", "value": "Coastal", "source": "prototype-copy" }
+    {
+      "label": "Rating",
+      "value": "4.97",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Reviews",
+      "value": "39",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Host",
+      "value": "Laurens",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Pets",
+      "value": "Allowed",
+      "source": "airbnb-public"
+    }
   ],
   "listingHighlights": [
     {
-      "label": "Seaside position",
-      "value": "Louise Marie should carry the brighter coastal side of the collection.",
-      "source": "briefing-doc"
+      "label": "Self check-in",
+      "value": "The public listing highlights lockbox self check-in.",
+      "source": "airbnb-public"
     },
     {
-      "label": "Origin story",
-      "value": "The briefing ties the stay to a promise from Laurens to Maaike in the first week of their relationship.",
-      "source": "briefing-doc"
+      "label": "Lots nearby",
+      "value": "Guests say the area has plenty to explore.",
+      "source": "airbnb-public"
     },
     {
-      "label": "Practical layer",
-      "value": "Public web references suggest a modern Ostend apartment pattern, but final Airbnb facts must be confirmed by the team.",
-      "source": "needs-confirmation"
+      "label": "Pet-friendly",
+      "value": "Louise Marie is one of the collection pages where pets are publicly listed as allowed.",
+      "source": "airbnb-public"
     }
   ],
   "stayStory": [
     {
       "title": "The stay",
-      "text": "Louise Marie should feel light, coastal, and easy to understand: a seaside apartment within the larger House of Wander world.",
-      "source": "briefing-doc"
+      "text": "Louise Marie carries the lighter seaside side of the collection: central Ostend, beach access, and a simple apartment rhythm.",
+      "source": "airbnb-public"
     },
     {
       "title": "The story",
-      "text": "The romantic origin gives the page a human anchor without turning it into a private family page.",
+      "text": "The House of Wander narrative ties Louise Marie to a promise from Laurens to Maaike early in their relationship.",
       "source": "briefing-doc"
     },
     {
-      "title": "The guest fit",
-      "text": "This page should eventually explain beach access, city convenience, bedroom setup, and who the apartment is best for.",
-      "source": "needs-confirmation"
+      "title": "Sleeping setup",
+      "text": "The public listing shows one bedroom with a double bed and a sofa bed.",
+      "source": "airbnb-public"
     },
     {
-      "title": "The booking path",
-      "text": "Airbnb remains the correct live booking handoff until direct booking is built and verified.",
+      "title": "The handoff",
+      "text": "The site can explain the stay and guide questions, while Airbnb keeps live booking details safe.",
       "source": "prototype-copy"
     }
   ],
   "amenityGroups": [
     {
-      "title": "Confirmed now",
-      "source": "briefing-doc",
-      "items": ["Ostend seaside stay", "Apartment positioning", "Maaike and Laurens origin story"]
+      "title": "Core comforts",
+      "source": "airbnb-public",
+      "items": [
+        "Beach access",
+        "Kitchen",
+        "Wifi",
+        "Dedicated workspace",
+        "Pets allowed"
+      ]
     },
     {
-      "title": "Likely detail to confirm",
+      "title": "Sleeping setup",
+      "source": "airbnb-public",
+      "items": [
+        "Bedroom with double bed",
+        "Sofa bed",
+        "1 bathroom",
+        "Up to 4 guests"
+      ]
+    },
+    {
+      "title": "Arrival and rules",
+      "source": "airbnb-public",
+      "items": [
+        "Self check-in with lockbox",
+        "Check-in 14:00-23:00",
+        "Checkout before 12:00",
+        "Nearby water body noted"
+      ]
+    },
+    {
+      "title": "Needs approval",
       "source": "needs-confirmation",
-      "items": ["Guest count", "Bedrooms", "Bathroom", "Kitchen", "Parking", "Beach access"]
-    },
-    {
-      "title": "Media needed",
-      "source": "needs-confirmation",
-      "items": ["Hero image", "Interior gallery", "Bedroom photos", "Exterior or beach context"]
-    },
-    {
-      "title": "Amigo can guide",
-      "source": "prototype-copy",
-      "items": ["Compare with Casa Cabane", "Explain coastal fit", "Send to Airbnb once URL is confirmed"]
+      "items": [
+        "Photo reuse",
+        "Exact cross-platform parity",
+        "Review snippets",
+        "Direct booking rules"
+      ]
     }
   ],
-  "reviewMentions": ["Sea", "Ostend", "Apartment", "Romantic story", "Content needed"],
+  "reviewScores": [
+    {
+      "label": "Cleanliness",
+      "value": "4.9",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Accuracy",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Communication",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Location",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Value",
+      "value": "4.8",
+      "source": "airbnb-public"
+    }
+  ],
+  "reviewMentions": [
+    "Beach",
+    "Hospitality",
+    "Location",
+    "Walkability",
+    "Indoor spaces",
+    "Decor",
+    "Cleanliness",
+    "Nearby",
+    "Comfort",
+    "Kitchen"
+  ],
   "bookingSteps": [
-    "Confirm the official Airbnb URL and whether this is the exact Louise Marie listing.",
-    "Import only approved facts and approved photos.",
-    "Keep exact prices, dates, cancellation, and payment on Airbnb.",
-    "Use House of Wander for story and guidance, not final transaction."
+    "Use Airbnb to confirm live dates, price, cancellation policy, and final availability.",
+    "Select the correct guest count, with 4 guests maximum as the current public maximum.",
+    "Keep payment and guest-host messaging inside Airbnb until a direct booking layer is approved.",
+    "Use House of Wander for story, comparison, guidance, and source-labelled decision support."
   ],
   "houseNotes": [
-    "Official Airbnb URL needed.",
-    "Guest count and room setup need confirmation.",
-    "Amenities and rules need confirmation.",
-    "Approved gallery needed before client-ready publication."
+    "Check-in from 14:00 to 23:00.",
+    "Checkout before 12:00.",
+    "Maximum 4 guests.",
+    "Pets are listed as allowed.",
+    "Smoke alarm listed; nearby water body noted."
   ],
-  "locationNote": "Louise Marie belongs to the Ostend coastal part of the collection. Exact neighborhood, beach distance, parking, and access details need confirmation from the live listing or hosts.",
+  "locationNote": "Louise Marie is positioned in Ostend near the city centre and beach. The source docs also mention a Bonferia/Vakantiewoning.org reference that should be confirmed before any direct-book parity table goes live.",
   "sourceNotes": [
-    "The briefing document establishes the story and collection role.",
-    "Search found public non-Airbnb references for a Louise Marie apartment, but these are not treated as final Airbnb truth.",
-    "No Airbnb-hosted photos were copied."
+    "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "The older collection-listings doc found a non-Airbnb Louise Marie page; this is retained as a cross-platform reference, not final booking truth.",
+    "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
+    "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ],
   "amigoStayPlan": [
     {
-      "title": "Story guide",
-      "text": "Amigo can explain the promise and seaside angle in a concise guest-facing way.",
+      "title": "Fit guide",
+      "text": "Amigo can explain Louise Marie as the pet-friendly Ostend apartment with strong walkability and a romantic House of Wander story.",
       "source": "prototype-copy"
     },
     {
-      "title": "Content intake",
-      "text": "Amigo should surface that the official Airbnb URL, photos, and room facts are still missing.",
-      "source": "prototype-copy"
+      "title": "Practical guide",
+      "text": "Amigo can summarize guest count, self check-in, pets, sleeping setup, and beach/city positioning.",
+      "source": "airbnb-public"
     },
     {
-      "title": "Stay comparison",
-      "text": "Later, Amigo can help guests choose between Ostend, Ghent, Blankenberge, and Stekene.",
+      "title": "Booking guardrail",
+      "text": "Amigo keeps price, availability, cancellation, and payment on Airbnb until direct booking is real.",
       "source": "prototype-copy"
     }
   ],
   "amigoPrompts": [
     {
       "label": "What is Louise Marie?",
-      "sourceLabel": "Briefing doc",
-      "answer": "Louise Marie is the Ostend seaside apartment in the collection, built around a romantic promise story from Laurens to Maaike. The exact Airbnb details still need confirmation.",
+      "sourceLabel": "Airbnb public + briefing doc",
+      "answer": "Louise Marie is the Ostend seaside apartment in the collection, with a romantic House of Wander origin story, public Airbnb proof, pet-friendly setup, and space for up to 4 guests.",
       "actionLabel": "Review details",
       "actionHref": "#details"
     },
     {
-      "label": "Is it ready to book?",
-      "sourceLabel": "Needs confirmation",
-      "answer": "Not from this prototype yet. The official Airbnb URL, approved photos, guest count, rules, and amenities need to be confirmed before this page can become booking-ready.",
-      "actionLabel": "Back to collection",
-      "actionHref": "/stays"
+      "label": "Can I bring a pet?",
+      "sourceLabel": "Airbnb public",
+      "answer": "The public Airbnb listing marks pets as allowed. Exact pet conditions, fees, and exceptions should still be confirmed on Airbnb before booking.",
+      "actionLabel": "Open Airbnb",
+      "actionHref": "https://www.airbnb.be/h/louisemarie"
     },
     {
-      "label": "Which style fits it?",
-      "sourceLabel": "Style lab",
-      "answer": "Louise Marie is a strong candidate for the Coastal Light house style: brighter, airier, and more seaside than Casa Cabane's cinematic nature mood.",
-      "actionLabel": "View style lab",
-      "actionHref": "/style-lab"
+      "label": "How do I book?",
+      "sourceLabel": "Airbnb handoff",
+      "answer": "Use House of Wander to understand the stay, then Airbnb for live dates, price, cancellation, payment, and host messaging.",
+      "actionLabel": "Check dates on Airbnb",
+      "actionHref": "https://www.airbnb.be/h/louisemarie"
     }
   ]
 }

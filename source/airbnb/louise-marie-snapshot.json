@@ -1,22 +1,23 @@
 {
   "checked": "Public Airbnb page · May 27, 2026",
-  "url": "https://www.airbnb.com/rooms/1025111265786397251",
-  "title": "Love Nest - Your cosy penthouse",
-  "listingId": "1025111265786397251",
-  "listingType": "Entire rental unit in Ostend, Belgium",
-  "rating": "4.95",
-  "reviews": "115",
+  "url": "https://www.airbnb.co.uk/rooms/563442400500577170",
+  "vanityUrl": "https://www.airbnb.be/h/louisemarie",
+  "title": "Comfortable apartment in the city center near the beach",
+  "listingId": "563442400500577170",
+  "listingType": "Entire apartment in Ostend, Belgium",
+  "rating": "4.97",
+  "reviews": "39",
   "status": "Guest favourite",
-  "host": "Lisa",
+  "host": "Laurens",
   "coHosts": [
-    "Caroline",
-    "Laurens"
+    "Thomas",
+    "Maaike",
+    "Caroline"
   ],
-  "response": "100% response rate · responds within an hour",
   "quickFacts": [
     {
       "label": "Guests",
-      "value": "2 maximum",
+      "value": "4 maximum",
       "source": "airbnb-public"
     },
     {
@@ -25,30 +26,30 @@
       "source": "airbnb-public"
     },
     {
-      "label": "Bed",
-      "value": "1 king bed",
+      "label": "Beds",
+      "value": "2",
       "source": "airbnb-public"
     },
     {
-      "label": "Baths",
-      "value": "1.5",
+      "label": "Bathroom",
+      "value": "1",
       "source": "airbnb-public"
     },
     {
       "label": "Check-in",
-      "value": "After 16:00",
+      "value": "14:00-23:00",
       "source": "airbnb-public"
     },
     {
       "label": "Checkout",
-      "value": "Before 11:00",
+      "value": "Before 12:00",
       "source": "airbnb-public"
     }
   ],
   "guardrails": [
     "Public Airbnb facts were checked on May 27, 2026 without login.",
+    "The older collection-listings doc found a non-Airbnb Louise Marie page; this is retained as a cross-platform reference, not final booking truth.",
     "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Cross-platform links from Booking.com and BedandBreakfast.eu are retained as references, not live parity claims.",
     "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ]
 }

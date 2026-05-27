@@ -4,7 +4,7 @@
   "location": "Stekene",
   "region": "Nature retreat",
   "status": "Flagship prototype",
-  "sourceStatus": "Airbnb public snapshot plus local owner-approved Casa Cabane media",
+  "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local owner-approved Casa Cabane media",
   "title": "Step inside Casa Cabane without losing the thread.",
   "tagline": "A quiet lakehouse in the green borderlands, guided by real walkthrough footage.",
   "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
@@ -85,18 +85,58 @@
     }
   ],
   "quickFacts": [
-    { "label": "Guests", "value": "7 maximum", "source": "airbnb-public" },
-    { "label": "Bedrooms", "value": "2", "source": "airbnb-public" },
-    { "label": "Beds", "value": "5", "source": "airbnb-public" },
-    { "label": "Bathroom", "value": "1", "source": "airbnb-public" },
-    { "label": "Check-in", "value": "After 16:00", "source": "airbnb-public" },
-    { "label": "Checkout", "value": "Before 11:00", "source": "airbnb-public" }
+    {
+      "label": "Guests",
+      "value": "7 maximum",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bedrooms",
+      "value": "2",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Beds",
+      "value": "5",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Bathroom",
+      "value": "1",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "After 16:00",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Checkout",
+      "value": "Before 11:00",
+      "source": "airbnb-public"
+    }
   ],
   "trustSignals": [
-    { "label": "Rating", "value": "4.93", "source": "airbnb-public" },
-    { "label": "Reviews", "value": "94", "source": "airbnb-public" },
-    { "label": "Host", "value": "Laurens", "source": "airbnb-public" },
-    { "label": "Response", "value": "100%", "source": "airbnb-public" }
+    {
+      "label": "Rating",
+      "value": "4.93",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Reviews",
+      "value": "94",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Host",
+      "value": "Laurens",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Response",
+      "value": "100%",
+      "source": "airbnb-public"
+    }
   ],
   "listingHighlights": [
     {
@@ -141,31 +181,78 @@
     {
       "title": "Core comforts",
       "source": "airbnb-public",
-      "items": ["Waterfront", "Kitchen", "Wifi", "Dedicated workspace", "Free parking"]
+      "items": [
+        "Waterfront",
+        "Kitchen",
+        "Wifi",
+        "Dedicated workspace",
+        "Free parking"
+      ]
     },
     {
       "title": "Arrival basics",
       "source": "airbnb-public",
-      "items": ["Coffee and tea starter set", "Olive oil, salt and pepper", "Dish soap and dishwasher tablets", "Kitchen towel and cleaning basics"]
+      "items": [
+        "Coffee and tea starter set",
+        "Olive oil, salt and pepper",
+        "Dish soap and dishwasher tablets",
+        "Kitchen towel and cleaning basics"
+      ]
     },
     {
       "title": "Bathroom basics",
       "source": "airbnb-public",
-      "items": ["Shampoo", "Shower gel", "Hand soap", "Toilet paper"]
+      "items": [
+        "Shampoo",
+        "Shower gel",
+        "Hand soap",
+        "Toilet paper"
+      ]
     },
     {
       "title": "Outdoor life",
       "source": "airbnb-public",
-      "items": ["Lake garden", "Outdoor dining tables", "BBQ", "Tripod with fire bowl", "Tank tub", "Children's playhouse"]
+      "items": [
+        "Lake garden",
+        "Outdoor dining tables",
+        "BBQ",
+        "Tripod with fire bowl",
+        "Tank tub",
+        "Children's playhouse"
+      ]
     }
   ],
   "reviewScores": [
-    { "label": "Cleanliness", "value": "4.7", "source": "airbnb-public" },
-    { "label": "Accuracy", "value": "4.9", "source": "airbnb-public" },
-    { "label": "Check-in", "value": "5.0", "source": "airbnb-public" },
-    { "label": "Communication", "value": "5.0", "source": "airbnb-public" },
-    { "label": "Location", "value": "4.9", "source": "airbnb-public" },
-    { "label": "Value", "value": "4.9", "source": "airbnb-public" }
+    {
+      "label": "Cleanliness",
+      "value": "4.7",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Accuracy",
+      "value": "4.9",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Check-in",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Communication",
+      "value": "5.0",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Location",
+      "value": "4.9",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Value",
+      "value": "4.9",
+      "source": "airbnb-public"
+    }
   ],
   "reviewMentions": [
     "Location",
@@ -194,7 +281,8 @@
   "locationNote": "Casa Cabane is positioned in Stekene, between Antwerp and Ghent, while the stay itself is anchored in nature, lake, garden, and quiet.",
   "sourceNotes": [
     "Casa Cabane uses local owner-approved poster and walkthrough media already in the project.",
-    "Practical facts are shaped from a public Airbnb snapshot and still need host confirmation before final publication.",
+    "Public Airbnb facts were checked again on May 27, 2026 without logging into the host account.",
+    "Airbnb-hosted photo URLs are catalogued in the source references only; they are not downloaded or displayed.",
     "Live price, availability, cancellation, payment, and messaging remain on Airbnb."
   ],
   "amigoStayPlan": [
@@ -242,6 +330,46 @@
       "answer": "Before Casa Cabane becomes a final public page, Maaike & Laurens should confirm the reusable Airbnb details, review usage, final copy, and whether Airbnb remains the only v1 booking path.",
       "actionLabel": "Review stay details",
       "actionHref": "#details"
+    }
+  ],
+  "publicListingTitle": "Stylish lakehouse, green nature",
+  "listingId": "962896812968290131",
+  "vanityUrl": "https://www.airbnb.be/h/casacabane",
+  "canonicalUrl": "https://www.airbnb.be/rooms/962896812968290131",
+  "externalLinks": [
+    {
+      "label": "Airbnb vanity",
+      "href": "https://www.airbnb.be/h/casacabane",
+      "note": "Public vanity URL from Laurens account",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Airbnb canonical",
+      "href": "https://www.airbnb.be/rooms/962896812968290131",
+      "note": "Canonical listing ID 962896812968290131",
+      "source": "airbnb-public"
+    }
+  ],
+  "sourceAudit": [
+    {
+      "label": "Public title",
+      "value": "Stylish lakehouse, green nature",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Listing ID",
+      "value": "962896812968290131",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Public page checked",
+      "value": "May 27, 2026",
+      "source": "airbnb-public"
+    },
+    {
+      "label": "Photos on site",
+      "value": "Local approved media only",
+      "source": "owner-approved"
     }
   ]
 }
