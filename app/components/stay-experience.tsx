@@ -141,7 +141,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
   const [videoReady, setVideoReady] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isReducedMotion, setIsReducedMotion] = useState(false);
   const activeChapter = chapters[activeIndex] ?? chapters[0];
   const heroMedia = stay.media[0];
   const runtimeLabel = useMemo(() => {
@@ -170,7 +169,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
 
     try {
       video.currentTime = time;
-      if (shouldPlay && !isReducedMotion) {
+      if (shouldPlay) {
         void video.play().catch(() => setIsPlaying(false));
       }
     } catch {
@@ -230,7 +229,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
 
   const handleVideoMetadata = () => {
     setVideoReady(true);
-    seekToTime(chapters[activeIndex]?.time ?? 0, !isReducedMotion);
+    seekToTime(chapters[activeIndex]?.time ?? 0, true);
   };
 
   const handleVideoTimeUpdate = () => {
@@ -238,14 +237,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
     if (!video) return;
     applyTimeState(video.currentTime);
   };
-
-  useEffect(() => {
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const apply = () => setIsReducedMotion(media.matches);
-    apply();
-    media.addEventListener("change", apply);
-    return () => media.removeEventListener("change", apply);
-  }, []);
 
   useEffect(() => {
     if (!isJourneyOpen) return;
@@ -286,7 +277,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
       window.removeEventListener("keydown", onKeyDown);
       window.removeEventListener("scroll", keepScrollPinned);
     };
-  }, [activeIndex, isJourneyOpen, isPlaying, isReducedMotion, videoError]);
+  }, [activeIndex, isJourneyOpen, isPlaying, videoError]);
 
   useEffect(() => {
     if (!isJourneyOpen) return;
@@ -295,7 +286,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
     if (!panel) return;
 
     const onWheel = (event: WheelEvent) => {
-      if (isReducedMotion || videoError) return;
+      if (videoError) return;
 
       event.preventDefault();
       const direction = event.deltaY > 0 ? 1 : -1;
@@ -306,7 +297,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
 
     panel.addEventListener("wheel", onWheel, { passive: false, capture: true });
     return () => panel.removeEventListener("wheel", onWheel, { capture: true });
-  }, [isJourneyOpen, isReducedMotion, videoError]);
+  }, [isJourneyOpen, videoError]);
 
   return (
     <main className={`stayPage ${stay.styleVariant}`}>
@@ -665,7 +656,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
             muted
             playsInline
             preload="auto"
-            autoPlay={!isReducedMotion}
+            autoPlay
             onLoadedMetadata={handleVideoMetadata}
             onTimeUpdate={handleVideoTimeUpdate}
             onPlay={() => setIsPlaying(true)}

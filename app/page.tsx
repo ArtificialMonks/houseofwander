@@ -61,7 +61,6 @@ function HouseOfWanderObject() {
       antialias: true,
       preserveDrawingBuffer: true
     });
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const pointer = { x: 0, y: 0, targetX: 0, targetY: 0 };
     let frameId = 0;
     let isDisposed = false;
@@ -270,11 +269,7 @@ function HouseOfWanderObject() {
     host.addEventListener("pointermove", onPointerMove);
     resize();
 
-    if (motionQuery.matches) {
-      render();
-    } else {
-      frameId = window.requestAnimationFrame(animate);
-    }
+    frameId = window.requestAnimationFrame(animate);
 
     return () => {
       isDisposed = true;
