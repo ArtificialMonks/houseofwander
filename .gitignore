@@ -23,3 +23,7 @@ public/media/Casa Fabiola/*
 public/media/Louise Marie/*
 !public/media/Louise Marie/Louise.avif
 renders/
+
+# Local Claude Code state and personal context optimizations
+.omc/
+.claude/settings.local.json

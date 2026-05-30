@@ -33,6 +33,35 @@ Borrow from `ArtificialMonks/ai-design-studio`:
 - Use clear handoff docs for Claude/Codex: changed files, verified behavior,
   open questions, and next step.
 
+### AI Design Studio skills (installed locally)
+
+The `ai-design-studio` design skill set is vendored into `.claude/skills/` so
+Claude Code can use it directly in this repo. Re-pull/update with
+`npm run install-skills` (clones the public skill source repos; see
+`scripts/install-skills.sh`). Invoke a skill by its **skill name** (left column),
+not its folder name.
+
+| Skill name | Folder | Use it when |
+|---|---|---|
+| `design-taste-frontend` | `taste-skill` | Default for premium, anti-slop landing/stay pages. Reads the brief and ships non-templated UI. |
+| `minimalist-ui` | `minimalist-skill` | Clean editorial surfaces — warm monochrome, typographic contrast, flat grids. Good fit for Casa Cabane detail/decision layers. |
+| `industrial-brutalist-ui` | `brutalist-skill` | Bold, raw, data-heavy editorial. Use sparingly — off-brand for House of Wander's warm cinematic tone. |
+| `redesign-existing-projects` | `redesign-skill` | Auditing and upgrading existing pages (e.g. `app/page.tsx`, `stay-experience.tsx`) without breaking behavior. |
+| `ui-subagents` | `ui-subagents` | Dispatch Claude/Gemini design subagents (needs the studio's Agent Runs harness; not present here — reference only). |
+| `ui-battle` | `ui-battle` | Run a judged two-round redesign contest between models (same harness caveat). |
+
+Generation skills — **gated, do not run without explicit approval**:
+
+| Skill name | Folder | Note |
+|---|---|---|
+| `nano-banana-use` | `nano-banana-use` | Image generation via Google Vertex AI / Gemini. **Paid**, needs GCP creds. Per project rules, no paid AI generation without approval. |
+| `veo-build` | `veo-build` | Veo video generation. **Paid**, same gate. Prefer the real Casa Cabane footage as the source of truth. |
+| `google-genai-sdk-python` | `google-genai-sdk-python` | Reference for writing Google GenAI SDK Python code. No-cost reference, but downstream calls are paid. |
+
+For this prototype, prefer `design-taste-frontend` / `minimalist-ui` /
+`redesign-existing-projects`. Treat the generation skills as future options that
+require approval and a Vertex AI setup, in line with section 10 guardrails.
+
 Borrow from Airbnb product design:
 
 - Photography and video carry most of the visual weight.

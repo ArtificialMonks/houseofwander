@@ -8,7 +8,8 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-OUT = Path("/Users/wezienwel/houseofwander/renders/house-of-wonder-brief/20260522-004801-v01/house-of-wonder-brief.docx")
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "renders/house-of-wonder-brief/20260522-004801-v01/house-of-wonder-brief.docx"
 
 
 SOURCES = {

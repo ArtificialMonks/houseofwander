@@ -3,7 +3,7 @@
 Use this prompt inside Claude Code from the project folder:
 
 ```text
-You are working inside /Users/wezienwel/Library/CloudStorage/Dropbox-We-zien-wel/Thomas Lambrechts/JJ - AI/ArtificialMonks/Projects/houseofwander.
+You are working inside the House of Wander prototype repository (run from the repo root of your local clone).
 
 Context:
 - This is a local House of Wander prototype for Casa Cabane in Stekene.
@@ -55,7 +55,7 @@ Verification:
 1. Open a terminal in the project:
 
 ```bash
-cd "/Users/wezienwel/Library/CloudStorage/Dropbox-We-zien-wel/Thomas Lambrechts/JJ - AI/ArtificialMonks/Projects/houseofwander"
+cd <your-local-clone>/houseofwander
 claude
 ```
 

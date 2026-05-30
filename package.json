@@ -2,22 +2,26 @@
   "name": "houseofwander",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "install-skills": "bash scripts/install-skills.sh"
   },
   "dependencies": {
-    "@types/three": "^0.184.1",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "next": "^16.2.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.184.1",
     "typescript": "^5.9.3"
   }
 }

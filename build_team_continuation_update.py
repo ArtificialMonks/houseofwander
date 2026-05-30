@@ -8,9 +8,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-ROOT = Path(
-    "/Users/wezienwel/Library/CloudStorage/Dropbox-We-zien-wel/Thomas Lambrechts/JJ - AI/ArtificialMonks/Projects/houseofwander"
-)
+ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "renders/house-of-wander-team-update/20260523-073132-v01/house-of-wander-team-update.docx"
 
 

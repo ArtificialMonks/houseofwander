@@ -78,16 +78,35 @@ hosted media/CDN path before making this public-ready at full quality.
 
 ## Claude Workflow
 
-Claude Code can be used as a design-iteration partner from this same project folder:
+Claude Code can be used as a design-iteration partner from the repo root:
 
 ```bash
-cd "/Users/wezienwel/Library/CloudStorage/Dropbox-We-zien-wel/Thomas Lambrechts/JJ - AI/ArtificialMonks/Projects/houseofwander"
+cd <your-local-clone>/houseofwander
 claude
 ```
 
-`/Users/wezienwel/houseofwander` is only a local shortcut symlink to this Dropbox project folder. Treat the Dropbox path as the canonical location so all project files stay together.
+The repo is machine-agnostic: clone it anywhere (or work in a Dropbox-synced
+copy) and run from that root. Do not hardcode a specific machine's absolute
+path into code, docs, or handoffs.
 
 Use `CLAUDE.md` for project-local instructions and `docs/claude-casa-cabane-handoff.md` for a ready-to-paste Claude prompt.
+
+### AI Design Studio skills
+
+The design skill set from `ArtificialMonks/ai-design-studio` is vendored into
+`.claude/skills/` so Claude Code can use it directly in this repo (design skills
+`design-taste-frontend`, `minimalist-ui`, `industrial-brutalist-ui`,
+`redesign-existing-projects`, plus `ui-subagents` / `ui-battle`, and the
+approval-gated paid generation skills `nano-banana-use`, `veo-build`,
+`google-genai-sdk-python`). See `DESIGN.md` section 2 for when to use which.
+Re-pull or update the external skills with:
+
+```bash
+npm run install-skills
+```
+
+Note: `nano-banana-use` and `veo-build` call **paid Google Vertex AI** and must
+not be run without explicit approval, per `CLAUDE.md` and `DESIGN.md` guardrails.
 
 Tutorial reference now captured in the handoff:
 
