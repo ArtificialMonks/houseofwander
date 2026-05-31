@@ -3,10 +3,6 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import {
-  AmigoGuide,
-  type AmigoPrompt
-} from "./components/amigo-guide";
 import navSource from "../source/nav.json";
 import staysSource from "../source/stays/index.json";
 
@@ -15,7 +11,6 @@ type Stay = {
   name: string;
   location: string;
   status: string;
-  sourceStatus?: string;
   meta?: string;
   description: string;
   href?: string;
@@ -28,21 +23,14 @@ type NavItem = {
   href: string;
 };
 
-type AmigoSystemItem = {
-  title: string;
-  text: string;
-};
-
 type CollectionSource = {
   stays: Stay[];
   productionLanes: string[];
-  amigoSystem: AmigoSystemItem[];
-  amigoPrompts: AmigoPrompt[];
 };
 
 const nav = navSource as { primary: NavItem[] };
 const collection = staysSource as CollectionSource;
-const { stays, productionLanes, amigoSystem, amigoPrompts } = collection;
+const { stays, productionLanes } = collection;
 
 function HouseOfWanderObject() {
   const hostRef = useRef<HTMLDivElement | null>(null);
@@ -312,10 +300,6 @@ function HouseOfWanderObject() {
 }
 
 export default function Home() {
-  const openAmigo = () => {
-    window.dispatchEvent(new Event("amigo:open"));
-  };
-
   return (
     <main className="brandPage">
       <section className="wanderHero" aria-label="House of Wander">
@@ -350,7 +334,7 @@ export default function Home() {
             House of Wander is now the calm entry point for the whole
             accommodation ecosystem: a cinematic collection first, then a guided
             dive into each stay. Casa Cabane remains the flagship prototype,
-            with Amigo as the guide layer guests can talk to before Airbnb.
+            with Airbnb as the booking handoff for live dates and prices.
           </p>
           <div className="wanderActions">
             <Link className="primaryButton" href="/stays/casa-cabane">
@@ -359,15 +343,12 @@ export default function Home() {
             <Link className="ghostButton" href="/stays">
               View collection
             </Link>
-            <button className="ghostButton" type="button" onClick={openAmigo}>
-              Ask Amigo
-            </button>
           </div>
         </div>
 
         <footer className="wanderHeroFoot">
           <span>Collection ecosystem v0.3</span>
-          <span>Guided stay pages · source-aware Amigo</span>
+          <span>Guided stay pages · Airbnb handoff</span>
         </footer>
       </section>
 
@@ -378,8 +359,8 @@ export default function Home() {
           <p>
             The public collection is now focused on Casa Cabane, Casa Fabiola,
             and Louise Marie. Each stay has a main photo, source status,
-            Airbnb-level facts where available, and Amigo prompts instead of
-            unfinished placeholder listings.
+            Airbnb-level facts where available, and a clear path to the booking
+            handoff.
           </p>
         </div>
 
@@ -425,30 +406,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="amigo"
-        className="amigoSystemBand"
-        aria-label="Amigo guided booking system"
-      >
-        <div className="amigoSystemIntro">
-          <p className="sectionKicker">Amigo guide layer</p>
-          <h2>One guide between atmosphere, answers, Airbnb, and direct booking later.</h2>
-          <p>
-            Amigo starts as a visible source-aware guide for guests. Later it can
-            become the operating layer between Maaike & Laurens, guest questions,
-            Airbnb messages, and direct booking on House of Wander.
-          </p>
-        </div>
-        <div className="amigoSystemGrid">
-          {amigoSystem.map((item) => (
-            <article key={item.title}>
-              <span>{item.title}</span>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section id="system" className="systemBand" aria-label="Project brief">
         <div>
           <p className="sectionKicker">Project shape</p>
@@ -464,11 +421,6 @@ export default function Home() {
         </ol>
       </section>
 
-      <AmigoGuide
-        context="House of Wander collection"
-        intro="I can help guests choose where to start, explain source labels, point out what is missing, and keep live booking details safely on Airbnb."
-        prompts={amigoPrompts}
-      />
     </main>
   );
 }

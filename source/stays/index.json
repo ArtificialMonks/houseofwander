@@ -5,9 +5,8 @@
       "name": "Casa Cabane",
       "location": "Stekene",
       "status": "Flagship prototype",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local Casa Cabane media",
       "meta": "4.93 · 94 reviews · 7 maximum",
-      "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
+      "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and a clear booking handoff.",
       "href": "/stays/casa-cabane",
       "image": "/media/Casa%20Cabane/CasaCabane.avif",
       "styleVariant": "Editorial Warm"
@@ -17,7 +16,6 @@
       "name": "Casa Fabiola",
       "location": "Ghent",
       "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
       "meta": "4.96 · 155 reviews · 5 maximum",
       "description": "Casa Fabiola is the Ghent city stay in the collection: a private upper-floor apartment in the family townhouse, rooted in family, heritage, comfort, and a very practical station-side location.",
       "href": "/stays/casa-fabiola",
@@ -29,7 +27,6 @@
       "name": "Louise Marie",
       "location": "Ostend",
       "status": "Public Airbnb facts integrated",
-      "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
       "meta": "4.97 · 39 reviews · 4 maximum",
       "description": "Louise Marie is the Ostend seaside chapter in the House of Wander collection, inspired by a promise from Laurens to Maaike and now backed by public Airbnb facts.",
       "href": "/stays/louise-marie",
@@ -38,71 +35,10 @@
     }
   ],
   "productionLanes": [
-    "The public collection is now intentionally focused on the three priority stays: Casa Cabane, Casa Fabiola, and Louise Marie.",
+    "The public collection is intentionally focused on the three priority stays: Casa Cabane, Casa Fabiola, and Louise Marie.",
     "Each priority stay has a local main photo integrated from the project media folder.",
     "Casa Cabane remains the flagship proof-of-feel and keeps the guided walkthrough video.",
-    "Airbnb facts remain source-labelled and live price, availability, payment, and private messaging stay on Airbnb for now.",
-    "The other listings are removed from the public collection until the team decides to bring them back with approved assets and naming."
-  ],
-  "amigoSystem": [
-    {
-      "title": "Guest guide",
-      "text": "Amigo helps visitors choose a stay, understand practical details, and move from atmosphere to Airbnb handoff without menu diving."
-    },
-    {
-      "title": "Source labels",
-      "text": "Amigo distinguishes public Airbnb data, briefing notes, prototype copy, project media, and host confirmations still needed."
-    },
-    {
-      "title": "Host cockpit later",
-      "text": "Later, Maaike, Laudi, and Laurens can use Amigo and Toon to organize questions, Airbnb messages, direct inquiries, rules, and stay updates."
-    }
-  ],
-  "styleVariants": [
-    {
-      "name": "Editorial Warm",
-      "slug": "editorial-warm",
-      "description": "Cinematic serif, warm ivory, moss, clay, and restrained gold. Recommended flagship style."
-    },
-    {
-      "name": "Coastal Light",
-      "slug": "coastal-light",
-      "description": "Brighter, airier, and more seaside. Best first test for Ostend and Blankenberge stays."
-    },
-    {
-      "name": "Boutique Night",
-      "slug": "boutique-night",
-      "description": "Darker and more intimate, suited to romantic hideaways and evening-led storytelling."
-    }
-  ],
-  "amigoPrompts": [
-    {
-      "label": "Which stays are ready now?",
-      "sourceLabel": "Source labels",
-      "answer": "The public collection is now focused on three priority stays: Casa Cabane in Stekene, Casa Fabiola in Ghent, and Louise Marie in Ostend. The other listings are intentionally hidden until the team approves naming and assets.",
-      "actionLabel": "View the three stays",
-      "actionHref": "/stays"
-    },
-    {
-      "label": "Can you use Airbnb photos?",
-      "sourceLabel": "Safety guardrail",
-      "answer": "The site now uses local project-media main photos for the three priority stays. Any broader Airbnb gallery import still needs owner approval before publication.",
-      "actionLabel": "Open Casa Cabane",
-      "actionHref": "/stays/casa-cabane"
-    },
-    {
-      "label": "How does booking work now?",
-      "sourceLabel": "Airbnb handoff",
-      "answer": "For now, House of Wander guides the decision and Airbnb handles live dates, price, rules, cancellation, payment, and guest-host messaging.",
-      "actionLabel": "View Casa details",
-      "actionHref": "/stays/casa-cabane#details"
-    },
-    {
-      "label": "What about Amigo and Toon?",
-      "sourceLabel": "Future platform",
-      "answer": "Amigo is the guest-facing guide now. Toon and private Airbnb conversation training need a safe GDPR export or channel-manager path first, not risky logged-in scraping.",
-      "actionLabel": "See project shape",
-      "actionHref": "/#system"
-    }
+    "Airbnb handles live price, availability, payment, cancellation, and guest-host messaging for now.",
+    "Internal review tools and future guide concepts are kept out of the public experience until approved."
   ]
 }

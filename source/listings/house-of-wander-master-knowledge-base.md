@@ -469,30 +469,25 @@ The original briefing also references these — not yet matched to public Airbnb
 
 ---
 
-# Part B — Conversation Scraping Playbook (Train Amigo + Toon on Laudi's Tone)
+# Part B — Conversation Data Playbook (Train Amigo + Toon on Laudi's Tone)
 
 > Goal: build a high-fidelity training corpus from Laudi's real Airbnb inbox so Amigo (sales/diplomacy) and Toon (service/operations) speak exactly like him — same warmth, same pacing, same sales tactics, same diplomacy when things go sideways.
 
 ### Why Airbnb's API won't give us this
 Airbnb does **not** offer a public messaging API to extract host inbox conversations. The only legitimate routes are:
 1. **GDPR data export** ("Request your personal data") from Airbnb — slow, broad, but legal and complete
-2. **Browser-session scraping** of `https://www.airbnb.com/inbox` using a logged-in headless session
-3. **Channel Manager integrations** (Hospitable, Hostex, Smartbnb, Hostaway) — they have read access to Airbnb conversations via authorised partner APIs
+2. **Channel Manager integrations** (Hospitable, Hostex, Smartbnb, Hostaway) — they have read access to Airbnb conversations via authorised partner APIs
+
+Logged-in browser automation against the Airbnb host account is **not approved** for this project. Do not use bots, persisted sessions, headless browsers, or cookie-based scraping inside Airbnb inbox/admin pages.
 
 ### Recommended stack
 
 **Step 1 — Legal & ethical baseline**
 - Run a GDPR data download from Airbnb under Laudi's account (Account → Privacy & sharing → Request your personal data). Includes message archive, reviews, guest profiles. Takes 24–72 h. This is the cleanest starting corpus and is bulletproof legally.
-- For ongoing capture, decide between (a) **Hospitable** (the cleanest channel-manager API for inbox + AI replies — has its own AI you can compete with by training on Laudi's voice) or (b) a custom Playwright/Browserbase scraper.
+- For ongoing capture, use an authorised channel manager such as **Hospitable**, **Smoobu**, **Hostaway**, or equivalent once the team chooses the operations stack.
+- Store raw exports outside Git in private encrypted storage. Only schemas, labels, redacted examples, and safety rules belong in the public repo.
 
-**Step 2 — Browser-based capture (if going custom)**
-- **Browserbase** (serverless Chromium with persistent profiles) or **Playwright** running on a small VPS
-- Persisted Airbnb login via cookies stored in a vault (1Password Connect, AWS Secrets Manager)
-- Daily delta sync: poll `/inbox/messages` and `/users/show/{guest_id}` JSON endpoints (these return JSON when the right headers are set)
-- Store raw HTML + parsed JSON + plain-text transcript per thread in a `conversations/` directory in the houseofwander repo (consider Git LFS or an S3 bucket — these get big fast)
-- **Rate-limit:** Airbnb is sensitive — keep < 1 req/2s, randomise jitter, rotate user-agent, run from a Belgian residential IP if possible
-
-**Step 3 — Schema for the training corpus**
+**Step 2 — Schema for the training corpus**
 
 ```yaml
 thread_id: 1234567890
@@ -524,7 +519,7 @@ outcome:
   host_review_text: "..."
 ```
 
-**Step 4 — Labelling pipeline (the 80/20 of agent quality)**
+**Step 3 — Labelling pipeline (the 80/20 of agent quality)**
 Run each turn through a Claude/GPT labeller that tags:
 - **Intent:** availability, price, late-checkout, refund, complaint, post-stay-thanks, neighbour-tip-request, etc.
 - **Tactic:** warm_open, mirror_language, anchor_value, scarcity, soft_close, give-before-ask, empathy-first, name_a_neighbour_business
@@ -537,7 +532,7 @@ The resulting JSONL becomes:
 2. The **fine-tune dataset** if you ever want a Laudi-tuned model (300+ labelled threads is enough for LoRA on a 7B; 1000+ for something portable)
 3. The **eval suite** — hold out 50 threads, see if Amigo's reply matches Laudi's in tone & outcome
 
-**Step 5 — Two agents, two specialisations**
+**Step 4 — Two agents, two specialisations**
 
 | Agent | Surface | Trained on | Auto-send? |
 |---|---|---|---|
@@ -706,8 +701,8 @@ app/
 
 | Week | Deliverable |
 |---|---|
-| **1** | Drop this knowledge base into `source/listings/` · scrape one full conversation thread end-to-end as proof |
-| **2** | GDPR data export request submitted · stand up labelling pipeline (small batch: 50 threads) |
+| **1** | Drop this knowledge base into `source/listings/` · confirm the no-login/no-bot Airbnb account boundary |
+| **2** | GDPR data export request submitted · stand up labelling pipeline (small batch: 50 threads after export exists) |
 | **3** | Replace scripted Amigo with Claude + RAG over the 7 listings · ship Heritage placeholder pages |
 | **4** | Trust shelf on every stay page · cross-platform parity table |
 | **5–6** | Direct-book MVP for Casa Cabane only · Stripe + Bokun integration · test with friends |

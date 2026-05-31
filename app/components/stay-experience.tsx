@@ -2,10 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  AmigoGuide,
-  type AmigoPrompt
-} from "./amigo-guide";
 
 export type Chapter = {
   id: string;
@@ -55,7 +51,6 @@ export type StaySource = {
   location: string;
   region: string;
   status: string;
-  sourceStatus: string;
   title?: string;
   tagline: string;
   description: string;
@@ -69,8 +64,6 @@ export type StaySource = {
   runtimeSeconds?: number;
   chapters?: Chapter[];
   media: StayMedia[];
-  sourceAudit?: DetailItem[];
-  externalLinks?: ExternalLink[];
   quickFacts: DetailItem[];
   trustSignals: DetailItem[];
   listingHighlights: DetailItem[];
@@ -81,9 +74,6 @@ export type StaySource = {
   bookingSteps: string[];
   houseNotes: string[];
   locationNote: string;
-  sourceNotes: string[];
-  amigoStayPlan: StayStory[];
-  amigoPrompts: AmigoPrompt[];
   styleVariant: "editorial-warm" | "coastal-light" | "boutique-night";
 };
 
@@ -148,10 +138,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
     if (!runtimeSeconds) return "Guided stay page";
     return `${formatTime(runtimeSeconds)} walkthrough`;
   }, [runtimeSeconds]);
-
-  const openAmigo = () => {
-    window.dispatchEvent(new Event("amigo:open"));
-  };
 
   const applyTimeState = (time: number) => {
     if (!chapters.length || !runtimeSeconds) return;
@@ -344,9 +330,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
             >
               {hasJourney ? "Enter walkthrough" : "View stay details"}
             </button>
-            <button className="ghostButton" type="button" onClick={openAmigo}>
-              Ask Amigo
-            </button>
             {stay.airbnbUrl ? (
               <a
                 className="ghostButton"
@@ -358,7 +341,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
               </a>
             ) : (
               <Link className="ghostButton" href="/stays">
-                Source needed
+                View collection
               </Link>
             )}
           </div>
@@ -366,7 +349,7 @@ export function StayExperience({ stay }: StayExperienceProps) {
 
         <footer className="gatewayFooter">
           <span>{runtimeLabel}</span>
-          <span>{stay.sourceStatus}</span>
+          <span>{stay.location}</span>
         </footer>
       </section>
 
@@ -377,34 +360,9 @@ export function StayExperience({ stay }: StayExperienceProps) {
         </div>
         <p>
           House of Wander brings atmosphere, practical stay facts, guest proof,
-          and the booking handoff into one guided flow. Source labels make clear
-          what is confirmed, public, prototype copy, or still waiting on the
-          team.
+          and the booking handoff into one guided flow, without turning the stay
+          page into an Airbnb-style dashboard.
         </p>
-      </section>
-
-      <section
-        id="amigo-stay-plan"
-        className="amigoStayBand"
-        aria-label={`Amigo plan for ${stay.name}`}
-      >
-        <div className="amigoStayIntro">
-          <p className="sectionKicker">Amigo for {stay.name}</p>
-          <h2>Guided answers before guests jump to booking.</h2>
-          <p>
-            Amigo answers from prepared House of Wander sources only. Live AI,
-            host inbox, pricing, availability, and payment are intentionally not
-            active in this pass.
-          </p>
-        </div>
-        <div className="amigoStayGrid">
-          {stay.amigoStayPlan.map((item) => (
-            <article key={item.title}>
-              <span>{item.title}</span>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section
@@ -419,7 +377,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
           </div>
           <div className="detailIntroCopy">
             <p>{stay.tagline}</p>
-            <span>{stay.sourceStatus}</span>
           </div>
         </div>
 
@@ -471,49 +428,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
             </div>
           ))}
         </div>
-
-        {(stay.sourceAudit?.length || stay.externalLinks?.length) ? (
-          <section className="sourceMap" aria-label={`${stay.name} source map`}>
-            <div className="sourceMapIntro">
-              <p className="sectionKicker">Source map</p>
-              <h2>Public listing facts, safely separated from owner approvals.</h2>
-              <p>
-                Airbnb details are used as decision support. Photos, direct
-                booking, private conversations, live price, and live
-                availability stay out of the public site until approved.
-              </p>
-            </div>
-
-            {stay.sourceAudit?.length ? (
-              <div className="sourceAuditGrid">
-                {stay.sourceAudit.map((item) => (
-                  <div key={item.label}>
-                    <span>{item.label}</span>
-                    <strong>{item.value}</strong>
-                    <small>{sourceLabel(item.source)}</small>
-                  </div>
-                ))}
-              </div>
-            ) : null}
-
-            {stay.externalLinks?.length ? (
-              <div className="externalLinkGrid">
-                {stay.externalLinks.map((item) => (
-                  <a
-                    key={`${item.label}-${item.href}`}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span>{item.label}</span>
-                    <strong>{item.note}</strong>
-                    <small>{sourceLabel(item.source)}</small>
-                  </a>
-                ))}
-              </div>
-            ) : null}
-          </section>
-        ) : null}
 
         <div className="detailGrid">
           <article className="detailPanel primaryDetail">
@@ -619,7 +533,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
                 Back to collection
               </Link>
             )}
-            <small>{stay.sourceStatus}</small>
           </aside>
         </div>
 
@@ -639,14 +552,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
           </article>
         </section>
 
-        <section className="sourceNotes" aria-label="Source notes">
-          <p className="sectionKicker">Source status</p>
-          <ul>
-            {stay.sourceNotes.map((note) => (
-              <li key={note}>{note}</li>
-            ))}
-          </ul>
-        </section>
       </section>
 
       {isJourneyOpen && hasJourney && activeChapter ? (
@@ -765,11 +670,6 @@ export function StayExperience({ stay }: StayExperienceProps) {
         </section>
       ) : null}
 
-      <AmigoGuide
-        context={stay.name}
-        intro={`I can guide ${stay.name}, explain source labels, and keep live booking details safely on Airbnb or marked as needs-confirmation.`}
-        prompts={stay.amigoPrompts}
-      />
     </main>
   );
 }

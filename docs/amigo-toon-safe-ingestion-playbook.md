@@ -66,9 +66,8 @@ This repo does not contain:
   assumed available until approved.
 - Open-source PMS: useful as a dashboard or data-model base only; it is not a
   safe Airbnb bridge unless paired with an approved Airbnb API path.
-- Browser automation: not a foundation for this project. It may only be
-  considered in a separate research sandbox with explicit owner approval and no
-  live host-account risk.
+- Airbnb host login automation: not approved. Do not enter the Airbnb account as
+  a bot, headless browser, persisted session, or cookie-based scraper.
 
 ## MVP Scope
 
@@ -87,7 +86,8 @@ booking, or auto-send in the first version.
 
 ## Forbidden Actions
 
-- Do not scrape private inbox pages without explicit owner approval.
+- Do not scrape private inbox pages.
+- Do not automate Airbnb host login, even in read-only mode.
 - Do not send Airbnb messages automatically.
 - Do not alter listings, pricing, calendar, availability, house rules, or
   cancellation settings.

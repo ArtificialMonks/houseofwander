@@ -51,9 +51,8 @@ photo exports for any additional gallery images.
 
 ## Amigo and Toon
 
-Amigo is still intentionally a scripted, source-aware guide. It can explain
-stays, source boundaries, booking handoffs, missing confirmations, and the
-difference between public Airbnb facts and future direct booking.
+Amigo is no longer exposed on the public site. It remains an internal/future
+prototype path until the team approves a client-ready guide experience.
 
 Toon is not built as a live agent yet. The safe ingestion plan for Airbnb
 conversations is documented in:

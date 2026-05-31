@@ -4,7 +4,6 @@
   "location": "Ghent",
   "region": "City stay",
   "status": "Public Airbnb facts integrated",
-  "sourceStatus": "Public Airbnb facts checked May 27, 2026; local main photo integrated from project media",
   "title": "A Ghent apartment with the feeling of coming home.",
   "tagline": "Family, heritage, and city warmth directly beside Gent-Sint-Pieters station.",
   "description": "Casa Fabiola is the Ghent city stay in the collection: a private upper-floor apartment in the family townhouse, rooted in family, heritage, comfort, and a very practical station-side location.",
@@ -31,42 +30,6 @@
       "type": "placeholder",
       "caption": "Ghent station and arrival context pending",
       "source": "needs-confirmation"
-    }
-  ],
-  "externalLinks": [
-    {
-      "label": "Airbnb vanity",
-      "href": "https://www.airbnb.be/h/casafabiola",
-      "note": "Public vanity URL from Laurens account",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Airbnb canonical",
-      "href": "https://www.airbnb.co.uk/rooms/51655826",
-      "note": "Canonical listing ID 51655826",
-      "source": "airbnb-public"
-    }
-  ],
-  "sourceAudit": [
-    {
-      "label": "Public title",
-      "value": "Modern spacious apartment directly at Gent SP station",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Listing ID",
-      "value": "51655826",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Public page checked",
-      "value": "May 27, 2026",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Photos on site",
-      "value": "Local main photo integrated; extra gallery photos still need approval",
-      "source": "project-media"
     }
   ],
   "quickFacts": [
@@ -254,7 +217,7 @@
     "Use Airbnb to confirm live dates, price, cancellation policy, and final availability.",
     "Select the correct guest count, with 5 guests maximum as the current public maximum.",
     "Keep payment and guest-host messaging inside Airbnb until a direct booking layer is approved.",
-    "Use House of Wander for story, comparison, guidance, and source-labelled decision support."
+    "Use House of Wander for story, comparison, and stay detail before the Airbnb handoff."
   ],
   "houseNotes": [
     "Check-in from 14:00 to 02:00.",
@@ -264,52 +227,5 @@
     "Carbon monoxide alarm is not reported; smoke alarm listed."
   ],
   "locationNote": "Casa Fabiola sits directly beside Gent-Sint-Pieters station, with public transport, shops, restaurants, Citadel Park, and Blaarmeersen nearby.",
-  "sourceNotes": [
-    "Public Airbnb facts were checked on May 27, 2026 without login.",
-    "The older collection-listings cross-check could not find Casa Fabiola by name; the direct vanity URL resolves the match.",
-    "Airbnb-hosted photos are catalogued only as references and are not displayed on the site.",
-    "Live price, availability, cancellation, payment, and messaging remain on Airbnb.",
-    "A local main photo from the project media folder is now integrated; any additional gallery expansion still needs owner-approved source selection."
-  ],
-  "amigoStayPlan": [
-    {
-      "title": "Fit guide",
-      "text": "Amigo can position Casa Fabiola as the easiest Ghent city base for train arrivals, families, and guests who want space.",
-      "source": "prototype-copy"
-    },
-    {
-      "title": "Practical guide",
-      "text": "Amigo can explain the stairs, private upper floors, sleeping setup, self check-in, and nearby transport.",
-      "source": "airbnb-public"
-    },
-    {
-      "title": "Booking guardrail",
-      "text": "Amigo sends live dates, pricing, cancellation, payment, and host messaging back to Airbnb.",
-      "source": "prototype-copy"
-    }
-  ],
-  "amigoPrompts": [
-    {
-      "label": "Who is Casa Fabiola for?",
-      "sourceLabel": "Airbnb public + prototype guide",
-      "answer": "Casa Fabiola is strongest for guests who want a spacious Ghent base near Gent-Sint-Pieters, with private upper floors, a real workspace, and easy public transport. Live dates and price still need Airbnb confirmation.",
-      "actionLabel": "Review details",
-      "actionHref": "#details"
-    },
-    {
-      "label": "What should guests know?",
-      "sourceLabel": "Airbnb public",
-      "answer": "Guests should know the apartment is on upper floors and requires stairs. The listing highlights self check-in, strong transport access, and a private lockable entrance after the shared front door.",
-      "actionLabel": "Open Airbnb",
-      "actionHref": "https://www.airbnb.be/h/casafabiola"
-    },
-    {
-      "label": "Can I book directly?",
-      "sourceLabel": "Future direct booking",
-      "answer": "Not yet. This site guides the decision, while Airbnb handles live availability, pricing, cancellation, payment, and messaging.",
-      "actionLabel": "Check dates on Airbnb",
-      "actionHref": "https://www.airbnb.be/h/casafabiola"
-    }
-  ],
   "posterSrc": "/media/Casa%20Fabiola/Casa%20Fabiola.avif"
 }

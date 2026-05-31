@@ -4,10 +4,9 @@
   "location": "Stekene",
   "region": "Nature retreat",
   "status": "Flagship prototype",
-  "sourceStatus": "Public Airbnb facts checked May 27, 2026 plus local Casa Cabane media",
   "title": "Step inside Casa Cabane without losing the thread.",
   "tagline": "A quiet lakehouse in the green borderlands, guided by real walkthrough footage.",
-  "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and Amigo as the guest guide before the final Airbnb handoff.",
+  "description": "Casa Cabane is the first complete House of Wander stay prototype: a cinematic gateway, full-screen walkthrough, Airbnb-informed practical detail, and a clear booking handoff.",
   "airbnbUrl": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61",
   "videoSrc": "/media/casa-cabane-walkthrough.mp4",
   "posterSrc": "/media/casa-cabane-poster.jpg",
@@ -281,98 +280,8 @@
     "Cleaning and post-checkout inspection are included in the Airbnb booking setup."
   ],
   "locationNote": "Casa Cabane is positioned in Stekene, between Antwerp and Ghent, while the stay itself is anchored in nature, lake, garden, and quiet.",
-  "sourceNotes": [
-    "Casa Cabane uses local owner-approved poster and walkthrough media already in the project.",
-    "Public Airbnb facts were checked again on May 27, 2026 without logging into the host account.",
-    "Airbnb-hosted photo URLs are catalogued in the source references only; they are not downloaded or displayed.",
-    "Live price, availability, cancellation, payment, and messaging remain on Airbnb.",
-    "A local main photo from the project media folder is now integrated; any additional gallery expansion still needs owner-approved source selection."
-  ],
-  "amigoStayPlan": [
-    {
-      "title": "Guest questions",
-      "text": "Amigo can answer stay-fit questions, explain sleeping setup, summarize amenities, and send guests to the right section.",
-      "source": "prototype-copy"
-    },
-    {
-      "title": "Booking handoff",
-      "text": "For this prototype, Amigo keeps the final transaction on Airbnb and explains what still needs live confirmation there.",
-      "source": "prototype-copy"
-    },
-    {
-      "title": "Host readiness",
-      "text": "Before direct booking, Maaike & Laurens need confirmed rules, availability, pricing, payment, cancellation, and support workflows.",
-      "source": "prototype-copy"
-    }
-  ],
-  "amigoPrompts": [
-    {
-      "label": "Is Casa Cabane right for us?",
-      "sourceLabel": "Airbnb public + prototype guide",
-      "answer": "Casa Cabane suits guests who want a quiet lakeside stay with outdoor life, a compact interior, and space for up to 7 guests. The exact dates, price, and final rules still need Airbnb confirmation.",
-      "actionLabel": "Check quick facts",
-      "actionHref": "#details"
-    },
-    {
-      "label": "Guide me through the stay",
-      "sourceLabel": "Prototype guide",
-      "answer": "Start with the walkthrough for atmosphere, then review guests, sleeping setup, outdoor features, reviews, house notes, and finally check dates on Airbnb.",
-      "actionLabel": "Review details",
-      "actionHref": "#details"
-    },
-    {
-      "label": "Can I book directly here?",
-      "sourceLabel": "Future direct booking",
-      "answer": "Not yet. This version guides the decision and sends the final booking to Airbnb. Direct booking is a future phase once live availability, payments, rules, and support are approved.",
-      "actionLabel": "Check dates on Airbnb",
-      "actionHref": "https://www.airbnb.be/rooms/962896812968290131?guests=1&adults=1&s=67&unique_share_id=915e903d-cb45-4d1e-9776-0d9e07a52e61"
-    },
-    {
-      "label": "What still needs confirmation?",
-      "sourceLabel": "Team to-do",
-      "answer": "Before Casa Cabane becomes a final public page, Maaike & Laurens should confirm the reusable Airbnb details, review usage, final copy, and whether Airbnb remains the only v1 booking path.",
-      "actionLabel": "Review stay details",
-      "actionHref": "#details"
-    }
-  ],
   "publicListingTitle": "Stylish lakehouse, green nature",
   "listingId": "962896812968290131",
   "vanityUrl": "https://www.airbnb.be/h/casacabane",
-  "canonicalUrl": "https://www.airbnb.be/rooms/962896812968290131",
-  "externalLinks": [
-    {
-      "label": "Airbnb vanity",
-      "href": "https://www.airbnb.be/h/casacabane",
-      "note": "Public vanity URL from Laurens account",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Airbnb canonical",
-      "href": "https://www.airbnb.be/rooms/962896812968290131",
-      "note": "Canonical listing ID 962896812968290131",
-      "source": "airbnb-public"
-    }
-  ],
-  "sourceAudit": [
-    {
-      "label": "Public title",
-      "value": "Stylish lakehouse, green nature",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Listing ID",
-      "value": "962896812968290131",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Public page checked",
-      "value": "May 27, 2026",
-      "source": "airbnb-public"
-    },
-    {
-      "label": "Photos on site",
-      "value": "Local main photo integrated; extra gallery photos still need approval",
-      "source": "project-media"
-    }
-  ]
+  "canonicalUrl": "https://www.airbnb.be/rooms/962896812968290131"
 }

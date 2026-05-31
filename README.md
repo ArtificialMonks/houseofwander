@@ -37,8 +37,8 @@ npm start -- -p 3000
   House of Wander direction with AI Design Studio and Airbnb workflow lessons.
 - `source/` holds structured brand, nav, stay, source-status, and Airbnb
   snapshot data so future stays do not have to start as hard-coded page copy.
-- Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
-  agent or backend. It now labels source boundaries and missing confirmations.
+- Amigo remains a future/internal prototype path and is not exposed on the
+  public site yet.
 - The first real Airbnb-Amigo operator workflow should be tested with Casa
   WeZienWel before touching Maaike and Laurens' active Airbnb host workflow.
 - The site now displays local project-media main photos for Casa Cabane, Casa
