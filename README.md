@@ -39,6 +39,8 @@ npm start -- -p 3000
   snapshot data so future stays do not have to start as hard-coded page copy.
 - Amigo is currently integrated as a scripted UI chatbot prototype, not a live AI
   agent or backend. It now labels source boundaries and missing confirmations.
+- The first real Airbnb-Amigo operator workflow should be tested with Casa
+  WeZienWel before touching Maaike and Laurens' active Airbnb host workflow.
 - The site now displays local project-media main photos for Casa Cabane, Casa
   Fabiola, and Louise Marie. Broader Airbnb-hosted galleries remain
   reference-only until owner-approved exports exist.
@@ -75,6 +77,8 @@ hosted media/CDN path before making this public-ready at full quality.
   `docs/house-of-wander-final-delivery-2026-05-27.md`
 - Safe Amigo/Toon ingestion:
   `docs/amigo-toon-safe-ingestion-playbook.md`
+- Amigo operator activation:
+  `docs/amigo-house-of-wander-activation-plan.md`
 
 ## Claude Workflow
 

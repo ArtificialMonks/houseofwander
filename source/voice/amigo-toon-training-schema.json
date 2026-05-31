@@ -2,6 +2,12 @@
   "status": "future-safe-schema",
   "created": "2026-05-27",
   "purpose": "Define how exported Airbnb/message data can later train Amigo and Toon without putting private conversations in Git.",
+  "pilot": {
+    "property": "Casa WeZienWel",
+    "reason": "Use the user's own pilot property before touching Maaike and Laurens' active Airbnb host workflow.",
+    "liveAccountRiskPosture": "compliance-first",
+    "firstReplyMode": "draft-only with human sending"
+  },
   "storageBoundary": {
     "git": "Only schemas, labels, redacted examples, and safety rules.",
     "privateStorage": "Raw exports, transcripts, guest PII, booking IDs, and message history.",
@@ -74,14 +80,17 @@
     }
   },
   "recommendedIngestionRoutes": [
-    "Airbnb GDPR data export requested by account owner",
-    "Channel manager with authorized API access such as Hospitable, Smoobu, Hostaway, or equivalent",
-    "Browser automation only after explicit approval, with no sending/editing actions and secrets stored outside Git"
+    "Airbnb GDPR data export requested by the account owner",
+    "Official Airbnb-connected PMS or channel manager with authorized API/webhook access",
+    "Airbnb Partner Program access for Artificial Monks only after official approval",
+    "Open-source PMS as a dashboard or data-model base only, not as a direct Airbnb bridge unless paired with approved API access"
   ],
   "forbiddenActions": [
     "Do not scrape private Airbnb inbox pages without explicit owner approval.",
+    "Do not use browser automation as the foundation for live Airbnb access.",
     "Do not store Airbnb cookies, tokens, passwords, or raw private conversations in this repo.",
     "Do not send guest messages automatically.",
+    "Do not test risky workflows on Maaike and Laurens' active Airbnb host account.",
     "Do not change listings, pricing, calendar, house rules, availability, or cancellation settings.",
     "Do not promise refunds, discounts, direct payment, late checkout, or exceptions without host approval.",
     "Do not reveal exact address before booking confirmation."

@@ -1,5 +1,7 @@
 # Amigo x House of Wander Activation Plan
 
+Updated: May 31, 2026
+
 ## Product Recommendation
 
 Activate Amigo as a visible guide layer before building a real backend. The
@@ -12,6 +14,22 @@ website should now show the concept clearly:
 
 This keeps the prototype client-ready without implying live automation that does
 not exist yet.
+
+## Casa WeZienWel Pilot Decision
+
+The first real Airbnb-Amigo workflow should be tested on Casa WeZienWel, not on
+Maaike and Laurens' active host account.
+
+This gives Artificial Monks a safer path to learn from real host communication
+while protecting House of Wander's current Airbnb operations. Casa WeZienWel is
+the proving ground for export import, message classification, booking context,
+draft replies, and Amigo memory before the same workflow is offered to other
+hosts.
+
+The first live integration target is a compliant PMS/channel-manager bridge with
+official Airbnb connectivity. Free, trial, and open-source options should be
+researched, but an open-source PMS is only acceptable as a dashboard or data
+model base unless it connects to Airbnb through an approved API route.
 
 ## Guest-Facing Amigo Concept
 
@@ -41,6 +59,16 @@ Future Amigo should become a host cockpit that helps manage:
 This requires a real data model, source-of-truth policy, authentication,
 message logging, and booking/payment decisions before implementation.
 
+For the Casa WeZienWel pilot, this cockpit should start with:
+
+- imported Airbnb export conversations;
+- reservation context for each thread;
+- source-aware draft replies;
+- host tone and FAQ memory;
+- no auto-send;
+- no listing, pricing, calendar, payout, or payment mutation;
+- full archive storage outside Git with access controls and audit logs.
+
 ## Phased Roadmap
 
 ### Now / Prototype
@@ -49,6 +77,7 @@ message logging, and booking/payment decisions before implementation.
 - Move key stay and Airbnb data into `source/`.
 - Keep Airbnb as the final transaction path.
 - Make direct booking visible as a future direction only.
+- Keep the live app honest that Amigo is not yet connected to Airbnb.
 
 ### Next / Client-Ready
 
@@ -59,6 +88,16 @@ message logging, and booking/payment decisions before implementation.
 - Expand the collection model for every stay.
 - Confirm all Casa Cabane facts with Maaike & Laudi.
 
+### Casa WeZienWel / Safe Operator MVP
+
+- Import the official Airbnb export outside Git.
+- Parse messages and bookings into a private archive.
+- Build a message-and-booking dashboard view for Casa WeZienWel.
+- Let Amigo draft replies with citations to source snippets or house docs.
+- Require human approval and manual sending.
+- Research PMS bridges that can provide official Airbnb message and booking
+  access through API/webhooks.
+
 ### Later / Direct Booking Platform
 
 - Add availability and pricing source.
@@ -66,6 +105,8 @@ message logging, and booking/payment decisions before implementation.
 - Add payment and cancellation logic.
 - Add host inbox and guest messaging.
 - Add Amigo with real retrieval, source citations, and escalation to hosts.
+- Expand from Casa WeZienWel to House of Wander and selected external hosts only
+  after the safety model is proven.
 
 ## Concrete UI Changes Activated
 
@@ -101,3 +142,10 @@ Not implemented yet:
 - payments;
 - CMS.
 
+Still explicitly out of scope until approved:
+
+- private Airbnb inbox scraping;
+- browser automation on Maaike and Laurens' account;
+- automated guest-message sending;
+- changing Airbnb listings, pricing, calendar, availability, or house rules;
+- storing Airbnb exports, raw transcripts, cookies, tokens, or guest PII in Git.
